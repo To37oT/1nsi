@@ -49,6 +49,15 @@ Une fois Edupyther installé (espace personnel ou c:/python) son exécution vous
 
 ![image](https://github.com/To37oT/1nsi/assets/47528665/30ab3b42-939c-4fd3-b8a9-9c83bde346d9)
 
+Avec un clic droit vous ferez apparaitre le menu contextuel :
+
+![image](https://github.com/To37oT/1nsi/assets/47528665/ee5e37b2-15fc-4fca-a296-db50029ecc3e)
+
+Cliquer sur **Thonny** permettra de lancer l'éditeur Python
+
+![image](https://github.com/To37oT/1nsi/assets/47528665/8af897d9-732c-4d0b-9586-6176528b91ba)
+
+
 Vous pouvez utiliser au autre éditeur si vous le souhaitez, cependant attention, l'infrastructure du lycée peut-être capricieuse.
 
 
