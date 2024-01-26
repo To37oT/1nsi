@@ -14,6 +14,6 @@ Il existe 2 grandes familles de langages de programmation :
 
 En NSI, notre langage de prédilection sera Python.
 
-'''
+```
 print("hello word")
-'''
+```
