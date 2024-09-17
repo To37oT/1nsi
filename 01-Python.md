@@ -1,3 +1,8 @@
+---
+layout: default
+title: Bienvenue
+---
+
 # Python
 
 ## I. Introduction
