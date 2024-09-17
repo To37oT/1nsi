@@ -3,7 +3,6 @@ layout: default
 title: Page d'accueil
 ---
 
-# Bienvenue sur ma page
-Ceci est une page générée avec Jekyll.
+# Cours NSI
 
 [Chapitre 1](01-Python.md)
