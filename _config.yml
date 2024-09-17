@@ -1,0 +1,4 @@
+title: Mon Site Markdown
+description: Un site généré avec Jekyll et GitHub Pages
+theme: minima  # Ceci utilise le thème "minima" par défaut
+markdown: kramdown
