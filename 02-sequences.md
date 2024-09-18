@@ -12,9 +12,9 @@ Il est possible de "stocker" plusieurs grandeurs dans une même structure, ce ty
 
 **Exemple :**
 
-'''1, 3, 5''' 
+```1, 3, 5``` 
 est une séquence de 3 éléments avec comme indice (une sorte d'étiquette) 0 pour le premier élément, 1 pour le second et 2 pour le dernier)
-'''bonjour, 5, 18, 2'''
+```bonjour, 5, 18, 2```
 est une séquence avec 4 éléments et des indices qui vont de 0 à 3
 
 Nous allons étudier plus particulièrement 2 types de séquences : les **tuples** et les **tableaux**.
