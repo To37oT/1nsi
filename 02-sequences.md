@@ -6,7 +6,7 @@ published: true
 date: 2024
 ---
 
-## 1) Les séquences en Python
+## I) Les séquences en Python
 
 Il est possible de "stocker" plusieurs grandeurs dans une même structure, ce type de structure est appelé **une séquence**. De façon plus précise, nous définirons une séquence comme un ensemble fini et ordonné d'éléments indicés de 0 à n-1 (si cette séquence comporte n éléments). 
 
@@ -19,7 +19,7 @@ est une séquence avec 4 éléments et des indices qui vont de 0 à 3
 
 Nous allons étudier plus particulièrement 2 types de séquences : les **tuples** et les **tableaux**.
 
-###  a) Les tuples en Python
+###  A) Les tuples en Python
 
 Comme déjà dit ci-dessus, un tuple est une séquence. Voici un exemple très simple :
 
@@ -27,7 +27,7 @@ Comme déjà dit ci-dessus, un tuple est une séquence. Voici un exemple très s
 mon_tuple = (5, 8, 6, 9)
 ```
 
-Dans le code ci-dessus, le nom mon_tuple est associé à un tuple (l'association entre un nom et un tuple est aussi une variable), ce tuple est constitué des entiers 5, 8, 6 et 9. Comme indiqué dans la définition, chaque élément du tuple est indicé (il possède un indice):
+Dans le code ci-dessus, le nom mon_tuple est associé à un tuple (le tuple est aussi une variable), ce tuple est constitué des entiers 5, 8, 6 et 9. Comme indiqué dans la définition, chaque élément du tuple est indicé (il possède un indice):
 
 le premier élément du tuple (l'entier 5) possède l'indice 0
 le deuxième élément du tuple (l'entier 8) possède l'indice 1
