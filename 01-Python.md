@@ -1,6 +1,9 @@
 ---
 layout: default
 title: Chapitre 1
+permalink: /chapitre1/
+published: true
+date: 2024
 ---
 
 # Python
