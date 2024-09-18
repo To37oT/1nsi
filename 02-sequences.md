@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Chapitre 1
-permalink: /chapitre1/
+title: Chapitre 2
+permalink: /chapitre2/
 published: true
 date: 2024
 ---
