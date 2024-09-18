@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Accueil
-permalink: /accueil/
+permalink: /1nsi/
 published: true
 date: 2024
 ---
