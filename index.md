@@ -1,6 +1,9 @@
 ---
 layout: default
-title: Page d'accueil
+title: Chapitre 1
+permalink: /chapitre1/
+published: true
+date: 2024
 ---
 
 # Cours NSI
