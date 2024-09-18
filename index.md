@@ -7,5 +7,5 @@ date: 2024
 
 # Cours NSI
 
-[Chapitre 1](/chapitre1/)
-[Chapitre 1](/chapitre2/)
+[Chapitre 1 - Variables, if et boucle while](/chapitre1/)<br>
+[Chapitre 2 - Tableau, tuple et boucle for](/chapitre2/)<br>
