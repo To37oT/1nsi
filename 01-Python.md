@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: nsi
 title: Chapitre 1
 permalink: /chapitre1/
 published: true
