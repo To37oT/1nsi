@@ -13,7 +13,7 @@ Il est possible de "stocker" plusieurs grandeurs dans une même structure, ce ty
 **Exemple :**
 
 ```1, 3, 5```<br>
-est une séquence de 3 éléments avec comme indice (une sorte d'étiquette) 0 pour le premier élément, 1 pour le second et 2 pour le dernier)
+est une séquence de 3 éléments avec comme indice (une sorte d'étiquette) 0 pour le premier élément, 1 pour le second et 2 pour le dernier)<br>
 ```bonjour, 5, 18, 2```<br>
 est une séquence avec 4 éléments et des indices qui vont de 0 à 3
 
