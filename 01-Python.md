@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Bienvenue
+title: Chapitre 1
 ---
 
 # Python
