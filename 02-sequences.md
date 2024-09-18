@@ -1,6 +1,20 @@
+---
+layout: default
+title: Chapitre 1
+permalink: /chapitre1/
+published: true
+date: 2024
+---
+
 ## 1) Les séquences en Python
 
-Il est possible de "stocker" plusieurs grandeurs dans une même structure, ce type de structure est appelé une séquence. De façon plus précise, nous définirons une séquence comme un ensemble fini et ordonné d'éléments indicés de 0 à n-1 (si cette séquence comporte n éléments). Rassurez-vous, nous reviendrons ci-dessous sur cette définition. Nous allons étudier plus particulièrement 2 types de séquences : les tuples et les tableaux (il en existe d'autres que nous n'évoquerons pas ici).
+Il est possible de "stocker" plusieurs grandeurs dans une même structure, ce type de structure est appelé **une séquence**. De façon plus précise, nous définirons une séquence comme un ensemble fini et ordonné d'éléments indicés de 0 à n-1 (si cette séquence comporte n éléments). 
+
+**Exemple :**
+*1, 3, 5* est une séquence de 3 éléments avec comme indice (une sorte d'étiquette) 0 pour le premier élément, 1 pour le second et 2 pour le dernier)
+*bonjour, 5, 18, 2* est une séquence avec 4 éléments et des indices qui vont de 0 à 3
+
+Nous allons étudier plus particulièrement 2 types de séquences : les **tuples** et les **tableaux**.
 
 ###  a) Les tuples en Python
 
