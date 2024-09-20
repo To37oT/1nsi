@@ -12,37 +12,39 @@ Il est possible de "stocker" plusieurs grandeurs dans une même structure, ce ty
 
 **Exemple :**
 
-```1, 3, 5```<br>
-est une séquence de 3 éléments avec comme indice (une sorte d'étiquette) 0 pour le premier élément, 1 pour le second et 2 pour le dernier)<br>
-```bonjour, 5, 18, 2```<br>
+    1, 3, 5
+
+est une séquence de 3 éléments avec comme indice (une sorte d'étiquette) 0 pour le premier élément, 1 pour le second et 2 pour le dernier)
+
+	bonjour, 5, 18, 2
+
 est une séquence avec 4 éléments et des indices qui vont de 0 à 3
+
+Une séquence peut être composée de 0 à n éléments.
 
 Nous allons étudier plus particulièrement 2 types de séquences : les **tuples** et les **tableaux**.
 
 ###  A) Les tuples en Python
 
-Comme déjà dit ci-dessus, un tuple est une séquence. Voici un exemple très simple :
+**Un tuple est une séquence non modifiable**. La séquence est entourée de parenthèse et les éléments sont séparés par des virgules.  Voici un exemple  :
 
-```
-mon_tuple = (5, 8, 6, 9)
-```
+    mon_tuple = (5, 8, 6, 9)
 
-Dans le code ci-dessus, le nom mon_tuple est associé à un tuple (le tuple est aussi une variable), ce tuple est constitué des entiers 5, 8, 6 et 9. Comme indiqué dans la définition, chaque élément du tuple est indicé (il possède un indice):
+Dans le code ci-dessus, le nom `mon_tuple` est associé à un tuple (le tuple est aussi une variable), ce tuple est constitué des entiers 5, 8, 6 et 9. Chaque élément du tuple possède **un indice** :
 
-le premier élément du tuple (l'entier 5) possède l'indice 0
-le deuxième élément du tuple (l'entier 8) possède l'indice 1
-le troisième élément du tuple (l'entier 6) possède l'indice 2
-le quatrième élément du tuple (l'entier 9) possède l'indice 3
-Comment accéder à l'élément d'indice i dans un tuple ?
+- le premier élément du tuple (l'entier 5) possède l'indice 0
+- le deuxième élément du tuple (l'entier 8) possède l'indice 1
+- le troisième élément du tuple (l'entier 6) possède l'indice 2
+- le quatrième élément du tuple (l'entier 9) possède l'indice 3
+
+**Comment accéder à l'élément d'indice i dans un tuple ?**
 
 Simplement en utilisant la "notation entre crochets" :
 
-```
-mon_tuple = (5, 8, 6, 9)
-a = mon_tuple[2]
-```
+    mon_tuple = (5, 8, 6, 9)
+    a = mon_tuple[2]
 
-Dans le programme ci-dessus, la variable *a* a pour valeur 6.
+Dans le programme ci-dessus, la variable **a** a pour valeur 6.
 
 ATTENTION : dans les séquences les indices commencent toujours à 0 (le premier élément de la séquence a pour indice 0), oublier cette particularité est une source d'erreur "classique".
 
@@ -330,3 +332,5 @@ L'exécution de ce programme donnera le résultat suivant :
 Nous avons bien parcouru l'ensemble des éléments du tableau *m*.
 
 Cette double boucle *for* est une structure complexe, mais pourtant assez répandue. N'hésitez pas à consacrer quelques minutes à son analyse. 
+
+
