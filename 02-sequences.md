@@ -1,3 +1,4 @@
+
 ---
 layout: default
 title: Chapitre 2
@@ -6,7 +7,7 @@ published: true
 date: 2024
 ---
 
-## I) Les séquences en Python
+# I) Les séquences en Python
 
 Il est possible de "stocker" plusieurs grandeurs dans une même structure, ce type de structure est appelé **une séquence**. De façon plus précise, nous définirons une séquence comme un ensemble fini et ordonné d'éléments indicés de 0 à n-1 (si cette séquence comporte n éléments). 
 
@@ -24,7 +25,7 @@ Une séquence peut être composée de 0 à n éléments.
 
 Nous allons étudier plus particulièrement 2 types de séquences : les **tuples** et les **tableaux**.
 
-###  A) Les tuples en Python
+##  A) Les tuples en Python
 
 **Un tuple est une séquence non modifiable**. La séquence est entourée de parenthèse et les éléments sont séparés par des virgules.  Voici un exemple  :
 
@@ -37,106 +38,100 @@ Dans le code ci-dessus, le nom `mon_tuple` est associé à un tuple (le tuple es
 - le troisième élément du tuple (l'entier 6) possède l'indice 2
 - le quatrième élément du tuple (l'entier 9) possède l'indice 3
 
-**Comment accéder à l'élément d'indice i dans un tuple ?**
+### Comment accéder à l'élément d'indice i dans un tuple ?
 
-Simplement en utilisant la "notation entre crochets" :
+Simplement en utilisant des crochets :
 
     mon_tuple = (5, 8, 6, 9)
-    a = mon_tuple[2]
+    var = mon_tuple[2]
 
-Dans le programme ci-dessus, la variable **a** a pour valeur 6.
+Dans le programme ci-dessus, la variable **var** a pour valeur 6.
 
-ATTENTION : dans les séquences les indices commencent toujours à 0 (le premier élément de la séquence a pour indice 0), oublier cette particularité est une source d'erreur "classique".
+> ATTENTION : dans les séquences les indices commencent toujours à 0 (le
+> premier élément de la séquence a pour indice 0).
 
 Un tuple ne contient pas forcément des nombres entiers, il peut aussi contenir des nombres décimaux, des chaînes de caractères, des booléens...
 
 Dans le programme ci-dessous :
 
-```
-mon_tuple = ("le", "monde", "bonjour")
-msg = mon_tuple[2] + " " + mon_tuple[0] + " " + mon_tuple[1] + "!"
-```
+	mon_tuple = ("le", "monde", "bonjour")
+	msg = mon_tuple[2] + " " + mon_tuple[0] + " " + mon_tuple[1] + "!"
 
-la variable msg a pour valeur : "bonjour le monde!"
+la variable **msg** a pour valeur : "bonjour le monde!"
 
-Grâce au tuple, une fonction peut renvoyer plusieurs valeurs :
+
+### Renvoyer un tuple
 
 Intéressons-nous au programme suivant :
 
-```
-def add(a, b):
-	c = a + b
-	return (a, b, c)
-val = add(5, 8)
-```
-Après exécution du programme ci-dessus, la variable *val* a  pour valeur le tuple *(5, 8, 13)* car notre fonction *add* renvoie bien un tuple (*return (a, b, c)*)
+    def add(a, b):
+    	c = a + b
+    	return (a, b, c)
+    val = add(5, 8)
 
-Il est possible d'associer à des noms les valeurs contenues dans un tuple. Dans l'exemple ci-dessous :
+Après exécution du programme ci-dessus, la variable **val** a  pour valeur le tuple *(5, 8, 13)* car notre fonction **add()** renvoie bien tuple.
 
-```
-a, b, c = (5, 8, 6)
-```
-
-la variable *a* a pour valeur 5, *b* a pour valeur 8 et *c* a pour valeur 6.
-
-### b) Les tableaux en Python
-
-ATTENTION : Dans la suite nous allons employer le terme "tableau". Pour parler de ces "tableaux" les concepteurs de Python ont choisi d'utiliser le terme de "list" ("liste" en français). Pour éviter toute confusion, notamment par rapport à des notions qui seront abordées en terminale, le choix a été fait d'employer "tableau" à la place de "liste" (dans la documentation vous rencontrerez le terme "list", cela ne devra pas vous perturber)
-
-Il n'est pas possible de modifier un tuple après sa création (on parle d'objet "immutable"), si vous essayez de modifier un tuple existant, l'interpréteur Python vous renverra une erreur. Les tableaux sont,comme les tuples, des séquences, mais à la différence des tuples, ils sont modifiables (on parle d'objets "mutables").
-
-Pour créer un tableau, il existe différentes méthodes : une de ces méthodes ressemble beaucoup à la création d'un tuple :
+Il est également possible d'associer à des noms les valeurs contenues dans un tuple :
 
 ```
-mon_tab = [5, 8, 6, 9]
+var,truc, machin = (5, 8, 6)
 ```
 
-Notez la présence des crochets à la place des parenthèses.
+Dans l'exemple ci-dessus, la variable **var** a pour valeur 5, **truc** a pour valeur 8 et **machin** a pour valeur 6.
 
-Un tableau est une séquence, il est donc possible de "récupérer" un élément d'un tableau à l'aide de son indice (de la même manière que pour un tuple)
+## B) Les tableaux en Python
+
+> ATTENTION : Pour parler de ces "tableaux" les concepteurs de Python ont choisi d'utiliser le terme de "list". Pour éviter toute confusion (avec des notions qui seront abordées en terminale), le choix a été fait d'employer le terme "tableau" à la place de "liste".
+
+Il n'est pas possible de modifier un tuple après sa création (on parle d'objet **immutable**), si vous essayez de modifier un tuple existant, l'interpréteur Python vous renverra une erreur. Les tableaux sont des séquences comme les tuples, mais ils sont modifiables (on parle d'objets **mutables**).
+
+Voici un exemple de tableau :
+
+    mon_tab = [5, 8, 6, 9]
+
+**Notez la présence des crochets à la place des parenthèses.**
+
+Un tableau est aussi une séquence, il est donc possible de récupérer un élément d'un tableau à l'aide de son indice (de la même manière que pour un tuple).
 
 Dans le cas ci-dessous :
 
-```
-mon_tab = [5, 8, 6, 9]
-val = mon_tab[1]
-```
-la variable *val* a pour valeur  8 (index 0 : 5, index 1 :  8...)
+    mon_tab = [5, 8, 6, 9]
+    val = mon_tab[1]
 
-Il est possible de modifier un tableau à l'aide de la "notation entre crochets" :
+Ici la variable **val** a pour valeur  **8**.
 
-```
-mon_tab = [5, 8, 6, 9]
-mon_tab[2] = 15
-```
-Après l'exécution du programme ci-dessus, la tableau *mon_tab* est constitué des valeurs suivantes : [5, 8, **15**,  9]. L'élément d'indice 2 (le nombre entier 6) a bien été remplacé par le nombre entier 15
+### Actions sur un tableau
 
-Il est aussi possible d'ajouter un élément en fin de tableau à l'aide de la méthode "append" :
+Il est possible de modifier un tableau à l'aide de la notation entre crochets :
 
-```
-mon_tab = [5, 8, 6, 9]
-mon_tab.append(15)
-```
+    mon_tab = [5, 8, 6, 9]
+    mon_tab[2] = 15
 
-Après l'exécution du programme ci-dessus, la tableau *mon_tab* est constitué des valeurs suivantes : [5, 8, 6, 9, **15**]. La valeur 15 a  bien été ajoutée au tableau en dernière position.
+Après l'exécution du programme ci-dessus, la tableau **mon_tab** est constitué des valeurs suivantes : <br>`[5, 8, 15,  9]`. <br>L'élément d'indice 2 (le nombre entier 6) a bien été remplacé par le nombre entier 15.
 
-L'instruction "del" permet de supprimer un élément d'un tableau en utilisant son index :
+Il est aussi possible d'**ajouter** un élément en fin de tableau à l'aide de la méthode **append()** :
 
-```
-mon_tab = [5, 8, 6, 9]
-del mon_tab[1]
-```
-À la suite de l'exécution du programme ci-dessus le tableau *mon_tab* contient les  valeurs [5, 6, 9] : l'élément situé à l'index 1 (c'est à dire 8) a bien été supprimé.
+    mon_tab = [5, 8, 6, 9]
+    mon_tab.append(15)
 
-La fonction "len" renvoie le nombre d’éléments présents dans une séquence (tableau et tuple)
+Après l'exécution du programme ci-dessus, la tableau **mon_tab** est constitué des valeurs suivantes :<br>`[5, 8, 6, 9, 15]`. <br> La valeur 15 a  bien été ajoutée au tableau en dernière position.
 
-```
-mon_tab = [5, 8, 6, 9]
-a = len(mon_tab)
-```
-Après exécution du programme ci-dessus,  la  variable *a* a  pour valeur 4 (le tableau [5, 8, 6, 9] est bien constitué de 4 éléments)
+L'instruction **del** permet de **supprimer** un élément d'un tableau en utilisant son index :
 
-Après avoir vu les tableaux, on pourrait s'interroger sur l'intérêt d'utiliser un tuple puisque le tableau permet plus de choses ! La réponse est simple : les opérations sur les tuples sont plus "rapides". Quand vous savez que votre tableau ne sera pas modifié, il est préférable d'utiliser un tuple à la place d'un tableau.
+    mon_tab = [5, 8, 6, 9]
+    del mon_tab[1]
+
+À la suite de l'exécution du programme ci-dessus le tableau **mon_tab** contient les  valeurs :<br>`[5, 6, 9]` <br> l'élément situé à l'index 1 (c'est à dire 8) a bien été supprimé. <br>C'est l'index 4 qui n'existe plus et les valeurs des index 1 et 2 ont changées.
+
+La fonction **len** renvoie **le nombre d’éléments** présents dans une séquence (tableau, tuple,...)
+
+    mon_tab = [5, 8, 6, 9]
+    taille = len(mon_tab)
+
+Après exécution du programme ci-dessus,  la  variable **taille** a  pour valeur 4 car le tableau [5, 8, 6, 9] est constitué de 4 éléments.
+
+Après avoir vu les tableaux, on pourrait s'interroger sur l'intérêt d'utiliser un tuple puisque le tableau permet plus de choses. <br>La réponse est simple : les opérations sur les tuples sont plus rapides. Quand vous savez que votre tableau ne sera pas modifié, il est préférable d'utiliser un tuple à la place d'un tableau.
+
 
 ## 2) Parcourir une séquence à l'aide de la boucle *for*
 
@@ -332,5 +327,3 @@ L'exécution de ce programme donnera le résultat suivant :
 Nous avons bien parcouru l'ensemble des éléments du tableau *m*.
 
 Cette double boucle *for* est une structure complexe, mais pourtant assez répandue. N'hésitez pas à consacrer quelques minutes à son analyse. 
-
-
