@@ -214,63 +214,31 @@ Ci-dessus nous utilisons le tableau **tab** pour créer le tableau **mon_tab** :
 
 ## 4) Travailler sur des "tableaux de tableaux"
 
-Chaque élément d'un tableau peut être un tableau, on parle de tableau de tableau.
+Chaque élément d'un tableau peut être de tout type, donc éventuellement de type tableau, on parle alors de **tableaux de tableaux**.
 
 Voici un exemple de tableau de tableau :
 
-```
-m = [[1, 3, 4], [5 ,6 ,8], [2, 1, 3], [7, 8, 15]]
-```
-
-Le premier élément du tableau ci-dessus est bien un tableau ([1, 3, 4]), le deuxième élément est aussi un tableau ([5, 6, 8])...
-
-Il est souvent plus pratique de présenter ces "tableaux de tableaux" comme suit :
-
-```
-m = [[1, 3, 4],
-     [5, 6, 8],
-     [2, 1, 3],
-     [7, 8, 15]]
-```
-
-Nous obtenons ainsi quelque chose qui ressemble beaucoup à un "objet mathématique" très utilisé : une matrice
-
-Il est évidemment possible d'utiliser les indices de position avec ces "tableaux de tableaux". Pour cela nous allons considérer notre tableau de tableaux comme une matrice, c'est à dire en utilisant les notions de "ligne" et de "colonne". Dans la matrice ci-dessus :
-
-En ce qui concerne les lignes :
-
-- 1, 3, 4 constituent la première ligne
-
-- 5, 6, 8 constituent la deuxième ligne
-
-- 2, 1, 3 constituent la troisième ligne
-
-- 7, 8, 15 constituent la quatrième ligne
+    m = [[1, 3, 4], [5 ,6 ,8], [2, 1, 3], [7, 8, 15]]
 
 
-En ce qui concerne les colonnes :
+Le premier élément du tableau ci-dessus est bien un tableau `[1, 3, 4]`, le deuxième élément est aussi un tableau `[5, 6, 8]` et ainsi de suite.
 
-- 1, 5, 2, 7 constituent la première colonne
+Il est souvent plus lisible de présenter ces tableaux de tableaux comme suit :
 
-- 3, 6, 1, 8 constituent la deuxième colonne
+    m = [[1, 3, 4],
+         [5, 6, 8],
+         [2, 1, 3],
+         [7, 8, 15]]
 
-- 4, 8, 3, 15 constituent la troisième colonne
+Nous obtenons ainsi quelque chose qui ressemble beaucoup à un "objet mathématique" très utilisé : **une matrice**
 
-Pour cibler un élément particulier de la matrice, on utilise la notation avec "doubles crochets" : m\[ligne]\[colonne] (sans perdre de vu que la première ligne et la première colonne ont pour indice 0)
+Il est évidemment possible d'utiliser les indices de position avec ces tableaux de tableaux. 
 
-Si nous prenons cet exemple : 
+`m[1]` renverra `[5, 6, 8]`
 
-```
-m = [[1, 3, 4],
-     [5, 6, 8],
-     [2, 1, 3],
-     [7, 8, 15]]
-a = m[1][2]
-```
+Et nous pouvons aussi cibler un élément à l'intérieur de `m[1]` avec un second indice entre crochet :
 
-la variable  *a* aura  pour valeur 8.
-
-Explications : *m[1]* correspond au  tableau *[5, 6, 8]* (2e élément).  Dans ce tableau *[5, 6, 8]*, à  l'index 2 (*m[1][2]*), on trouve bien la valeur 8.
+`m[1][2]` renverra `8`
 
 Si maintenant nous considérons l'exemple suivant :
 
