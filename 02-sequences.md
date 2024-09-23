@@ -133,18 +133,18 @@ Après exécution du programme ci-dessus,  la  variable **taille** a  pour valeu
 Après avoir vu les tableaux, on pourrait s'interroger sur l'intérêt d'utiliser un tuple puisque le tableau permet plus de choses. <br>La réponse est simple : les opérations sur les tuples sont plus rapides. Quand vous savez que votre tableau ne sera pas modifié, il est préférable d'utiliser un tuple à la place d'un tableau.
 
 
-## 2) Parcourir une séquence à l'aide de la boucle *for*
+## 2) Parcourir une séquence à l'aide de la boucle "for"
 
-La boucle for... in permet de parcourir chacun des éléments d’une séquence (tableau ou tuple) :
+Nous avons déjà étudié les boucles **while** qui permettent d'effectuer des actions en boucle tant qu'une condition est Vrai.<br>
+La boucle **for... in** permet de faire autant de boucle qu'il y a d'éléments dans une séquence tout en parcourant ces éléments. La boucle se termine naturellement une fois que tous les éléments du tableau auront été parcourus.
 
-Prenons l'exemple suivant :
+### Parcours de tableau avec "for"
 
-```
-mon_tab = [5, 8, 6, 9]
-for ele in mon_tab:
-	print(ele)
-```
-L'exécution du programme ci-dessus permettra d'afficher toutes les valeurs contenues dans le tableau *mon_tab* :
+    mon_tab = [5, 8, 6, 9]
+    for ele in mon_tab:
+    	print(ele)
+
+L'exécution du programme ci-dessus permettra d'afficher toutes les valeurs contenues dans le tableau **mon_tab** :
 
 ```
 5
@@ -153,75 +153,64 @@ L'exécution du programme ci-dessus permettra d'afficher toutes les valeurs cont
 9
 ```
 
-Quelques explications : comme son nom l'indique, la boucle "for" est une boucle ! Nous "sortirons" de la boucle une fois que tous les éléments du tableau mon_tab auront été parcourus :
+**Quelques explications :** 
 
-- au premier tour de boucle, la variable *ele* sera égale 5
+- au premier tour de boucle, la variable **ele** sera égale 5
+- au deuxième tour de boucle, la variable **ele** sera égale 8
+- au troisième tour de boucle, la variable **ele** sera égale 6
+- au quatrième et dernier tour de boucle, la variable **ele** sera égale 9
 
-- au deuxième tour de boucle, la variable *ele* sera égale 8
+Le choix du nom de la variable qui va être associé aux éléments du tableau les uns après les autres (**ele**) est totalement libre, il est possible de choisir un autre nom sans aucun problème, le code suivant aurait donné exactement le même résultat :
 
-- au troisième tour de boucle, la variable *ele* sera égale 6
-
-- au quatrième et dernier tour de boucle, la variable *ele* sera égale 9
-
-Une chose importante à bien comprendre : le choix du nom de la variable qui va être associé aux éléments du tableau les uns après les autres (*ele*) est totalement arbitraire, il est possible de choisir un autre nom sans aucun problème, le code suivant aurait donné exactement le même résultat :
-
-```
-mon_tab = [5, 8, 6, 9]
-for toto in mon_tab:
+	mon_tab = [5, 8, 6, 9]
+	for toto in mon_tab:
 	print(toto)
-```
 
-Dans la boucle for... in il est possible d’utiliser la fonction native *range* à la place d’un tableau d’entiers :
+### Parcours de valeurs avec "for"
 
-```
-for ele in range(0, 5):
-	print (ele)
-```
+Dans la boucle **for... in** il est possible d’utiliser la fonction native **range** à la place d’un tableau d’entiers
+
+    for ele in range(0, 5):
+    	print (ele)
 
 aura exactement le même effet que le programme : 
 
-```
-for ele in [0, 1, 2, 3, 4]:
-	print (ele)
-```
+    for ele in [0, 1, 2, 3, 4]:
+    	print (ele)
 
-Comme vous pouvez le constater, *range(0,5)* est, au niveau de la boucle "for..in", équivalent au tableau [0,1,2,3,4]
+> Vous avez déjà rencontré normalement cette écriture en Maths et/ou en SNT :
+> 
+>     for ele in range(5)
 
-ATTENTION : si vous avez dans un programme "range(a,b)", a est la borne inférieure et b a borne supérieure. Vous ne devez surtout pas perdre de vu que la borne inférieure est incluse, mais que la borne supérieure est exclue.
+ATTENTION : pour toute expression **range(a,b)**, où **a** est la borne inférieure et **b** la borne supérieure. La borne inférieure est incluse, mais la borne supérieure est exclue.
 
 ## 3) Créer un tableau par compréhension
 
-Nous avons vu qu'il était possible de "remplir" un tableau en renseignant les éléments du tableau les uns après les autres :
+Nous avons vu qu'il était possible de remplir un tableau en renseignant les éléments du tableau les uns après les autres :
 
-```
-mon_tab = [0, 1, 2, 3]
-```
+    mon_tab = [0, 1, 2, 3]
 
-Il est aussi possible d'obtenir exactement le même résultat que ci-dessus en une seule ligne grâce à la compréhension de tableau :
 
-```
-mon_tab = [p for p in range(0, 4)]
-```
+Il est aussi possible d'obtenir exactement le même résultat que ci-dessus en une seule ligne grâce à la construction d'un tableau **par compréhension** :
 
-nous avons une boucle for entre crochets. p va successivement prendre les valeurs 0, 1, 2, 3, 4. Ces différentes valeurs de p vont permettre de remplir le tableau *mon_tab*.
+    mon_tab = [p for p in range(0, 4)]
 
-Les compréhensions de tableau permettent de rajouter une condition (if) :
+Nous avons une **boucle for** entre crochets. **p** va successivement prendre les valeurs `0, 1, 2, 3`. Ces différentes valeurs de p vont permettre de remplir le tableau *mon_tab*.
 
-```
-l = [1, 7, 9, 15, 5, 20, 10, 8]
-mon_tab = [p for p in l if p > 10]
-```
+Un autre exemple avec une opération mathématique :
 
-ci-dessus nous utilisons le tableau *l* pour créer le tableau *mon_tab* : on parcourt le tableau *l* grâce à la boucle *for p in l* mais on "garde" uniquement les valeurs supérieures à 10 (grâce au *if p > 10*). Après l'exécution du programme ci-dessus, le tableau *mon_tab* est constitué des éléments suivants : [15, 20]
+    mon_tab = [p*3 for p in range(0, 4)]
+Cette fois ci le tableau prendra les valeurs `0,3,6,9`.
 
-Il y a aussi la possibilité d'ajouter des opérations arithmétiques  :
+Les compréhensions de tableau permettent également de rajouter une condition **if** :
 
-```
-l = [1, 7, 9, 15, 5, 20, 10, 8]
-mon_tab = [p**2 for p in l if p < 10]
-```
 
-On utilise le tableau  *l* pour  créer le tableau *mon_tab* en mettant au carré tous les éléments du tableau *l* à condition qu'ils soient strictement inférieurs à 10. On obtient donc le tableau *mon_tab* suivant : [1, 49, 81, 25, 64]
+    tab = [1, 7, 9, 15, 5, 20, 10, 8]
+    mon_tab = [p for p in tab if p > 10]
+
+Ci-dessus nous utilisons le tableau **tab** pour créer le tableau **mon_tab** : on parcourt le tableau **tab** grâce à la boucle **for p in tab** mais on ne garde que les valeurs supérieures à 10 (grâce au **if p > 10**). Après l'exécution du programme ci-dessus, le tableau **mon_tab** est constitué des éléments suivants : `[15, 20]`
+
+
 
 ## 4) Travailler sur des "tableaux de tableaux"
 
@@ -327,3 +316,4 @@ L'exécution de ce programme donnera le résultat suivant :
 Nous avons bien parcouru l'ensemble des éléments du tableau *m*.
 
 Cette double boucle *for* est une structure complexe, mais pourtant assez répandue. N'hésitez pas à consacrer quelques minutes à son analyse. 
+
