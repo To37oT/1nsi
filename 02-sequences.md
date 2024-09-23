@@ -229,7 +229,7 @@ Il est souvent plus lisible de présenter ces tableaux de tableaux comme suit :
          [2, 1, 3],
          [7, 8, 15]]
 
-Nous obtenons ainsi quelque chose qui ressemble beaucoup à un "objet mathématique" très utilisé : **une matrice**
+Nous obtenons ainsi quelque chose qui ressemble beaucoup à un objet mathématique très utilisé : **une matrice**
 
 Il est évidemment possible d'utiliser les indices de position avec ces tableaux de tableaux. 
 
@@ -238,17 +238,6 @@ Il est évidemment possible d'utiliser les indices de position avec ces tableaux
 Et nous pouvons aussi cibler un élément à l'intérieur de `m[1]` avec un second indice entre crochet :
 
 `m[1][2]` renverra `8`
-
-Si maintenant nous considérons l'exemple suivant :
-
-```
-m = [1, 2, 3]
-mm = [m, m, m]
-m[0] = 100
-```
-Après l'exécution de ce programme le tableau *mm* est constitué des éléments suivants  : [[100, 2, 3], [100, 2, 3], [100, 2, 3]]
-
-Comme vous pouvez le constater, la modification du tableau associé au nom m entraîne la modification du tableau associé au nom mm (alors que nous n'avons pas directement modifié le tableau associé au nom mm). Il faut donc être très prudent lors de ce genre de manipulation afin d'éviter des modifications non désirées.
 
 Il est possible de parcourir l'ensemble des éléments d'une matrice à l'aide d'une "double boucle for" :
 
@@ -284,3 +273,17 @@ Nous avons bien parcouru l'ensemble des éléments du tableau *m*.
 
 Cette double boucle *for* est une structure complexe, mais pourtant assez répandue. N'hésitez pas à consacrer quelques minutes à son analyse. 
 
+### dernier petit conseil...
+Vous vous souvenez des variables locales et des variables globales ? Les tableaux sont par nature des variables globales, il faudra donc faire attention en les manipulant.
+
+Regardez cet exemple :
+
+    tab1 = [1, 2, 3]
+    tab2 = [tab1, tab1, tab1]
+    tab1[0] = 100
+
+Après l'exécution de ce programme le tableau **tab2** est constitué des éléments suivants  : 
+
+    [[100, 2, 3], [100, 2, 3], [100, 2, 3]]
+
+Comme vous pouvez le constater, la modification de **tab1** entraîne la modification de **tab2** (alors que nous n'avons pas directement modifié ce tableau). Il faut donc être très prudent lors de ce genre de manipulation afin d'éviter des modifications non désirées.
