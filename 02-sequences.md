@@ -199,6 +199,7 @@ Nous avons une **boucle for** entre crochets. **p** va successivement prendre le
 Un autre exemple avec une opération mathématique :
 
     mon_tab = [p*3 for p in range(0, 4)]
+    
 Cette fois ci le tableau prendra les valeurs `0,3,6,9`.
 
 Les compréhensions de tableau permettent également de rajouter une condition **if** :
