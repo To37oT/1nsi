@@ -240,41 +240,55 @@ Et nous pouvons aussi cibler un élément à l'intérieur de `m[1]` avec un seco
 
 `m[1][2]` renverra `8`
 
+### Parcours d'un tableau de tableaux
+
 Il est possible de parcourir l'ensemble des éléments d'une matrice à l'aide d'une "double boucle for" :
 
-```
-m = [[1, 3, 4],
-     [5, 6, 8],
-     [2, 1, 3],
-     [7, 8, 15]]
-nb_colonne = 3
-nb_ligne = 4
-for i in range(0, nb_ligne):
-	for j in range(0, nb_colonne):
-		a = m[i][j]
-		print(a)
-```
+    tab = [[1, 3, 4],
+           [5, 6, 8],
+           [2, 1, 3],
+           [7, 8, 15]]
+         
+    nb_colonne = 3
+    nb_ligne = 4
+    
+    for i in range(0, nb_ligne):
+    	for j in range(0, nb_colonne):
+    		a = tab[i][j]
+    		print(a)
+
 L'exécution de ce programme donnera le résultat suivant :
 
-```
-1
-3
-4
-5
-6
-8
-2
-1
-3
-7
-8
-15
-```
-Nous avons bien parcouru l'ensemble des éléments du tableau *m*.
+    1
+    3
+    4
+    5
+    6
+    8
+    2
+    1
+    3
+    7
+    8
+    15
 
-Cette double boucle *for* est une structure complexe, mais pourtant assez répandue. N'hésitez pas à consacrer quelques minutes à son analyse. 
+Nous avons bien parcouru l'ensemble des éléments du tableau **tab**.
 
-### dernier petit conseil...
+Nous pouvons également parcourir l'ensemble des éléments de cette manière : 
+
+    tab = [[1, 3, 4],
+         [5, 6, 8],
+         [2, 1, 3],
+         [7, 8, 15]]
+         
+    for i in range(len(tab)):
+    	for j in range(len(tab[i])):
+    		a = tab[i][j]
+    		print(a)
+
+Cette double boucle **for** est une structure complexe. N'hésitez pas à consacrer quelques minutes à son analyse. 
+
+### Dernier petit conseil...
 Vous vous souvenez des variables locales et des variables globales ? Les tableaux sont par nature des variables globales, il faudra donc faire attention en les manipulant.
 
 Regardez cet exemple :
