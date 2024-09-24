@@ -143,6 +143,26 @@ Après exécution du programme ci-dessus,  la  variable **taille** a  pour valeu
 Après avoir vu les tableaux, on pourrait s'interroger sur l'intérêt d'utiliser un tuple puisque le tableau permet plus de choses. <br>La réponse est simple : les opérations sur les tuples sont plus rapides. Quand vous savez que votre tableau ne sera pas modifié, il est préférable d'utiliser un tuple à la place d'un tableau.
 
 
+##### Exercice tableau 1
+Complétez le programme pour que le tableau soit composé des éléments suivants : [15, 8, 6, 9] :
+
+    mon_tab = [5, 8, 6, 9]
+    mon_tab[....] = .....
+
+##### Exercice tableau 2
+Soit le programme suivant :
+
+    mon_tab = [3, 3, 6, 9]
+
+Quelle sera la composition de ce tableau si l'on exécute les lignes suivantes :
+
+    mon_tab.append(0)
+    del mon_tab[3]
+
+Que m'affichera alors la ligne :
+
+    print(len(mon_tab)) 
+
 ## 2) Parcourir une séquence à l'aide de la boucle "for"
 
 Nous avons déjà étudié les boucles **while** qui permettent d'effectuer des actions en boucle tant qu'une condition est Vrai.<br>
@@ -313,3 +333,5 @@ Après l'exécution de ce programme le tableau **tab2** est constitué des élé
     [[100, 2, 3], [100, 2, 3], [100, 2, 3]]
 
 Comme vous pouvez le constater, la modification de **tab1** entraîne la modification de **tab2** (alors que nous n'avons pas directement modifié ce tableau). Il faut donc être très prudent lors de ce genre de manipulation afin d'éviter des modifications non désirées.
+
+
