@@ -78,6 +78,17 @@ var,truc, machin = (5, 8, 6)
 
 Dans l'exemple ci-dessus, la variable **var** a pour valeur 5, **truc** a pour valeur 8 et **machin** a pour valeur 6.
 
+##### Exercice tuple 1
+Complétez le programme pour que **var** ai la valeur **6** :
+
+    mon_tuple = (5, 8, 6, 9)
+    var = mon_tuple.......
+
+##### Exercice tuple 2
+Complétez le programme pour que **truc** ai la valeur **6** et **machin** la valeur **8** :
+
+    truc, machin = (.......
+
 ## B) Les tableaux en Python
 
 > ATTENTION : Pour parler de ces "tableaux" les concepteurs de Python ont choisi d'utiliser le terme de "list". Pour éviter toute confusion (avec des notions qui seront abordées en terminale), le choix a été fait d'employer le terme "tableau" à la place de "liste".
@@ -120,7 +131,7 @@ L'instruction **del** permet de **supprimer** un élément d'un tableau en utili
     mon_tab = [5, 8, 6, 9]
     del mon_tab[1]
 
-À la suite de l'exécution du programme ci-dessus le tableau **mon_tab** contient les  valeurs :<br>`[5, 6, 9]` <br> l'élément situé à l'index 1 (c'est à dire 8) a bien été supprimé. <br>C'est l'index 4 qui n'existe plus et les valeurs des index 1 et 2 ont changées.
+À la suite de l'exécution du programme ci-dessus le tableau **mon_tab** contient les  valeurs :<br>`[5, 6, 9]` <br> L'élément situé à l'index 1 (c'est à dire 8) a bien été supprimé. <br>C'est l'index 4 qui n'existe plus et les valeurs des index 1 et 2 ont changées.
 
 La fonction **len** renvoie **le nombre d’éléments** présents dans une séquence (tableau, tuple,...)
 
