@@ -195,7 +195,7 @@ Le choix du nom de la variable qui va être associé aux éléments du tableau l
 
 	mon_tab = [5, 8, 6, 9]
 	for toto in mon_tab:
-	print(toto)
+		print(toto)
 
 ### Parcours de valeurs avec "for"
 
