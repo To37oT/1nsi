@@ -53,8 +53,8 @@ Un tuple ne contient pas forcément des nombres entiers, il peut aussi contenir 
 
 Dans le programme ci-dessous :
 
-	mon_tuple = ("le", "monde", "bonjour")
-	msg = mon_tuple[2] + " " + mon_tuple[0] + " " + mon_tuple[1] + "!"
+    mon_tuple = ("le", "monde", "bonjour")
+    msg = mon_tuple[2] + " " + mon_tuple[0] + " " + mon_tuple[1] + "!"
 
 la variable **msg** a pour valeur : "bonjour le monde!"
 
@@ -173,7 +173,7 @@ La boucle **for... in** permet de faire autant de boucle qu'il y a d'éléments 
 
     mon_tab = [5, 8, 6, 9]
     for ele in mon_tab:
-    	print(ele)
+        print(ele)
 
 L'exécution du programme ci-dessus permettra d'afficher toutes les valeurs contenues dans le tableau **mon_tab** :
 
@@ -195,7 +195,7 @@ Le choix du nom de la variable qui va être associé aux éléments du tableau l
 
 	mon_tab = [5, 8, 6, 9]
 	for toto in mon_tab:
-		print(toto)
+	    print(toto)
 
 ### Parcours de valeurs avec "for"
 
