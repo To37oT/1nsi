@@ -6,7 +6,7 @@ published: true
 date: 2024
 ---
 
-# I) Les séquences en Python
+# Les séquences en Python
 
 Il est possible de "stocker" plusieurs grandeurs dans une même structure, ce type de structure est appelé **une séquence**. De façon plus précise, nous définirons une séquence comme un ensemble fini et ordonné d'éléments indicés de 0 à n-1 (si cette séquence comporte n éléments). 
 
