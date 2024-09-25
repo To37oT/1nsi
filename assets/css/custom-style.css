@@ -9,4 +9,4 @@ h5 {color: red;
   text-transform: uppercase;
 }
 blockquote {color:violet; border-left: 4px solid violet;}
-h5+blockquote {color:black; border-left: none; padding: 5px 10px; font-style:inherit; font-size:inherit, letter-spacing:inherit; background-color: rgba(255,0,0,0.05);}
+h5+blockquote {color:black; border: 1px red dashed; padding: 5px 10px; font-style:inherit; font-size:inherit; letter-spacing:inherit; }
