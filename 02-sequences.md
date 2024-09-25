@@ -217,11 +217,11 @@ ATTENTION : pour toute expression **range(a,b)**, où **a** est la borne inféri
 
 ##### Exercice boucle for 1
 > Quelle est la valeur de la variable **s** après l'exécution du programme suivant :
-
->    tab = [1, 2, 3]
->    s = 0
->    for t in tab:
->	    s = s + t
+>
+>    	tab = [1, 2, 3]
+>    	s = 0
+>    	for t in tab:
+>    	    s = s + t
 
 ##### Exercice boucle for 2
 Quelle est la valeur de la variable **s** après l'exécution du programme suivant :
