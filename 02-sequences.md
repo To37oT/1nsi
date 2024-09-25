@@ -164,7 +164,7 @@ Que m'affichera alors la ligne :
 
     print(len(mon_tab)) 
 
-## 2) Parcourir une séquence à l'aide de la boucle "for"
+## C) Parcourir une séquence à l'aide de la boucle "for"
 
 Nous avons déjà étudié les boucles **while** qui permettent d'effectuer des actions en boucle tant qu'une condition est Vrai.<br>
 La boucle **for... in** permet de faire autant de boucle qu'il y a d'éléments dans une séquence tout en parcourant ces éléments. La boucle se termine naturellement une fois que tous les éléments du tableau auront été parcourus.
@@ -253,7 +253,7 @@ de valeurs.*
 Exemple pour 15, 13, 17 -> (15 + 13 + 17) / 3 -> 45 / 3 -> moyenne = 15
 
 
-## C) Créer un tableau par compréhension
+## D) Créer un tableau par compréhension
 
 Nous avons vu qu'il était possible de remplir un tableau en renseignant les éléments du tableau les uns après les autres :
 
@@ -286,7 +286,7 @@ Quelle est la composition du tableau mon_tab après l'exécution du programme ci
     tab = [5, 3, 4, 8]
     mon_tab = [2*t for t in tab if t > 4]
 
-## D) Travailler sur des "tableaux de tableaux"
+## E) Travailler sur des "tableaux de tableaux"
 
 Chaque élément d'un tableau peut être de tout type, donc éventuellement de type tableau, on parle alors de **tableaux de tableaux**.
 
