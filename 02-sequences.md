@@ -253,7 +253,7 @@ de valeurs.*
 Exemple pour 15, 13, 17 -> (15 + 13 + 17) / 3 -> 45 / 3 -> moyenne = 15
 
 
-## 3) Créer un tableau par compréhension
+## C) Créer un tableau par compréhension
 
 Nous avons vu qu'il était possible de remplir un tableau en renseignant les éléments du tableau les uns après les autres :
 
@@ -286,7 +286,7 @@ Quelle est la composition du tableau mon_tab après l'exécution du programme ci
     tab = [5, 3, 4, 8]
     mon_tab = [2*t for t in tab if t > 4]
 
-## 4) Travailler sur des "tableaux de tableaux"
+## D) Travailler sur des "tableaux de tableaux"
 
 Chaque élément d'un tableau peut être de tout type, donc éventuellement de type tableau, on parle alors de **tableaux de tableaux**.
 
