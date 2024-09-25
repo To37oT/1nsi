@@ -79,10 +79,11 @@ var,truc, machin = (5, 8, 6)
 Dans l'exemple ci-dessus, la variable **var** a pour valeur 5, **truc** a pour valeur 8 et **machin** a pour valeur 6.
 
 ##### Exercice tuple 1
-Complétez le programme pour que **var** ai la valeur **6** :
 
-    mon_tuple = (5, 8, 6, 9)
-    var = mon_tuple.......
+> Complétez le programme pour que **var** ai la valeur **6** :
+> 
+>     mon_tuple = (5, 8, 6, 9)
+>     var = mon_tuple.......
 
 ##### Exercice tuple 2
 Complétez le programme pour que **truc** ai la valeur **6** et **machin** la valeur **8** :
