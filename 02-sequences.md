@@ -245,7 +245,7 @@ ATTENTION : pour toute expression **range(a,b)**, où **a** est la borne inféri
 >			maxi = ...
 >          return ...
 >
-> [Lien vers l'exercice sur Basthon](https://console.basthon.fr/?script=eJxLSU1TKEpNzkgtAuL43MQKjZLEJE0rXi4FIAByMxVsFfT09CD8tPwihRKFzDwFoBoFoBpOkGBmGkiBgh1ENUiUE5veotSS0qI8EB8AAFAcpw)
+> [Lien vers l'exercice sur CodePuzzle](https://www.codepuzzle.io/DBGFY)
 
 ##### Exercice boucle for 4
 >Écrire une fonction **moyenne()** qui prend en paramètre un tableau d'entiers non vide "tab" et qui
@@ -284,10 +284,10 @@ Les compréhensions de tableau permettent également de rajouter une condition *
 Ci-dessus nous utilisons le tableau **tab** pour créer le tableau **mon_tab** : on parcourt le tableau **tab** grâce à la boucle **for p in tab** mais on ne garde que les valeurs supérieures à 10 (grâce au **if p > 10**). Après l'exécution du programme ci-dessus, le tableau **mon_tab** est constitué des éléments suivants : `[15, 20]`
 
 ##### Exercice compréhension 1
-Quelle est la composition du tableau mon_tab après l'exécution du programme ci-dessous ?
-
-    tab = [5, 3, 4, 8]
-    mon_tab = [2*t for t in tab if t > 4]
+>Quelle est la composition du tableau mon_tab après l'exécution du programme ci-dessous ?
+>
+>     tab = [5, 3, 4, 8]
+>     mon_tab = [2*t for t in tab if t > 4]
 
 ## 4) Travailler sur des "tableaux de tableaux"
 
@@ -381,69 +381,68 @@ Après l'exécution de ce programme le tableau **tab2** est constitué des élé
 Comme vous pouvez le constater, la modification de **tab1** entraîne la modification de **tab2** (alors que nous n'avons pas directement modifié ce tableau). Il faut donc être très prudent lors de ce genre de manipulation afin d'éviter des modifications non désirées.
 
 ##### Exercice tableaux de tableaux 1
-Quelle est la valeur de la variable **var** après l'exécution de ce programme ?
-
-    m = [[1, 3, 4],
-		 [5, 6, 8],
-		 [2, 1, 3],
-		 [7, 8, 15]]
-    var = m[0][1]
+>Quelle est la valeur de la variable **var** après l'exécution de ce programme ?
+>
+>     m = [[1, 3, 4],
+>          [5, 6, 8],
+>          [2, 1, 3],
+>          [7, 8, 15]]
+>     var = m[0][1]
 
 ##### Exercice tableaux de tableaux 2 avec Python Tutor
-Connectez-vous sur [python tutor](https://pythontutor.com/visualize.html#mode=edit){:target="_blank"}, puis remplacer l'exemple par le code suivant : 
-
-    tab = [[1, 3, 4],
-           [5, 6, 8],
-           [2, 1, 3],
-           [7, 8, 15]]
-         
-    nb_colonne = 3
-    nb_ligne = 4
-    
-    for i in range(0, nb_ligne):
-    	for j in range(0, nb_colonne):
-    		a = tab[i][j]
-    		print(a)
-
-Expliquez ce qui se passe aux **étapes** 7, 8, 13, 20, 52 (attention, n'expliquez pas votre code, expliquez ce qu'il vient de se passer dans la machine).
-
-*Exemple :
-Étape 6 : La variable tab est mémorisée par l'ordinateur*
+> Connectez-vous sur [python tutor](https://pythontutor.com/visualize.html#mode=edit){:target="_blank"}, puis remplacer l'exemple par le code suivant : 
+>
+>     tab = [[1, 3, 4],
+>          [5, 6, 8],
+>          [2, 1, 3],
+>          [7, 8, 15]]
+>         
+>     nb_colonne = 3
+>     nb_ligne = 4
+>    
+>     for i in range(0, nb_ligne):
+>          for j in range(0, nb_colonne):
+>               a = tab[i][j]
+>               print(a)
+>
+>Expliquez ce qui se passe aux **étapes** 7, 8, 13, 20, 52 (attention, n'expliquez pas votre code, expliquez ce qu'il vient de se passer dans la machine).
+>
+>*Exemple :
+>Étape 6 : La variable tab est mémorisée par l'ordinateur*
 
 ##### Exercice tableaux de tableaux 3
-Quelle est la valeur de la variable a après l'exécution de ce programme ?
-
-    m = [[1, 3],
-	    [5, 8],
-	    [2, 3]]
-		    
-    nb_colonne = 2
-    nb_ligne = 2
-    a = 0
-    
-    for i in range(0, nb_ligne):
-	    for j in range(0, nb_colonne):
-		    a = a + m[i][j]
+>Quelle est la valeur de la variable a après l'exécution de ce programme ?
+>
+>     m = [[1, 3],
+>          [5, 8],
+>          [2, 3]]
+>		    
+>     nb_colonne = 2
+>     nb_ligne = 2
+>     a = 0
+>
+>     for i in range(0, nb_ligne):
+>          for j in range(0, nb_colonne):
+>               a = a + m[i][j]
 
 ##### Exercice : Trouver l'indice
-La fonction recherche prend en paramètres un tableau "tab" contenant des entiers et un entier "n". Cette fonction renvoie l'indice de position de l'entier "n" s'il est présent dans le tableau tab ou -1 dans le cas contraire (on partira du principe que le tableau ne peut pas contenir 2 fois le même entier).
-
-Cet exemple renvoie 2 :
-
-    recherche([3,5,8,34], 8)
-
-Cet exemple renvoie -1 : 
-
-	recherche([3,5,8,34], 42)
-
-Compléter la fonction recherche suivante :
-
-	def recherche(tab, n):
-		indice = ...
-		i = 0
-		for t in ... :
-			if n == ... :
-				indice = ...
-			i = i + ...
-		return ...
-
+>La fonction recherche prend en paramètres un tableau "tab" contenant des entiers et un entier "n". Cette fonction renvoie l'indice de position de l'entier "n" s'il est présent dans le tableau tab ou -1 dans le cas contraire (on partira du principe que le tableau ne peut pas contenir 2 fois le même entier).
+>
+>Cet exemple renvoie 2 :
+>
+>     recherche([3,5,8,34], 8)
+>
+>Cet exemple renvoie -1 : 
+>
+>     recherche([3,5,8,34], 42)
+>
+>Compléter la fonction recherche suivante :
+>
+>     def recherche(tab, n):
+>          indice = ...
+>          i = 0
+>          for t in ... :
+>               if n == ... :
+>                    indice = ...
+>               i = i + ...
+>          return ...
