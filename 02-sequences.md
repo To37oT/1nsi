@@ -245,7 +245,7 @@ ATTENTION : pour toute expression **range(a,b)**, où **a** est la borne inféri
 >			maxi = ...
 >          return ...
 >
-> [Lien vers l'exercice sur CodePuzzle](https://www.codepuzzle.io/DBGFY)
+> [Lien vers l'exercice sur CodePuzzle](https://www.codepuzzle.io/DBGFY){:target="_blank"}
 
 ##### Exercice boucle for 4
 >Écrire une fonction **moyenne()** qui prend en paramètre un tableau d'entiers non vide "tab" et qui
@@ -254,7 +254,7 @@ renvoie la moyenne de ces entiers.
 de valeurs.*
 >Exemple pour 15, 13, 17 -> (15 + 13 + 17) / 3 -> 45 / 3 -> moyenne = 15
 >
->[Lien vers l'exercice sur CodePuzzle](https://www.codepuzzle.io/DMH8X)
+>[Lien vers l'exercice sur CodePuzzle](https://www.codepuzzle.io/DMH8X){:target="_blank"}
 
 ## 3) Créer un tableau par compréhension
 
@@ -447,4 +447,4 @@ Comme vous pouvez le constater, la modification de **tab1** entraîne la modific
 >               i = i + ...
 >          return ...
 >
->[Lien vers l'exercice sur CodePuzzle](https://www.codepuzzle.io/DZNLX)
+>[Lien vers l'exercice sur CodePuzzle](https://www.codepuzzle.io/DZNLX){:target="_blank"}
