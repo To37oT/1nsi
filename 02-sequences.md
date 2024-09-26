@@ -145,24 +145,24 @@ Après avoir vu les tableaux, on pourrait s'interroger sur l'intérêt d'utilise
 
 
 ##### Exercice tableau 1
-Complétez le programme pour que le tableau soit composé des éléments suivants : [15, 8, 6, 9] :
-
-    mon_tab = [5, 8, 6, 9]
-    mon_tab[....] = .....
+> Complétez le programme pour que le tableau soit composé des éléments suivants : [15, 8, 6, 9] :
+>
+>     mon_tab = [5, 8, 6, 9]
+>     mon_tab[....] = .....
 
 ##### Exercice tableau 2
-Soit le programme suivant :
-
-    mon_tab = [3, 3, 6, 9]
-
-Quelle sera la composition de ce tableau si l'on exécute les lignes suivantes :
-
-    mon_tab.append(0)
-    del mon_tab[3]
-
-Que m'affichera alors la ligne :
-
-    print(len(mon_tab)) 
+> Soit le programme suivant :
+> 
+>     mon_tab = [3, 3, 6, 9]
+>
+> Quelle sera la composition de ce tableau si l'on exécute les lignes suivantes :
+>
+>     mon_tab.append(0)
+>     del mon_tab[3]
+>
+>Que m'affichera alors la ligne :
+>
+>     print(len(mon_tab)) 
 
 ## 2) Parcourir une séquence à l'aide de la boucle "for"
 
