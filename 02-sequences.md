@@ -80,13 +80,13 @@ Dans l'exemple ci-dessus, la variable **var** a pour valeur 5, **truc** a pour v
 
 ##### Exercice tuple 1
 
-> Complétez le programme pour que **var** ai la valeur **6** :
+> Complétez le programme pour que **var** ait la valeur **6** :
 > 
 >     mon_tuple = (5, 8, 6, 9)
 >     var = mon_tuple.......
 
 ##### Exercice tuple 2
-> Complétez le programme pour que **truc** ai la valeur **6** et **machin** la valeur **8** :
+> Complétez le programme pour que **truc** ait la valeur **6** et **machin** la valeur **8** :
 >
 >     truc, machin = (.......
 
@@ -224,34 +224,37 @@ ATTENTION : pour toute expression **range(a,b)**, où **a** est la borne inféri
 >          s = s + t
 
 ##### Exercice boucle for 2
-Quelle est la valeur de la variable **s** après l'exécution du programme suivant :
-
-    s = 0
-    for t in range (1,5):
-	    s = s + t
+>Quelle est la valeur de la variable **s** après l'exécution du programme suivant :
+>
+>     s = 0
+>     for t in range (1,5):
+>          s = s + t
 
 ##### Exercice boucle for 3
-La fonction **recherche_max()** prend en paramètre un tableau et renvoie la plus grande valeur présente dans le tableau (le tableau est constitué d'entiers positifs ou nuls).<br>
-Par exemple, cet appel renvoie 5 :
-
-    recherche_max([4, 3, 0, 5])
-
-Complétez la fonction recherche_max() suivante :
-
-    def recherche_max(tab):
-	    maxi = ...
-	    for t in tab :
-		    if ... > maxi :
-			    maxi = ...
-	    return ...
+>La fonction **recherche_max()** prend en paramètre un tableau et renvoie la plus grande valeur présente dans le tableau (le tableau est constitué d'entiers positifs ou nuls).
+>Par exemple, cet appel renvoie 5 :
+>
+>     recherche_max([4, 3, 0, 5])
+>
+>Complétez la fonction recherche_max() suivante :
+>
+>     def recherche_max(tab):
+>          maxi = ...
+>          for t in tab :
+>               if ... > maxi :
+>			maxi = ...
+>          return ...
+>
+> [Lien vers l'exercice sur Basthon](https://console.basthon.fr/?script=eJxLSU1TKEpNzkgtAuL43MQKjZLEJE0rXi4FIAByMxVsFfT09CD8tPwihRKFzDwFoBoFoBpOkGBmGkiBgh1ENUiUE5veotSS0qI8EB8AAFAcpw)
 
 ##### Exercice boucle for 4
-Écrire une fonction **moyenne()** qui prend en paramètre un tableau d'entiers non vide "tab" et qui
+>Écrire une fonction **moyenne()** qui prend en paramètre un tableau d'entiers non vide "tab" et qui
 renvoie la moyenne de ces entiers.
-*Rappel : la moyenne s'obtient en additionnant les valeurs et en divisant le résultat par le nombre
+>*Rappel : la moyenne s'obtient en additionnant les valeurs et en divisant le résultat par le nombre
 de valeurs.*
-Exemple pour 15, 13, 17 -> (15 + 13 + 17) / 3 -> 45 / 3 -> moyenne = 15
-
+>Exemple pour 15, 13, 17 -> (15 + 13 + 17) / 3 -> 45 / 3 -> moyenne = 15
+>
+>[Lien vers l'exercice sur CodePuzzle] ()
 
 ## 3) Créer un tableau par compréhension
 
