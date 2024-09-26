@@ -88,7 +88,7 @@ Dans l'exemple ci-dessus, la variable **var** a pour valeur 5, **truc** a pour v
 ##### Exercice tuple 2
 > Complétez le programme pour que **truc** ai la valeur **6** et **machin** la valeur **8** :
 >
->    truc, machin = (.......
+>     truc, machin = (.......
 
 ## B) Les tableaux en Python
 
