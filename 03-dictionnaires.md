@@ -226,3 +226,36 @@ orange : 2
 >Complétez la fonction **plusHaute**
 >
 >[Lien vers codePuzzle](http://www.codepuzzle.io/DVUT3){:target="_blank"}
+
+##### Exercice boucle for et dictionnaire 5
+
+>On utilise un tableau et des dictionnaires pour stocker des noms et des numéros  de téléphone :
+>
+>      [{'nom':'Titi', 'num':987675643}, {'nom':'Tutu', 'num':424224}, {'nom':'Toto', 'num':343235365}]
+>
+>La fonction **numTel** prend 2 paramètres :
+>
+> - un tableau de dictionnaires **tab_tel** contenant les noms  et les numéros de téléphone (comme celui ci-dessus)
+> - un nom **n**
+>
+>La fonction **numTel** doit renvoyer le numéro de téléphone de **n** si ce dernier existe. Dans le cas où **n** n'existe pas, la  fonction **numTel** doit renvoyer **-1**
+>
+>      def numTel(n, ...):
+>            for ... in tab_tel:
+>                  if ...  == t['nom']:
+>                        return ...
+>            return ...
+>
+>[Lien vers codePuzzle](http://www.codepuzzle.io/D9DGH){:target="_blank"}
+
+##### Exercice boucle for et dictionnaire 6
+
+>On utilise un tableau contenant des dictionnaires afin de stocker les  notes des élèves Titi, Toto et Tutu :
+>
+>      [{'nom':'Titi', 'note':12}, {'nom':'Tutu', 'note':11}, {'nom':'Toto', 'note':17}]
+>
+>La fonction **moyenne** prend en paramètre un tableau contenant des dictionnaires (comme celui ci-dessus) et renvoie la moyenne des notes.
+>
+>Écrivez la fonction **moyenne**
+>
+>[Lien vers codePuzzle](http://www.codepuzzle.io/DC4U7){:target="_blank"}
