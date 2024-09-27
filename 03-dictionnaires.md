@@ -178,31 +178,31 @@ orange : 2
 
 ##### Exercice boucle for et dictionnaire 1
 
->tab = []
->vehicule = {"voiture": 25, "vélo": 55, "train": 20}
->for t in vehicule.values():
->      if t < 40 :
->            tab.append(t)
+>      tab = []
+>      vehicule = {"voiture": 25, "vélo": 55, "train": 20}
+>      for t in vehicule.values():
+>            if t < 40 :
+>                  tab.append(t)
 >
 >Quelle est la valeur de la variable **tab** après l'exécution de  ce programme. Vérifiez votre réponse.
 
 ##### Exercice boucle for et dictionnaire 2
 
->tab = []
->vehicule = {"voiture": 25, "vélo": 55, "train": 20}
->for v,t in vehicule.items():
->      if t < 40 :
->            tab.append(v)
+>      tab = []
+>      vehicule = {"voiture": 25, "vélo": 55, "train": 20}
+>      for v,t in vehicule.items():
+>            if t < 40 :
+>                  tab.append(v)
 >
 >Quelle est la valeur de la variable **tab** après l'exécution de  ce programme. Vérifiez votre réponse.
 
 ##### Exercice boucle for et dictionnaire 3
 
->tab = [{'nom': 'toto', 'num': 2}, {'nom': 'titi', 'num': 5},  {'nom': 'tata', 'num': 4}]
->tab_nom =  []
->for t in tab :
->      if t['num'] > 3:
->            tab_nom.append(t['nom'])
+>      tab = [{'nom': 'toto', 'num': 2}, {'nom': 'titi', 'num': 5},  {'nom': 'tata', 'num': 4}]
+>      tab_nom =  []
+>      for t in tab :
+>            if t['num'] > 3:
+>                  tab_nom.append(t['nom'])
 >
 >Quelle est la valeur de la variable **tab_nom** après l'exécution de  ce programme. Vérifiez votre réponse.
 
