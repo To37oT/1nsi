@@ -18,7 +18,8 @@ Voici un exemple de dictionnaire :
 mon_dico = {"nom": "Durand", "prenom": "Christophe", "date de naissance": "29/02/1981"}
 ```
 
-Nous utilisons des accolades **{ }** pour définir le début et la fin du dictionnaire (alors que nous utilisons des crochets [] pour les listes et les parenthèses pour les tuples). Dans le dictionnaire ci-dessus, "nom", "prenom" et "date de naissance" sont des **clés** et "Durand", "Christophe" et "29/02/1981" sont des **valeurs**. 
+Nous utilisons des accolades **{ }** pour définir le début et la fin du dictionnaire (alors que nous utilisons des crochets [] pour les listes et les parenthèses pour les tuples). <br>
+Dans le dictionnaire ci-dessus, "nom", "prenom" et "date de naissance" sont des **clés** et "Durand", "Christophe" et "29/02/1981" sont des **valeurs**.<br>
 La clé "nom" est associée à la valeur "Durand", la clé "prenom" est associée à la valeur "Christophe" et la clé "date de naissance" est associée à la valeur "29/02/1981". 
 - Les clés sont des chaînes de caractères ou des nombres. 
 - Les valeurs peuvent être des chaînes de caractères, des nombres, des booléens...
@@ -83,7 +84,7 @@ mes_fruits["pomme"] = mes_fruits["pomme"] - 1
 
 Après l'exécution de ce programme, la clé **pomme*** aura pour valeur 3
 
-#### Exercice dictionnaire 1
+##### Exercice dictionnaire 1
 
 > Tapez la ligne suivante :
 > 
@@ -91,7 +92,7 @@ Après l'exécution de ce programme, la clé **pomme*** aura pour valeur 3
 > 
 > Qu'affiche la variable **mes_fruits** ?
 
-#### Exercice dictionnaire 2
+##### Exercice dictionnaire 2
 
 >      vehicules = {"voiture": 25, "vélo": 55, "train": 20}
 >      nb = vehicules['vélo']
@@ -175,7 +176,7 @@ pomme : 4
 orange : 2
 ```
 
-#### Exercice boucle for et dictionnaire 1
+##### Exercice boucle for et dictionnaire 1
 
 >tab = []
 >vehicule = {"voiture": 25, "vélo": 55, "train": 20}
@@ -185,7 +186,7 @@ orange : 2
 >
 >Quelle est la valeur de la variable **tab** après l'exécution de  ce programme. Vérifiez votre réponse.
 
-#### Exercice boucle for et dictionnaire 2
+##### Exercice boucle for et dictionnaire 2
 
 >tab = []
 >vehicule = {"voiture": 25, "vélo": 55, "train": 20}
@@ -195,7 +196,7 @@ orange : 2
 >
 >Quelle est la valeur de la variable **tab** après l'exécution de  ce programme. Vérifiez votre réponse.
 
-#### Exercice boucle for et dictionnaire 3
+##### Exercice boucle for et dictionnaire 3
 
 >tab = [{'nom': 'toto', 'num': 2}, {'nom': 'titi', 'num': 5},  {'nom': 'tata', 'num': 4}]
 >tab_nom =  []
@@ -205,7 +206,7 @@ orange : 2
 >
 >Quelle est la valeur de la variable **tab_nom** après l'exécution de  ce programme. Vérifiez votre réponse.
 
-#### Exercice boucle for et dictionnaire 4
+##### Exercice boucle for et dictionnaire 4
 
 >On utilise un tableau contenant des dictionnaires afin de stocker les notes des élèves Titi, Toto et Tutu :
 >
