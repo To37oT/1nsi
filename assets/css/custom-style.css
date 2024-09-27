@@ -14,8 +14,8 @@ h5+blockquote .highlighter-rouge .highlight {background-color:#ffa}
 h5+blockquote code { background-color:#ffa}
 
 @media (min-width:1000px) {
-    .wrapper { max-width: calc(960px -(30px* 2));}
+    .wrapper { max-width: calc(960px - (30px * 2));}
 }
 @media (min-width:1200px) {
-    .wrapper {max-width: calc(1080px -(30px* 2));}
+    .wrapper {max-width: calc(1080px - (30px * 2));}
 }
