@@ -83,7 +83,7 @@ mes_fruits["pomme"] = mes_fruits["pomme"] - 1
 
 Après l'exécution de ce programme, la clé **pomme*** aura pour valeur 3
 
-#### Exercice 1
+#### Exercice dictionnaire 1
 
 > Tapez la ligne suivante :
 > 
@@ -91,7 +91,7 @@ Après l'exécution de ce programme, la clé **pomme*** aura pour valeur 3
 > 
 > Qu'affiche la variable **mes_fruits** ?
 
-#### Exercice 2
+#### Exercice dictionnaire 2
 
 >      vehicules = {"voiture": 25, "vélo": 55, "train": 20}
 >      nb = vehicules['vélo']
@@ -150,6 +150,14 @@ Le programme ci-dessus permet d'obtenir :
 2
 ```
 
+> **Les noms de variables** Pour chaque variable, beaucoup de noms sont possibles. Nom court, long ? Explicite pour qui ?
+> - Les noms longs permettent de comprendre plus facilement, mais alourdissent le code.
+> - Les noms courts ont l'avantage de se rapprocher des termes anglophones (+ universels) et rendent la lecture plus agréable.
+> 
+> Dans le cadre précédent nous avons utilisé pour cela **qte** à la
+> place de **quantite**, à vous de trouver quand vous programmerez les
+> bons noms de variables :)
+
 ### Parcourir les clés et les valeurs en même temps
 
 Il est possible de parcourir un dictionnaire à la fois sur les clés et les valeurs en utilisant la méthode **items** :
@@ -166,3 +174,53 @@ poire : 3
 pomme : 4
 orange : 2
 ```
+
+#### Exercice boucle for et dictionnaire 1
+
+>tab = []
+>vehicule = {"voiture": 25, "vélo": 55, "train": 20}
+>for t in vehicule.values():
+>      if t < 40 :
+>            tab.append(t)
+>
+>Quelle est la valeur de la variable **tab** après l'exécution de  ce programme. Vérifiez votre réponse.
+
+#### Exercice boucle for et dictionnaire 2
+
+>tab = []
+>vehicule = {"voiture": 25, "vélo": 55, "train": 20}
+>for v,t in vehicule.items():
+>      if t < 40 :
+>            tab.append(v)
+>
+>Quelle est la valeur de la variable **tab** après l'exécution de  ce programme. Vérifiez votre réponse.
+
+#### Exercice boucle for et dictionnaire 3
+
+>tab = [{'nom': 'toto', 'num': 2}, {'nom': 'titi', 'num': 5},  {'nom': 'tata', 'num': 4}]
+>tab_nom =  []
+>for t in tab :
+>      if t['num'] > 3:
+>            tab_nom.append(t['nom'])
+>
+>Quelle est la valeur de la variable **tab_nom** après l'exécution de  ce programme. Vérifiez votre réponse.
+
+#### Exercice boucle for et dictionnaire 4
+
+>On utilise un tableau contenant des dictionnaires afin de stocker les notes des élèves Titi, Toto et Tutu :
+>
+>      [{'nom':'Titi', 'note':12}, {'nom':'Tutu', 'note':11}, {'nom':'Toto', 'note':17}]
+>
+>La fonction **plusHaute** prend en paramètre un tableau contenant des dictionnaires (comme celui ci-dessus) et renvoie le nom de l'élève ayant obtenu la meilleure note (on partira du principe que les élèves ont tous des notes différentes).
+>
+>      def plusHaute(tab):
+>            nom = ""
+>            max_note = ...
+>            for t in ...:
+>                  if t['note'] > ...:
+>                        max_note = t[...]
+>                        nom = t[...]
+>            return ...
+>
+>Complétez la fonction **plusHaute**
+>[Lien vers codePuzzle](www.codepuzzle.io/DVUT3){:blank}
