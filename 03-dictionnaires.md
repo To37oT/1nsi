@@ -223,4 +223,5 @@ orange : 2
 >            return ...
 >
 >Complétez la fonction **plusHaute**
->[Lien vers codePuzzle](www.codepuzzle.io/DVUT3){:blank}
+>
+>[Lien vers codePuzzle](www.codepuzzle.io/DVUT3){:target="_blank"}
