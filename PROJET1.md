@@ -1,43 +1,48 @@
-Avant d'entrer dans le vif du sujet (le projet), il est nécessaire d'étudier quelques éléments supplémentaires.
+---
+layout: default
+title: Projet 1
+permalink: /projet1/
+published: true
+date: 2024
+---
+
+# Projet 1 : Répertoire téléphonique Python
 
 ## 1) la fonction input
 
-la fonction *input* va permettre aux utilisateurs de saisir des données au clavier.
+la fonction **input** va permettre aux utilisateurs de saisir des données au clavier.
 
-### projet 1.1
-
-Testez ce programme à l'aide de Spyder :
-
-```
-age=input("Quel est votre âge ? ")
-```
-			
-Quel est là valeur de la variable *age* après avoir exécuté le programme ci-dessus (utilisez la console pour répondre à cette question) ? Quel est le type de la variable *age* ?
+##### Préparation 1
+>
+>Testez ce programme dans Thonny :
+>
+>
+>     age=input("Quel est votre âge ? ")
+>		
+>Quel est là valeur de la variable *age* après avoir exécuté le programme ci-dessus (utilisez la console pour répondre à cette question) ? Quel est le type de la variable *age* ?
+>
 
 Comme vous avez pu le constater, la valeur saisie par l'utilisateur sera toujours de type "string".
 
-### projet 1.2
 
-Testez ce programme à l'aide de Spyder :
-
-```
-a=input("Entrez un nombre")
-a=a+1
-```
+##### Préparation 2
+>
+>Testez ce programme à l'aide de Thonny :
+>
+>     a=input("Entrez un nombre")
+>     a=a+1
 
 Comme vous l'avez remarqué, nous avons une erreur puisque la valeur référencée par la variable a est de type string, la ligne "a=a+1" puisque nous avons un entier avec 1 et une chaîne de caractères avec la variable a, séparés par un signe +, (le signe + correspond à une concaténation ou à une addition ?) Python n'est pas capable de gérer le problème, nous avons donc une erreur.
 
 Pour éviter ce genre de problème, il peut être nécessaire de "transformer" notre chaîne de caractères en entier :
 
-### projet 1.3
-
-Testez ce programme à l'aide de Spyder :
-
-```
-a=input("Entrez un nombre")
-a=int(a)
-a=a+1
-```
+##### Préparation 3
+>
+>Testez ce programme à l'aide de Spyder :
+>
+>     a=input("Entrez un nombre")
+>     a=int(a)
+>     a=a+1
 
 ## 2) Écrire et lire dans un fichier externe
 
@@ -63,7 +68,7 @@ Il existe 3 modes d'ouverture :
 
 Une fois le fichier ouvert, il est possible d'écrire dedans (à l'aide de *write*) ou de lire son contenu (à l'aide de *read*).
 
-### projet 1.4
+##### Préparation 4
 
 Étudiez et testez le programme suivant :
 
@@ -75,7 +80,7 @@ with open('fichier.txt','a') as f :
 		
 Le répertoire courant devrait maintenant contenir aussi un fichier *fichier.txt*. Ouvrez ce fichier (avec un éditeur de texte) et vérifiez qu'il contient bien le mot entré par l'utilisateur.
 
-### projet 1.5
+##### Préparation 5
 
 Étudiez et testez le programme suivant :
 
@@ -86,7 +91,7 @@ with open('fichier.txt','r') as f :
 			
 Quelle va être la valeur de la variable *ligne* après l'exécution de ce programme ? Vérifiez votre réponse.
 
-### projet 1.6
+##### Préparation 6
 
 Écrivez un programme permettant à l'utilisateur de sauvegarder 5 noms dans un fichier texte (*fichier.txt*)
 
@@ -112,11 +117,11 @@ world
 
 Nous avons bien un saut de ligne (un "retour chariot"). Le caractère \n n'est pas affiché.
 
-### projet 1.7
+##### Préparation 7
 
 Modifier votre programme du "1.6" afin d'avoir un nom par ligne dans le fichier texte (*fichier.txt*)
 
-### projet 1.8
+##### Préparation 8
 
 Voici un programme permettant de lire le fichier texte et de ranger les différents noms entrés par l'utilisateur dans une liste, testez ce programme :
 
@@ -156,7 +161,7 @@ Attention, dans l'exemple ci-dessus j'ai volontairement alourdi le programme ave
 
 En utilisant les connaissances acquises jusqu'à présent, vous allez écrire un programme de gestion de répertoire téléphonique.
 
-### projet 1.9
+##### CONSIGNES PROJETS
 
 Ce programme devra proposer le menu suivant à l'utilisateur :
 
