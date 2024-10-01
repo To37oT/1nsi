@@ -195,7 +195,7 @@ Demandez-vous ce qui vous aiderait à la comprendre si vous retombiez sur ce pro
 >
 >recherche des utilisateurs (toto et titi) :
 >
->![pr1_2](https://github.com/user-attachments/assets/87c3d28e-56b1-4b43-aa4c-73b58c0ea612)
+>![pr1_2](https://github.com/user-attachments/assets/87c3d28e-56b1-4b43-aa4c-73b58c0ea612){:target="_blank"}
 >
 >Voici une démonstration en vidéo : [https://www.youtube.com/watch?v=itSlzuGZHe8](https://www.youtube.com/watch?v=itSlzuGZHe8)
 >
