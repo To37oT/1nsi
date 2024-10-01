@@ -405,10 +405,16 @@ Comme vous pouvez le constater, la modification de **tab1** entraîne la modific
 >               a = tab[i][j]
 >               print(a)
 >
->Expliquez ce qui se passe aux **étapes** 7, 8, 13, 20, 52 (attention, n'expliquez pas votre code, expliquez ce qu'il vient de se passer dans la machine).
+>Expliquez ce qui se passe aux **étapes** 7, 8, 13, 20, 51(attention, n'expliquez pas votre code, expliquez ce qu'il vient de se passer dans la machine).
 >
 >*Exemple :
 >Étape 6 : La variable tab est mémorisée par l'ordinateur*
+>
+> Etape 7 : La variable i est associée à la valeur ....
+> Etape 8 : La boucle commence, i ...
+> Etape 13 : le print est exécuté, est affiché ....
+> Etape 20 : La boucle précédente est terminée, j revient à la valeur ...
+> Etape 51 : ...
 
 ##### Exercice tableaux de tableaux 3
 >Quelle est la valeur de la variable a après l'exécution de ce programme ?
