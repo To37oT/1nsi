@@ -133,12 +133,15 @@ En Python, toute ligne commençant par le caractère dièse (#) sera considéré
 Voici un exemple de programme commenté :
 
 >     # la fonction monMessage permet d'afficher un message
+> 
 >     #****************début de la fonction monMessage******************
 >     def monMessage(nom):
 >          return f"Bonjour {nom}"
+> 
 >     #****************fin de la fonction monMessage********************
 >     # interrogation de l'utilisateur
 >     monNom=input("Quel est votre nom ? ")
+> 
 >     # appel de la fonction monMessage
 >     msg=monMessage(monNom)
 
@@ -146,7 +149,8 @@ Attention, dans l'exemple ci-dessus le programme est volontairement alourdi avec
 
 Vous avez aussi la possibilité de créer des commentaires multilignes avec **"""** en début et fin de bloc.
 
->     """Ceci est un programme permettant d'empiler des blocs
+>     """
+>     Ceci est un programme permettant d'empiler des blocs
 >     de différentes natures.
 >     Date de création : 01/01/1970
 >     Création : Jay Thoubont
