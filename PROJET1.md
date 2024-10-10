@@ -90,26 +90,26 @@ Une fois le fichier ouvert, il est possible d'écrire dedans (à l'aide de *writ
 >
 >Vérifiez que votre programme est correct en ouvrant le fichier txt à l'aide d'un éditeur de texte.
 >
->Votre fichier texte devrait être peu lisible (les mots s'enchaînent sans aucun espace ou saut à la ligne). Il est tout à fait possible de forcer le saut de ligne en utilisant la suite de caractères suivante: **\n** (l'enchaînement des caractères **\** et **n** entraîne un retour à la ligne).
->
->**Exemple :**
->
->     print('hello \n world')
->
->n'affiche pas : 
->
->     hello \n world
->
->mais :
->
->     hello
->     world
->
->Nous avons bien un saut de ligne. Le caractère \n n'est pas affiché.
+Votre fichier texte devrait être peu lisible (les mots s'enchaînent sans aucun espace ou saut à la ligne). Il est tout à fait possible de forcer le saut de ligne en utilisant la suite de caractères suivante: **\n** (l'enchaînement des caractères **\** et **n** entraîne un retour à la ligne).
+
+**Exemple :**
+
+     print('hello \n world')
+
+n'affiche pas : 
+
+     hello \n world
+
+mais :
+
+     hello
+     world
+
+Nous avons bien un saut de ligne. Le caractère \n n'est pas affiché.
 
 ##### Préparation 7
 >
->Modifier votre programme de la préparation 7 afin d'avoir un nom par ligne dans le fichier texte.
+>Modifier votre programme de la préparation 6 afin d'avoir un nom par ligne dans le fichier texte.
 
 ##### Préparation 8
 >
