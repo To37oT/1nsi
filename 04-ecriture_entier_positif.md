@@ -27,20 +27,21 @@ Par exemple : à 19, le rang des unités est "saturé" (plein), car il contient 
 
 Le nombre entier va être composé de rangs (unités, dizaines, centaines, etc). Chaque rang vaut le rang précédent multiplié par l'indice de la base. En base 10, une centaine vaut dix dizaines, et une dizaine vaut 10 unités. Par exemple, dans l'image ci-dessus, on peut voir le nombre 185<sub>10</sub> (ici, le 10 signifie qu'il s'agit d'un nombre en base 10). Dans ce nombre, on peut voir trois rangs : centaines, dizaines et unités. Pour n'importe quelle base, la valeur d'un rang est égale à b<sup>n</sup>, où b est l'indice de la base (ici, 10) et n la position du rang. Ici, les unités ont la position 0, les dizaines la position 1 et les centaines la position 2. Nous pouvons donc écrire :
 
-185=1∗10<sup>2</sup>+8∗10<sup>1</sup>+5∗10<sup>0</sup>
+185 = 1∗10<sup>2</sup> + 8∗10<sup>1</sup> + 5∗10<sup>0</sup>
 
 Ce que je viens de faire, c'est décomposer 185 en puissance de 10 (unités, dizaines, centaines, etc).
 
 Un nombre est égal à la somme des valeurs de ses rangs, et on peut décomposer n'importe quel nombre en puissance de sa base.
 
+> Rappel : X<sup>0</sup> = 1
+
 ## 2) Le binaire
 
 ### a) introduction
 
-Le binaire, c'est le système de comptage des ordinateurs. Pourquoi le binaire et pas le décimal comme les humains ? Et bien c'est très simple : un ordinateur est composé de circuits électroniques, et donc de composants électriques. Le plus simple pour compter est donc d'utiliser un système en base 2 (le binaire) car on peut représenter ses deux valeurs possibles (0 et 1) par un signal électrique : 1, y'a du courant, 0, y'en a pas (c'est la version simple).
+Le binaire, c'est le système de comptage des ordinateurs. Pourquoi le binaire et pas le décimal comme les humains ? Et bien c'est très simple : un ordinateur est composé de circuits électroniques, et donc de composants électriques. Le plus simple pour compter est donc d'utiliser un système en base 2 (le binaire) car on peut représenter ses deux valeurs possibles (0 et 1) par un signal électrique : 1, y'a du courant, 0, y'en a pas.
 
-Je vous ai parlé ci-dessus de rangs. En binaire, c'est pareil à la différence qu'on utilise le terme bit, qui est la contraction de "binary digit", littéralement "chiffre binaire". Par exemple, le nombre 10011 occupe 5 bits. Là où tout se complique, c'est que comme je l'ai expliqué, chaque rang en binaire ne peut avoir que deux valeurs (binaire = base 2) différentes : 0 ou 1. Pour la base 10, chaque rang représente une puissance de 10, pour la base 2, chaque rang occupe une puissance de 2. Voici comment compter en binaire jusqu'à 10 :
-
+Je vous ai parlé ci-dessus de rangs. En binaire, c'est pareil à la différence qu'on utilise le terme **bit**, qui est la contraction de "binary digit", littéralement chiffre binaire. Par exemple, le nombre **10011** occupe 5 bits. Là où tout se complique, c'est que comme je l'ai expliqué, chaque rang en binaire ne peut avoir que deux valeurs différentes (binaire = base 2) : 0 ou 1. Pour la base 10, chaque rang représente une puissance de 10, pour la base 2, chaque rang occupe une puissance de 2. Voici comment compter en binaire jusqu'à 10 :
 
 |Nombre en décimal|Nombre en binaire|Le pourquoi du comment|
 |--- |--- |--- |
@@ -65,13 +66,11 @@ Je vous ai parlé ci-dessus de rangs. En binaire, c'est pareil à la différence
 
 - avec n bits on peut coder... **2<sup>n</sup>** valeurs (vérifications : 2<sup>1</sup> = 2 ; 2<sup>2</sup> = 4 ; 2<sup>3</sup> = 8 ...)
 
-Comme on a pu le voir, compter jusqu'à 10 ou 20 reste aisé, mais imaginons un instant que je vous demandasse d'écrire 185 en binaire ? Vous allez faire chaque rang, un par un ?
-
 ### b) Conversion décimale binaire
 
 Pour l'instant, on n'a compté que jusqu'à 10. Mais pour les plus grands nombres, la méthode précédente peut se révéler fastidieuse
 
-La méthode :
+**La méthode :**
 
 Il existe bien sûr plusieurs méthodes de conversion, mais nous allons étudier la plus simple et la plus rapide. Il s'agit de la méthode euclidienne.
 
@@ -79,32 +78,17 @@ Cette méthode, en plus d'être facile à utiliser en programmation (c'est un al
 
 Voici la méthode :
 
-On prend le nombre en base 10 (forme normale).
-On le divise par 2 et on note le reste de la division (soit 1 soit 0)
-On refait la même chose avec le quotient précédent, et on met de nouveau le reste de côté.
-On réitère la division, jusqu'à ce que le quotient soit 0.
-Le nombre en binaire apparaît alors : il suffit de prendre tous les restes de bas en haut.
-Et l'exemple :
+- On prend le nombre en base 10 (forme normale).
+- On le divise par 2 et on note le reste de la division (soit 1 soit 0)
+- On refait la même chose avec le quotient précédent, et on met de nouveau le reste de côté.
+- On réitère la division, **jusqu'à ce que le quotient soit 0**.
+- Le nombre en binaire apparaît alors : il suffit de prendre tous les restes **de bas en haut**.
+ 
+![image](https://github.com/user-attachments/assets/92e2faec-7862-4642-be8c-8ecb3bcc6e59)
 
-185 = 2 x 92 + 1
+**Attention, il faut bien lire de bas en haut !**
 
-92 = 2 x 46 + 0
-
-46 = 2 x 23 + 0
-
-23 = 2 x 11 + 1
-
-11 = 2 x 5 + 1
-
-5 = 2 x 2 + 1
-
-2 = 2 x 1 + 0
-
-1 = 2 x 0 + 1
-
-Attention, il faut bien lire de bas en haut !
-
-185 en base 10 vaut donc 10111001 en binaire.
+**185** en base 10 vaut donc **10111001** en binaire.
 
 ### c) Conversion binaire décimale
 
