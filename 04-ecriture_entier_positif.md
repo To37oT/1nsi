@@ -23,7 +23,7 @@ Cela signifie que si le rang des unités est plein, il faut passer à celui des 
 
 Par exemple : à 19, le rang des unités est "saturé" (plein), car il contient le chiffre 9, et il n'y a pas (dans la base 10) de valeur plus élevée. Il faut donc incrémenter le rang périphérique puis réinitialiser l'état de celui des unités. Ce qui signifie : j'ai 19, je ne peux pas mettre plus de 9 à droite, donc j'ajoute 1 à celui de gauche et je remets à zéro celui de droite.
 
-![image](https://github.com/user-attachments/assets/623226ca-bac2-42a4-9d6c-153bd8c44174)
+![image](https://github.com/user-attachments/assets/3c3b7551-9724-45b9-874f-2ebd6681b07e)
 
 Le nombre entier va être composé de rangs (unités, dizaines, centaines, etc). Chaque rang vaut le rang précédent multiplié par l'indice de la base. En base 10, une centaine vaut dix dizaines, et une dizaine vaut 10 unités. Par exemple, dans l'image ci-dessus, on peut voir le nombre 185<sub>10</sub> (ici, le 10 signifie qu'il s'agit d'un nombre en base 10). Dans ce nombre, on peut voir trois rangs : centaines, dizaines et unités. Pour n'importe quelle base, la valeur d'un rang est égale à b<sup>n</sup>, où b est l'indice de la base (ici, 10) et n la position du rang. Ici, les unités ont la position 0, les dizaines la position 1 et les centaines la position 2. Nous pouvons donc écrire :
 
