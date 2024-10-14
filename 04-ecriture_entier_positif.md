@@ -94,19 +94,19 @@ Voici la méthode :
 
 Je vous rassure tout de suite : c'est plus simple dans ce sens-là que dans l'autre.
 
-Prenons un nombre au hasard, tel que 11010011. Il s'étale sur 8 rangs, et comme dit précédemment, chaque rang correspond à une puissance de deux.
+Prenons un nombre au hasard, tel que **11010011**. Il s'étale sur 8 rangs, et comme dit précédemment, chaque rang correspond à une puissance de deux.
 Le premier rang (en partant de la droite) est le rang 0, le second est le 1, etc.
 
 Pour convertir le tout en décimale, on procède de la manière suivante : on multiplie par 2<sup>0</sup> la valeur du rang 0, par 2<sup>1</sup> la valeur du rang 1, par 2<sup>2</sup> la valeur du rang 2, [...], par 2<sup>10</sup> la valeur du rang 10, etc.
 
 Après ça, il ne reste plus qu'à remplacer les puissances de 2 par leurs valeurs et de calculer la somme : (Attention à bien partir de la droite !)
-11010011<sub>binaire</sub>=1∗1+1∗2+0∗4+0∗8+1∗16+0∗32+1∗64+1∗128=211<sub>décimal</sub>
+11010011<sub>binaire</sub>=1∗1 + 1∗2 + 0∗4 + 0∗8 + 1∗16 + 0∗32 + 1∗64 + 1∗128 = 211<sub>décimal</sub>
 
 ## 3) L'hexadécimal
 
 ### a) introduction
 
-Le binaire, c'est bien pratique : on peut coder des nombres uniquement avec des 0 et des 1. C'est bien pour les signaux électriques et tout le bazar, mais dans la vie de tous les jours c'est pas bien facile d'utilisation. On utilise couramment la base 10. Le problème c'est qu'en informatique, tout est basé sur le binaire, et étant une base d'indice 2, c'est plus aisé d'encoder les informations sur un nombre multiple de 2. On utilise donc souvent la base 16, appelé système hexadécimal (hexa = 6, déci = 10, 16 = 6 + 10) car 16 est un multiple de 2, et qu'il permet de représenter 8 bits avec seulement 2 chiffres. Ça paraît simple, mais il y a un autre problème : en base 10, on utilise 10 chiffres. En base 2 (binaire) on utilise seulement 2 chiffres : 0 et 1. Mais du coup, en base 16, il faut 16 chiffres. OK, 0 1 2 3 4 5 6 7 8 9.. quoi après ? On prend des lettres de l'alphabet.
+Avec le binaire, on peut coder des nombres uniquement avec des 0 et des 1. C'est bien pour les signaux électriques, mais dans la vie de tous les jours c'est pas bien facile d'utilisation. On utilise couramment la base 10. Le problème c'est qu'en informatique, tout est basé sur le binaire, et étant une base d'indice 2, il est nécessaire d'encoder les informations sur un nombre multiple de 2. On utilise donc souvent la base 16, appelé système hexadécimal (hexa = 6, déci = 10, 16 = 6 + 10) car 16 est un multiple de 2, et qu'il permet de représenter 8 bits avec seulement 2 chiffres. Ça paraît simple, mais il y a un autre problème : en base 10, on utilise 10 chiffres. En base 2 (binaire) on utilise seulement 2 chiffres : 0 et 1. Mais du coup, en base 16, il faut 16 chiffres. OK, 0 1 2 3 4 5 6 7 8 9.. quoi après ? On prend des lettres de l'alphabet.
 
 Ce qui donne :
 
