@@ -90,6 +90,12 @@ Voici la méthode :
 
 **185** en base 10 vaut donc **10111001** en binaire.
 
+##### Exercice 1
+> Convertir 42<sub>10</sub> en base 2
+> Convertir 43<sub>10</sub> en base 2
+> Convertir 128<sub>10</sub> en base 2
+
+
 ### c) Conversion binaire décimale
 
 Je vous rassure tout de suite : c'est plus simple dans ce sens-là que dans l'autre.
@@ -102,16 +108,20 @@ Pour convertir le tout en décimale, on procède de la manière suivante : on mu
 Après ça, il ne reste plus qu'à remplacer les puissances de 2 par leurs valeurs et de calculer la somme : (Attention à bien partir de la droite !)
 11010011<sub>binaire</sub>=1∗1 + 1∗2 + 0∗4 + 0∗8 + 1∗16 + 0∗32 + 1∗64 + 1∗128 = 211<sub>décimal</sub>
 
+##### Exercice 2
+> Convertir 10011001<sub>2</sub> en base 10
+> Convertir 1111<sub>2</sub> en base 10
+> Convertir 00000100<sub>2</sub> en base 10
+
 ## 3) L'hexadécimal
 
 ### a) introduction
 
-Avec le binaire, on peut coder des nombres uniquement avec des 0 et des 1. C'est bien pour les signaux électriques, mais dans la vie de tous les jours c'est pas bien facile d'utilisation. On utilise couramment la base 10. Le problème c'est qu'en informatique, tout est basé sur le binaire, et étant une base d'indice 2, il est nécessaire d'encoder les informations sur un nombre multiple de 2. On utilise donc souvent la base 16, appelé système hexadécimal (hexa = 6, déci = 10, 16 = 6 + 10) car 16 est un multiple de 2, et qu'il permet de représenter 8 bits avec seulement 2 chiffres. Ça paraît simple, mais il y a un autre problème : en base 10, on utilise 10 chiffres. En base 2 (binaire) on utilise seulement 2 chiffres : 0 et 1. Mais du coup, en base 16, il faut 16 chiffres. OK, 0 1 2 3 4 5 6 7 8 9.. quoi après ? On prend des lettres de l'alphabet.
+Avec le binaire, on peut coder des nombres uniquement avec des 0 et des 1. C'est bien pour les signaux électriques, mais dans la vie de tous les jours ce n'est pas facile d'utilisation. On utilise couramment la base 10 mais le problème c'est qu'en informatique, tout est basé sur le binaire, et étant une base d'indice 2, il est nécessaire d'encoder les informations sur un nombre multiple de 2. On utilise donc souvent la base 16, appelé **système hexadécimal** (hexa = 6, déci = 10, 16 = 6 + 10) car 16 est un multiple de 2, et qu'il permet de représenter 8 bits avec seulement 2 chiffres. Ça paraît simple, mais il y a un autre problème : en base 10, on utilise 10 chiffres. En base 2 (binaire) on utilise seulement 2 chiffres : 0 et 1. Mais du coup, en base 16, il faut 16 chiffres : 0 1 2 3 4 5 6 7 8 9... quoi après ? On prend des lettres de l'alphabet.
 
 Ce qui donne :
 
-0 1 2 3 4 5 6 7 8 9 A B C D E F 
-
+**0 1 2 3 4 5 6 7 8 9 A B C D E F**
 On peut établir une liste de correspondances entre la base 10 et la base 16 (voire même la base 2) :
 
 |Binaire (base 2)|Décimal (base 10)|Hexadécimal (base 16)|
@@ -139,7 +149,14 @@ Comme vous pouvez le voir, le plus grand chiffre en hexadécimal est F, et il co
 
 Pour convertir un nombre binaire en base 16, on regroupe les bits 4 à 4, chaque groupe donnant un chiffre hexadécimal. À l'inverse, passer d'un nombre hexadécimal à sa représentation binaire se fait en remplaçant chaque chiffre pour son équivalent sur 4 bits. Ainsi, 11011001<sub>2</sub>=1101 1001<sub>2</sub>=D9<sub>16</sub>, tandis que 7F<sub>16</sub>=0111 1111<sub>2</sub>=01111111<sub>2</sub>. 
 
-Attention, si le nombre binaire de départ n'a pas un nombre de bits multiple de 4, il faut ajouter des zéros en tête (ce qui ne change pas sa valeur) afin de pouvoir les regrouper 4 par 4.
+Attention, si le nombre binaire de départ n'a pas un nombre de bits multiple de 4, il faut ajouter des zéros **à gauche** (ce qui ne change pas sa valeur) afin de pouvoir les regrouper 4 par 4.
+
+##### Exercice 3
+> Convertir 101111011001<sub>2</sub> en base 16
+> Convertir 111011<sub>2</sub> en base 16
+> Convertir 00010000<sub>2</sub> en base 16
+> Convertir 1A3E<sub>16</sub> en base 2
+
 
 ### c) Convertir un nombre décimal en hexadécimal
 
@@ -149,9 +166,13 @@ Pour convertir un nombre décimal en hexadécimal, la méthode est similaire au 
 
 11 = 16 x 0 + 11 (c'est à dire B)
 
-Attention, il faut bien lire de bas en haut !
+**Attention, il faut bien lire de bas en haut !**
 
 185 en base 10 vaut donc B9 en hexadécimal.
+
+##### Exercice 4
+> Convertir 1387<sub>10</sub> en base 16
+> Convertir 256<sub>10</sub> en base 16
 
 ### d) Convertir un nombre hexadécimal en décimal
 
@@ -172,3 +193,7 @@ Vous avez remarqué que quand on trouve un B dans le nombre écrit en hexadécim
 - un E, on le remplace par un 14
 
 - un F, on le remplace par un 15
+
+##### Exercice 4
+> Convertir 1B87<sub>16</sub> en base 10
+> Convertir 256<sub>16</sub> en base 10
