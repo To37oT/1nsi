@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Chapitre 4
+title: Chapitre 4 - Écriture d'un entier positif
 permalink: /chapitre4/
 published: true
 date: 2024
