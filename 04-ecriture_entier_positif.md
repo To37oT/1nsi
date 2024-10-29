@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Chapitre 1
+title: Chapitre 4
 permalink: /chapitre4/
 published: false
 date: 2024
