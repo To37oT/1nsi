@@ -32,6 +32,8 @@ Prenons tout de suite un exemple : déterminons la représentation de -12 sur 8 
 
 - Ajoutons 1 au nombre obtenu à l'étape précédente :
 
+![image](https://github.com/user-attachments/assets/4b570e6d-2b73-4b39-995a-efba17f19890)
+
 les retenues sont notées en rouge
 
 La représentation de -12 sur 8 bits est donc : 11110100
@@ -40,7 +42,7 @@ Comment peut-on être sûr que 11110100 est bien la représentation de -12 ?
 
 Nous pouvons affirmer sans trop de risque de nous tromper que 12 + (-12) = 0, vérifions que cela est vrai pour notre représentation sur 8 bits.
 
-![](img/c6c_2.jpg)
+![image](https://github.com/user-attachments/assets/0c22ee83-e758-4dbb-bc6b-de14b5c9fe22)
 
 Dans l'opération ci-dessus, nous avons un 1 pour le 9e bit, mais comme notre représentation se limite à 8 bits, il nous reste bien 00000000.
 
