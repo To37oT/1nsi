@@ -1,0 +1,13 @@
+---
+layout: default
+title: Chapitre 6 - Écriture des entiers relatifs
+permalink: /chapitre6/
+published: true
+date: 2024
+---
+
+# Représentation d'un texte en machine
+
+## 1) introduction
+
+Nous savons qu'un ordinateur est uniquement capable de traiter des données binaires, comment sont donc codés les textes dans un ordinateur ? Ou plus précisément, comment sont codés les caractères dans un ordinateur ?
