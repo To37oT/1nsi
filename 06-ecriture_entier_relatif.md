@@ -52,3 +52,19 @@ Il faut noter qu'il est facile de déterminer si une représentation correspond 
 La plus petite valeur qu'il est possible de coder sur 8 bits est 10000000 (soit -128). La plus grande valeur est 01111111 (soit 127). 
 
 Plus généralement, nous pouvons dire que pour une représentation sur **n** bits, il sera possible de coder des valeurs comprises entre -2<sup>n-1</sup> et 2<sup>n-1</sup> - 1
+
+##### Exercice 1
+>
+>En utilisant le complément à 2, représentez -15 en binaire (représentation sur 8 bits)
+
+##### Exercice 2
+>
+>En utilisant le complément à 2, représentez sur 8 bits l'entier 4 puis représentez, toujours sur 8 bits, l'entier -5. Additionnez ces 2 nombres (en utilisant les représentations binaires bien évidemment), vérifiez que vous obtenez bien -1.
+
+##### Exercice 3
+>
+>Quel est l'entier relatif codé en complément à 2 sur un octet par le code 11011010 ?
+
+##### Exercice 4
+>
+>Quelles sont les bornes inférieure et supérieure d'un entier relatif codé sur 16 bits ?
