@@ -1,0 +1,21 @@
+---
+layout: default
+title: Chapitre 8 - Modèle d'architecture de Von Neumann
+permalink: /chapitre8/
+published: true
+date: 2024
+---
+
+# Modèle d'architecture de Von Neumann
+
+## 1) Du transistor au microprocesseur
+
+### a) Le transistor
+
+On entend souvent dire qu'"un ordinateur utilise uniquement des "1" et des "0"". Cette affirmation mérite d'être précisée.
+
+À la base de la plupart des composants d'un ordinateur, on retrouve le transistor. 
+
+Ce composant électronique a été inventé fin 1947 par les Américains John Bardeen, William Shockley et Walter Brattain. L'invention du transistor a été un immense progrès, mais les premiers ordinateurs sont antérieurs à cette invention. En effet, ces premiers ordinateurs, par exemple le Colossus qui date de 1943, étaient conçus à base de tubes électroniques (on parle aussi de tubes à vide) qui, bien que beaucoup plus gros et beaucoup moins fiable que les transistors fonctionnent sur le même principe que ce dernier.
+
+Un transistor :
