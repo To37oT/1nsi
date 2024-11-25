@@ -3,7 +3,6 @@ layout: default
 title: Chapitre 9 - Simulation CPU
 permalink: /chapitre9/
 published: true
-lineBreaks: soft
 date: 2024
 ---
 
