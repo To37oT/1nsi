@@ -14,7 +14,7 @@ Voici une vidéo qui va vous permettre de comprendre ce qui peut être attendu :
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/_-2nQRZGa-c?si=2oxy4ZRGy04Ec4pw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-Vous avez à votre disposition un fichier texte qcm.txt qu'il est possible de télécharger [ici](projet2-qcm.txt){:target="_blank"}. Ce fichier contient 30 questions et réponses, voici un exemple de question (et de la réponse qui va avec) :
+Vous avez à votre disposition un fichier texte projet2-qcm.txt qu'il est possible de télécharger [en cliquant ici](projet2-qcm.txt){:target="_blank"}. Ce fichier contient 30 questions et réponses, voici un exemple de question (et de la réponse qui va avec) :
 
 ```python
 Un octet correspond à A-1bit B-4 bits C-8 bits D-32 bits;;C
@@ -34,9 +34,9 @@ On ne pourra pas avoir 2 fois la même question au cours d'une même session.
 
 Au cours de ce projet, il vous sera sans doute nécessaire d'étudier les 2 points suivants :
 
-- le module random qui permet de gérer le "hasard" en Python (pour en savoir plus, voir [ici](https://www.w3schools.com/python/module_random.asp){:target="_blank"})
+- le module random qui permet de gérer le "hasard" en Python (pour en savoir plus, [voir ici](https://www.w3schools.com/python/module_random.asp){:target="_blank"})
 
-- la méthode split qui permet de séparer en plusieurs morceaux une chaîne de caractères (pour en savoir plus, voir [ici](https://www.w3schools.com/python/ref_string_split.asp){:target="_blank"})
+- la méthode split qui permet de séparer en plusieurs morceaux une chaîne de caractères (pour en savoir plus, voir [voir ici](https://www.w3schools.com/python/ref_string_split.asp){:target="_blank"})
 
 ## Rappels : 
 
