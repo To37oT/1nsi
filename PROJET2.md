@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Projet 2 : Générateur de QCM
+title: Projet 2 - Générateur de QCM
 permalink: /projet2/
 published: true
 date: 2024
