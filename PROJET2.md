@@ -47,8 +47,8 @@ Au cours de ce projet, il vous sera sans doute nécessaire d'étudier les 2 poin
 - Veillez au bon fonctionnement de votre rendu
 - Des points spéciaux sont attribués :
   - Ajouter des fonctionnalités complémentaires (uniquement si le reste fonctionne parfaitement)
-  - Prévoir les erreurs utilisateur qui pourrait ammener le programme à ne pas fonctionner correctement
-  - Proposer une interface favorisant l'interraction.
+  - Prévoir les erreurs utilisateur qui pourraient amener le programme à ne pas fonctionner correctement
+  - Proposer une interface favorisant l'interaction.
   
 
 
