@@ -34,9 +34,9 @@ On ne pourra pas avoir 2 fois la même question au cours d'une même session.
 
 Au cours de ce projet, il vous sera sans doute nécessaire d'étudier les 2 points suivants :
 
-- le module random qui permet de gérer le "hasard" en Python (pour en savoir plus, [voir ici](https://www.w3schools.com/python/module_random.asp){:target="_blank"})
+- le module ```random``` qui permet de gérer le "hasard" en Python (pour en savoir plus, [voir ici](https://www.w3schools.com/python/module_random.asp){:target="_blank"})
 
-- la méthode split qui permet de séparer en plusieurs morceaux une chaîne de caractères (pour en savoir plus, voir [voir ici](https://www.w3schools.com/python/ref_string_split.asp){:target="_blank"})
+- la méthode ```split``` qui permet de séparer en plusieurs morceaux une chaîne de caractères (pour en savoir plus, voir [voir ici](https://www.w3schools.com/python/ref_string_split.asp){:target="_blank"})
 
 ## Rappels : 
 
