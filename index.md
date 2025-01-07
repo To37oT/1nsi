@@ -31,6 +31,6 @@ date: 2024
 [Générateur de QCM]({{site.baseurl}}/projet2/)<br>
 
 ## Algorithmie
-[Chapitre 10 - Introduction]({{site.baseurl}}/chapitre99/)<br>
-[Chapitre 11 - Algorithme de tri]({{site.baseurl}}/chapitre99/)<br>
-[Chapitre 12 - Invariants de boucle]({{site.baseurl}}/chapitre99/)<br>
+[Chapitre 10 - Introduction]({{site.baseurl}}/chapitre10/)<br>
+[Chapitre 11 - Algorithme de tri]({{site.baseurl}}/chapitre11/)<br>
+[Chapitre 12 - Invariants de boucle]({{site.baseurl}}/chapitre12/)<br>
