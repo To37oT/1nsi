@@ -12,7 +12,7 @@ date: 2024
 
 Pour commencer, vous allez visionner la vidéo de David Louapre (chaine YouTube "Science étonnante"). Dans cette vidéo, il aborde quasiment toutes les notions qui seront vues ci-dessous.
 
-[Lien vers la vidéo](https://www.youtube.com/watch?v=AgtOCNCejQ8)
+[Lien vers la vidéo](https://www.youtube.com/watch?v=AgtOCNCejQ8) (jusqu'à 16'42)
 
 À l'aide de cette vidéo, vous répondrez aux questions suivantes :
 
