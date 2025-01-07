@@ -6,33 +6,13 @@ published: true
 date: 2024
 ---
 
-# Simulation CPU
+# Introduction à l'algorithmique
 
-Afin de mettre en pratique ce que nous avons étudié dans le cours "Modèle d'architecture de von Neumann", nous allons utiliser un simulateur développé par Peter L Higginson. Ce simulateur est basé sur une architecture de von Neumann. Nous allons trouver dans ce simulateur :
+## Qu'est-ce qu'un algorithme ?
 
-- une RAM
+Pour commencer, vous allez visionner la vidéo de David Louapre (chaine YouTube "Science étonnante"). Dans cette vidéo, il aborde quasiment toutes les notions qui seront vues ci-dessous.
 
-- un CPU
-
-Une version en ligne de ce simulateur est disponible ici :  [http://www.peterhigginson.co.uk/AQA/](http://www.peterhigginson.co.uk/AQA/)
-
-Voici ce que vous devriez obtenir en vous rendant à l'adresse indiquée ci-dessus :
-
-simulateur développé par Peter L Higginson
-
-![image](https://github.com/user-attachments/assets/6f3d6dac-1cf8-4d59-8c3e-957457f6a207)
-
-Il est relativement facile de distinguer les différentes parties du simulateur :
-
-- à droite, on trouve la mémoire vive ("main memory")
-- au centre, on trouve le microprocesseur
-- à gauche on trouve la zone d'édition ("Assembly Language"), c'est dans cette zone que nous allons saisir nos programmes en assembleur
-
-Revenons sur les parties RAM et CPU
-
-## La RAM
-
-Par défaut le contenu des différentes cellules de la mémoire est en base 10 (entier signé), mais d'autres options sont possibles : base 10 (entier non-signé, "unsigned"), base 16 ("hex"), base 2 ("binary"). On accède à ces options à l'aide du bouton "OPTIONS" situé en bas dans la partie gauche du simulateur.
+https://www.youtube.com/watch?v=AgtOCNCejQ8
 
 ##### Exercice 1
 >
