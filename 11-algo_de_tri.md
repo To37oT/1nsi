@@ -6,6 +6,8 @@ published: true
 date: 2024
 ---
 
+# Algorithmes de tri
+
 ## 1) introduction
 
 Les algorithmes de tri des éléments d'un tableau ont une place à part en algorithmique. En effet, ils sont souvent utilisés pour mettre en évidence certains concepts algorithmiques (concepts que l'on retrouve dans d'autres types d'algorithmes). Nous allons commencer par 2 algorithmes "classiques" : le tri par insertion et le tri par sélection.
@@ -20,7 +22,7 @@ Pour commencer, voici une vidéo qui explique le principe du tri par insertion :
 
 On peut résumer le principe de fonctionnement de l'algorithme de tri par insertion avec le schéma suivant :
 
-![](img/c11c_2.jpg)
+![c11c_2](https://github.com/user-attachments/assets/01210144-1f92-431c-baab-5d63ffaf2cb4)
 
 Voici l'algorithme du tri par insertion :
 
@@ -53,14 +55,13 @@ Comme précédemment nous nous intéresserons à la complexité en temps dans le
 
 Pour déterminer la complexité de l'algorithme de tri par insertion nous n'allons pas rechercher le nombre d'opérations élémentaires, mais, pour souci de simplicité, directement nous intéresser au "nombre de décalages effectués" pour trier entièrement un tableau. J'appelle "décalage" ce qui est symbolisé par une flèche noire sur le schéma ci-dessous :
 
-![](img/c11c_3.jpg)
+![c11c_3](https://github.com/user-attachments/assets/d6c9a6a1-8a28-4216-bde4-2f7562e2f71a)
 
 Pour l'étape ci-dessus nous avons 3 décalages (décalages du 10, du 12 et du 27). Nous ne tiendrons pas compte du "placement" du nombre en cours de traitement (8 dans notre exemple) symbolisé par la flèche en pointillé.
 
 Évaluons le nombre de décalages nécessaires pour trier le tableau t = [5, 4, 3, 2, 1]
 
-
-![](img/c11c_4.jpg)
+![c11c_4](https://github.com/user-attachments/assets/565626ab-cc34-4314-a1f7-3e1c971daf36)
 
 Il est, je l'espère, évident pour vous que nous avons : 1 + 2 + 3 + 4 = 10 décalages.
 
@@ -80,7 +81,7 @@ soit S = (n(n-1))/2 soit S = (n<sup>2</sup>-n)/2 soit encore S = (1/2)n<sup>2</s
 
 Comme nous l'avons vu précédemment (1/2)n<sup>2</sup>  -  (1/2)n = O(n<sup>2</sup> )
 
-L'algorithme de tri par insertion a donc une complexité en O(n<sup>2</sup>). On parle aussi de complexité quadratique.
+**L'algorithme de tri par insertion a donc une complexité en O(n<sup>2</sup>). On parle aussi de complexité quadratique.**
 
 Ce calcul est un peu complexe à comprendre, rassurez-vous, vous ne serez jamais interrogé sur cette démonstration. Vous devez juste retenir que nous avons une boucle imbriquée dans une autre boucle et que donc la complexité de l'algorithme du tri par insertion est O(n<sup>2</sup>).
 
@@ -94,8 +95,7 @@ Comme pour le tri par insertion, commençons par le visionnage d'une petite vid�
 
 On peut résumer le principe de fonctionnement de l'algorithme de tri par sélection avec le schéma suivant :
 
-
-![](img/c11c_6.jpg)
+![c11c_6](https://github.com/user-attachments/assets/f3f502de-227f-4ecc-bf3e-3f3bbd25d6b8)
 
 Voici l'algorithme du tri par sélection :
 
@@ -144,7 +144,7 @@ Dans le cas où nous avons un tableau à trier qui contient n éléments, nous a
 
 Vous avez sans doute déjà remarqué que nous avons un résultat similaire au tri par insertion (sauf que nous nous intéressons ici aux comparaisons alors que pour le tri par insertion nous nous intéressons aux décalages, mais cela ne change rien au problème)
 
-Conclusion : nous allons trouver exactement le même résultat que pour le tri par insertion : l'algorithme de tri par sélection a une complexité en O(n<sup>2</sup> ) (complexité quadratique).
+Conclusion : nous allons trouver exactement le même résultat que pour le tri par insertion : **l'algorithme de tri par sélection a une complexité en O(n<sup>2</sup> ) (complexité quadratique).**
 
 Nous avons vu précédemment des algorithmes de complexité linéaire (O(n)) avec les algorithmes de recherche d'un entier dans un tableau, de recherche d'un extremum ou encore de calcul d'une moyenne. Nous avons vu ici que les algorithmes de tri par sélection et de tri par insertion ont tous les deux une complexité quadratique (O(n<sup>2</sup> )). Il est important de bien avoir conscience de l'impact de ces complexités sur l'utilisation des algorithmes : si vous doublez la taille du tableau, vous doublerez le temps d'exécution d'un algorithme de complexité linéaire, en revanche vous quadruplerez le temps d'exécution d'un algorithme de complexité quadratique.
 
