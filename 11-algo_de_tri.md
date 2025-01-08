@@ -1,3 +1,11 @@
+---
+layout: default
+title: Chapitre 11 - Algorithmes de tri
+permalink: /chapitre11/
+published: true
+date: 2024
+---
+
 ## 1) introduction
 
 Les algorithmes de tri des éléments d'un tableau ont une place à part en algorithmique. En effet, ils sont souvent utilisés pour mettre en évidence certains concepts algorithmiques (concepts que l'on retrouve dans d'autres types d'algorithmes). Nous allons commencer par 2 algorithmes "classiques" : le tri par insertion et le tri par sélection.
