@@ -18,7 +18,7 @@ Les algorithmes de tri des éléments d'un tableau ont une place à part en algo
 
 Pour commencer, voici une vidéo qui explique le principe du tri par insertion :
 
-[https://www.youtube.com/watch?v=bRPHvWgc6YM](https://www.youtube.com/watch?v=bRPHvWgc6YM)
+[https://www.youtube.com/watch?v=bRPHvWgc6YM](https://www.youtube.com/watch?v=bRPHvWgc6YM){:target="_blank"}
 
 On peut résumer le principe de fonctionnement de l'algorithme de tri par insertion avec le schéma suivant :
 
@@ -91,7 +91,7 @@ Ce calcul est un peu complexe à comprendre, rassurez-vous, vous ne serez jamais
 
 Comme pour le tri par insertion, commençons par le visionnage d'une petite vidéo :
 
-[https://www.youtube.com/watch?v=8u3Yq-5DTN8](https://www.youtube.com/watch?v=8u3Yq-5DTN8)
+[https://www.youtube.com/watch?v=8u3Yq-5DTN8](https://www.youtube.com/watch?v=8u3Yq-5DTN8){:target="_blank"}
 
 On peut résumer le principe de fonctionnement de l'algorithme de tri par sélection avec le schéma suivant :
 
