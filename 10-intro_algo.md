@@ -20,7 +20,7 @@ Pour commencer, vous allez visionner la vidéo de David Louapre (chaine YouTube 
 >
 >- Comment mesure-t-on la rapidité d'un algorithme ?
 >- Qu'est-ce que la complexité d'un algorithme ?
->- Quelle la différence entre une complexité N et une complexité N2 ?
+>- Quelle la différence entre une complexité N et une complexité N<sup>2</sup> ?
 >- Comment appelle-t-on également les 2 complexités précédentes ?
 >- Quelle est la complexité du problème du sac à dos ?
 >- Quel protocole se base sur la décomposition des nombres premiers ?
@@ -179,15 +179,15 @@ FIN
 
 Au total nous avons : 1 + 1 + n + 1 + n + 0 + n + 1 = 3n + 4 opérations élémentaires
 
-Comme dans la plupart des cas n > j, on effectue plus d'opérations élémentaires quand le nombre recherché n'est pas dans le tableau (sauf dans le cas précis où l'entier recherché est en dernière position, mais nous ne tiendrons pas compte de ce cas). On parle de "complexité dans le pire des cas" quand on s'intéresse uniquement au cas où le nombre d'opérations élémentaires est le plus grand. Dans la suite nous nous intéresserons uniquement à cette complexité dans le pire des cas (dans la suite "complexité" = "complexité en temps dans le pire des cas"). Pour notre exemple, nous considérerons uniquement le cas où le nombre total d'opérations élémentaires est de 3n + 4.
+Comme dans la plupart des cas n > j, on effectue plus d'opérations élémentaires quand le nombre recherché n'est pas dans le tableau (sauf dans le cas précis où l'entier recherché est en dernière position, mais nous ne tiendrons pas compte de ce cas). On parle de "complexité dans le pire des cas" quand on s'intéresse uniquement au cas où le nombre d'opérations élémentaires est le plus grand. Dans la suite nous nous intéresserons uniquement à cette **complexité dans le pire des cas**. Pour notre exemple, nous considérerons uniquement le cas où le nombre total d'opérations élémentaires est de 3n + 4.
 
 Nous venons de voir que la complexité dépend de la taille du tableau, plus le tableau est grand et plus le nombre d'opérations élémentaires à effectuer est important. Pour effectuer des comparaisons entre plusieurs algorithmes, nous allons raisonner sur des tableaux de grande taille, car plus les tableaux sont grands et plus les différences entre les algorithmes seront flagrantes. Pour comparer des algorithmes, nous allons donc uniquement nous intéresser à ce que l'on appelle "l'ordre de grandeur asymptotique". La définition précise de cet "ordre de grandeur asymptotique" est trop complexe pour être abordé ici. Vous devez juste savoir que cet "ordre de grandeur asymptotique" concerne les cas où l'on prend n très très grand. On note cet "ordre de grandeur asymptotique" avec un O majuscule. Pour le cas qui nous intéresse, nous aurons :
 
 3n+4 = O(n)
 
-La relation ci-dessus signifie que "3n+4 est dominée asymptotiquement par n", autrement dit "si n est suffisamment grand, il existe une constante c qui permettra d'avoir c.n ⩾ 3n+4", vous n'avez pas tout compris ? Cela n'a pas vraiment d'importance, ce qu'il faut retenir c'est que nous utiliserons systématiquement cette notation O pour exprimer la complexité des algorithmes : au final on dira donc que la complexité de notre algorithme "x est-il présent dans le tableau t ?" est O(n).
+Ce qu'il faut retenir c'est que nous utiliserons systématiquement cette notation O pour exprimer la complexité des algorithmes : au final on dira donc que **la complexité de notre algorithme "x est-il présent dans le tableau t ?" est O(n)**.
 
-Comment obtient-on cette notation O à partir du nombre d'opérations élémentaires ?
+**Comment obtient-on cette notation O à partir du nombre d'opérations élémentaires ?**
 
 Ici nous avons simplement supprimé la constante (4) et le coefficient devant le n (c'est-à-dire 3), il reste donc uniquement n d'où le 3n+4 = O(n). Dans le cas où nous avons un polynôme de degrés quelconque, par exemple pour 6n<sup>2</sup>+3n+10, il suffit de :
 
