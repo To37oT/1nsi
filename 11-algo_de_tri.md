@@ -85,6 +85,15 @@ Comme nous l'avons vu précédemment (1/2)n<sup>2</sup>  -  (1/2)n = O(n<sup>2</
 
 Ce calcul est un peu complexe à comprendre, rassurez-vous, vous ne serez jamais interrogé sur cette démonstration. Vous devez juste retenir que nous avons une boucle imbriquée dans une autre boucle et que donc la complexité de l'algorithme du tri par insertion est O(n<sup>2</sup>).
 
+
+##### Exercice 1
+>
+>Le schéma ci-dessous illustre le principe de fonctionnement du tri par insertion pour le tableau [27, 10, 12, 8, 11]
+>
+>![c11c_2](https://github.com/user-attachments/assets/79eb7f7f-ea76-4df6-8645-c27f4a195e4d)
+>
+>Produisez un schéma équivalent pour le tableau [12, 8, 23, 10, 15]
+
 ## 3) Tri par sélection
 
 ### a) algorithme du tri par sélection
@@ -146,6 +155,80 @@ Vous avez sans doute déjà remarqué que nous avons un résultat similaire au t
 
 Conclusion : nous allons trouver exactement le même résultat que pour le tri par insertion : **l'algorithme de tri par sélection a une complexité en O(n<sup>2</sup> ) (complexité quadratique).**
 
+##### Exercice 2
+>
+>Le schéma ci-dessous illustre le principe de fonctionnement du tri par sélection pour le tableau [12, 8, 23, 10, 15]
+>
+>![c11c_6](https://github.com/user-attachments/assets/bc07ca3f-75b3-4407-9e53-3397977cd2f1)
+>
+>Produisez un schéma équivalent pour le tableau [15, 16, 11, 13, 12]
+
 Nous avons vu précédemment des algorithmes de complexité linéaire (O(n)) avec les algorithmes de recherche d'un entier dans un tableau, de recherche d'un extremum ou encore de calcul d'une moyenne. Nous avons vu ici que les algorithmes de tri par sélection et de tri par insertion ont tous les deux une complexité quadratique (O(n<sup>2</sup> )). Il est important de bien avoir conscience de l'impact de ces complexités sur l'utilisation des algorithmes : si vous doublez la taille du tableau, vous doublerez le temps d'exécution d'un algorithme de complexité linéaire, en revanche vous quadruplerez le temps d'exécution d'un algorithme de complexité quadratique.
 
 Si votre ordinateur met T secondes pour trier un tableau de taille n, il mettra  4T secondes pour trier une tableau  de taille 2n.
+
+##### Exercice 3
+>
+>Soit l'algorithme du tri par insertion :
+>
+>```
+>VARIABLE
+>t : tableau d'entiers
+>i : nombre entier
+>j : nombre entier
+>k : nombre entier
+>DEBUT
+>j←2
+>tant que j<=longueur(t):  
+>  i←j-1
+>  k←t[j]
+>  tant que i>0 et que t[i]>k:
+>    t[i+1]←t[i]
+>    i←i-1
+>  fin tant que
+>  t[i+1]←k
+>  j←j+1
+>fin tant que
+>FIN
+>```
+>
+>Appliquez cet algorithme au tableau  t = [27, 10, 12, 8, 11] et vérifiez que vous obtenez bien le tableau [8, 10, 11, 12, 27]
+
+##### Exercice 4
+>
+>Soit l'algorithme du tri par sélection :
+>
+>```
+>VARIABLE
+>t : tableau d'entiers
+>i : nombre entier
+>min : nombre entier
+>j : nombre entier
+>DEBUT
+>i←1
+>tant que i<longueur(t):  
+>  j←i+1
+>  min←i
+>  tant que j<=longueur(t):  
+>    si t[j]<t[min]:
+>      min←j
+>    fin si
+>    j←j+1
+>  fin tant que
+>  si min≠i :
+>    échanger t[i] et t[min]
+>  fin si
+>  i←i+1
+>fin tant que
+>FIN
+>```
+>
+>Appliquez cet algorithme au tableau  t = [27, 10, 12, 8, 11] et vérifiez que vous obtenez bien le tableau [8, 10, 11, 12, 27]
+
+##### Exercice 5
+>
+>Proposez une implémentation en Python de l'algorithme de tri par insertion. Vous testerez votre programme à l'aide du tableau t = [15, 16, 11, 13, 12]
+
+##### Exercice 6
+>
+>Proposez une implémentation en Python de l'algorithme de tri par sélection. Vous testerez votre programme à l'aide du tableau t = [15, 16, 11, 13, 12]
