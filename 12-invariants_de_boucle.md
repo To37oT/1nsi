@@ -6,7 +6,7 @@ published: true
 date: 2024
 ---
 
-# Algorithmes de tri
+# Invariants de boucle
 
 A priori, les algorithmes de tri par insertion et de tri par sélection "fonctionnent" correctement : ils trient bien le tableau donné en entrée, on dit que ces algorithmes sont corrects. On parle aussi de la "**correction d'un algorithme**" pour dire qu'un algorithme produit bien le résultat attendu.
 
