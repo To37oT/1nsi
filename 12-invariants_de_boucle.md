@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Chapitre 11 - Algorithmes de tri
-permalink: /chapitre11/
+title: Chapitre 12 - Invariants de boucle
+permalink: /chapitre12/
 published: true
 date: 2024
 ---
