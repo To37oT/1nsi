@@ -10,65 +10,72 @@ date: 2024
 
 ## 1) la ligne de commande
 
-À la "préhistoire" des systèmes d'exploitation, ces derniers étaient dépourvus d'interface graphique (système de fenêtres "pilotables" à la souris), toutes les interactions "système d'exploitation - utilisateur" se faisaient par l'intermédiaire de "lignes de commandes" (suites de caractères, souvent ésotériques, saisies par l'utilisateur). Aujourd'hui, même si les interfaces graphiques modernes permettent d'effectuer la plupart des opérations, il est important de connaitre quelques-unes de ces lignes de commandes.
+À la "préhistoire" des systèmes d'exploitation, ces derniers étaient dépourvus d'interface graphique, toutes les interactions "système d'exploitation - utilisateur" se faisaient par l'intermédiaire de **lignes de commandes**. Aujourd'hui, même si les interfaces graphiques modernes permettent d'effectuer la plupart des opérations, il est important de connaitre quelques-unes de ces lignes de commandes.
 
-Pour saisir des lignes de commandes, nous allons utiliser une console (aussi appelé terminal même si ce n'est pas exactement la même chose).
+Pour saisir des lignes de commandes, nous allons utiliser une console (aussi appelé terminal).
 
-![](img/c14c_1.png)
+![image](https://github.com/user-attachments/assets/c5af4320-f8a6-4923-ac3a-028e33b90e99)
 
-Nous avons ci-dessus la console de l'utilisateur "david" qui utilise un ordinateur qui se nomme "PC-Bureau" ("david@PC-Bureau").
+Nous avons ci-dessus la console de l'utilisateur "root" qui utilise un ordinateur qui se nomme "localhost" ("root@localhost").
 
 ## 2) arborescence du système de fichier
 
 ### a) introduction
 
-Principalement nous allons, grâce à la ligne de commande, travailler sur les fichiers et les répertoires. Dans les systèmes de type "UNIX" (par exemple GNU/Linux ou macOS), nous avons un système de fichier en arborescence :
+Dans les systèmes de type "UNIX" (par exemple GNU/Linux ou macOS), nous avons un système de fichier en arborescence :
 
-![](img/c14c_2.jpg)
+![c14c_2](https://github.com/user-attachments/assets/f63d8060-fdb0-4803-b7be-5b23e231f35c)
 
 Dans le schéma ci-dessus on trouve des répertoires (noms entourés d'un rectangle, exemple : "home") et des fichiers (uniquement des noms "grub.cfg"). À noter : les extensions des noms de fichiers, par exemple le "cfg" de "grub.cfg", ne sont pas obligatoires dans les systèmes de type "UNIX", par exemple, "bash" est bien un nom de fichier et il n'a pas d'extension.
 
-On parle d'arborescence, car ce système de fichier ressemble à un arbre à l'envers.
+On parle d'**arborescence**, car ce système de fichier ressemble à un arbre à l'envers.
 
-Comme vous pouvez le constater, la base de l'arbre s'appelle la racine de l'arborescence et se représente par un "/"
+La base de l'arbre s'appelle **la racine** de l'arborescence et se représente par un "**/**"
 
 ### b) chemin absolu ou chemin relatif ?
 
-Pour indiquer la position d'un fichier (ou d'un répertoire) dans l'arborescence, il existe 2 méthodes : indiquer un chemin absolu ou indiquer un chemin relatif. Le chemin absolu doit indiquer "le chemin" depuis la racine. Par exemple le chemin absolu du fichier fiche.ods sera : /home/elsa/documents/fiche.ods
+Pour indiquer la position d'un fichier (ou d'un répertoire) dans l'arborescence, il existe 2 méthodes : indiquer un **chemin absolu** ou indiquer un **chemin relatif**. 
 
-Remarquez que nous démarrons bien de la racine / (attention les symboles de séparation sont aussi des /)
+- Le chemin absolu doit indiquer le chemin depuis la racine. Par exemple le chemin absolu du fichier fiche.ods sera : /home/elsa/documents/fiche.ods (nous démarrons bien de la racine /, les symboles de séparation sont aussi des /).
 
-Il est possible d'indiquer le chemin non pas depuis la racine, mais depuis un répertoire quelconque, nous parlerons alors de chemin relatif :
-
-Le chemin relatif permettant d'accéder au fichier "photo_1.jpg" depuis le répertoire "max" est : "images/photo_vac/photo_1.jpg"
-
-Remarquez l’absence du / au début du chemin (c'est cela qui nous permettra de distinguer un chemin relatif et un chemin absolu).
+- Le chemin relatif permettant d'accéder au fichier "photo_1.jpg" depuis le répertoire "max" est : "images/photo_vac/photo_1.jpg" (remarquez l’absence du / au début du chemin).
 
 Imaginons maintenant que nous désirions indiquer le chemin relatif pour accéder au fichier "gdbd_3.jpg" depuis le répertoire "photos_vac".
 
 Comment faire ?
 
-Il faut "remonter" d'un "niveau" dans l'arborescence pour se retrouver dans le répertoire "images" et ainsi pouvoir repartir vers la bonne "branche". Pour ce faire il faut utiliser 2 points : ..
+Il faut remonter d'un niveau dans l'arborescence pour se retrouver dans le répertoire "images" et ainsi pouvoir repartir vers la bonne branche. Pour ce faire il faut utiliser 2 points : ..
 
 "../ski/gdbd_3.jpg"
 
-Il est tout à fait possible de remonter de plusieurs "crans" : "../../" depuis le répertoire "photos_vac" permet de "remonter" dans le répertoire "max"
+Il est tout à fait possible de remonter de plusieurs "crans" : 
 
-Comme déjà évoqué plus haut, les systèmes de type "UNIX" sont des systèmes "multi-utilisateurs" : chaque utilisateur possède son propre compte. Chaque utilisateur possède un répertoire à son nom, ces répertoires personnels se situent traditionnellement dans le répertoire "home". Dans l'arborescence ci-dessus, nous avons 2 utilisateurs : "max" et "elsa". Par défaut, quand un utilisateur ouvre une console, il se trouve dans son répertoire personnel. Dans l'image de la console ci-dessus, nous avons un *david@PC-Bureau ~ $* (au passage, on appelle cela "l'invite de commande"), le "~" (caractère "tilde") signifie que l'on se trouve actuellement dans le répertoire personnel de l'utilisateur courant, autrement dit dans le répertoire de chemin absolu "/home/david" (puisque l'utilisateur courant est "david"). Le répertoire "où l'on se trouve actuellement" est appelé "répertoire courant". L'invite de commande vous indique à tout moment le répertoire courant : *david@PC-Bureau ~/Documents $* vous indique que vous êtes dans le répertoire "Documents" qui se trouve dans le répertoire "david" qui se trouve dans le répertoire "home" (chemin absolu : "/home/david/Documents")
+"../../" depuis le répertoire "photos_vac" permet de "remonter" dans le répertoire "max"
 
-Attention : les systèmes de type "UNIX" sont "sensibles à la casse" (il faut différencier les caractères majuscules et les caractères minuscules) : le répertoire "Documents" et le répertoire "documents" sont 2 répertoires différents.
+Comme déjà évoqué plus haut, les systèmes de type "UNIX" sont des systèmes multi-utilisateurs : chaque utilisateur possède son propre compte. Chaque utilisateur possède un répertoire à son nom, ces répertoires personnels se situent traditionnellement dans le répertoire "home". Dans l'arborescence ci-dessus, nous avons 2 utilisateurs : "max" et "elsa". Par défaut, quand un utilisateur ouvre une console, il se trouve dans son répertoire personnel. Dans l'image de la console ci-dessus, nous avons un *root@localhost ~*, le "~" (caractère "tilde") signifie que l'on se trouve actuellement dans le répertoire personnel de l'utilisateur courant. 
+
+Le répertoire "où l'on se trouve actuellement" est appelé **répertoire courant**.
+
+*Attention : les systèmes de type "UNIX" sont "sensibles à la casse" (il faut différencier les caractères majuscules et les caractères minuscules) : le répertoire "Documents" et le répertoire "documents" sont 2 répertoires différents.*
 
 Il est important de savoir que si le double point ("../") permet de remonter d'un cran dans l'arborescence, le simple point "./" représente le répertoire courant. Si vous vous trouvez dans le répertoire "home" un "./document" représente le répertoire "document" qui se trouve dans le répertoire "home".
 
+##### Exercice 1
+> En utilisant l'arborescence page 2, quels sont les chemins absolus et relatifs pour vous rendre dans le répertoire "boulot".Vous donnerez le chemin absolu et le chemin relatif depuis le répertoire "ski".
+
 ## 3) les commandes pour manipuler les fichiers et les répertoires
+
+Nous utiliserons une émulation de Linux pour travailler : 
+
+https://bellard.org/jslinux/vm.html?cpu=riscv64&url=buildroot-riscv64.cfg&mem=256
 
 ### a) la commande cd
 
-La commande *cd* permet de changer le répertoire courant (cd => change directory). Il suffit d'indiquer le chemin (relatif ou absolu) qui permet d'atteindre le nouveau répertoire.
+La commande ```cd``` permet de changer le répertoire courant (cd => change directory). Il suffit d'indiquer le chemin (relatif ou absolu) qui permet d'atteindre le nouveau répertoire.
 
 Par exemple (en utilisant l'arborescence ci-dessous) :
 
-![](img/c14c_2.jpg)
+![c14c_2](https://github.com/user-attachments/assets/19479aed-e6ef-4348-9597-32f541491bc7)
 
 - si le répertoire courant est le répertoire "elsa" et que vous "voulez vous rendre" dans le répertoire "documents", il faudra saisir la commande : *cd documents* (relatif) ou *cd /home/elsa/documents* (absolu)
 
@@ -78,27 +85,27 @@ Par exemple (en utilisant l'arborescence ci-dessous) :
 
 ### b) la commande ls
 
-La commande *ls* permet de lister le contenu du répertoire courant.
+La commande ```ls``` permet de lister le contenu du répertoire courant.
 
-![](img/c14c_3.png)
+![image](https://github.com/user-attachments/assets/0e7167e7-dbd3-4abd-94ea-dabaef0cface)
 
-Dans l'exemple ci-dessus, depuis le répertoire personnel de l'utilisateur *david*, nous passons dans le répertoire *nsi* à l'aide d'un *cd nsi*, puis nous affichons le contenu de ce répertoire *nsi* à l'aide de la commande *ls*. Nous trouvons dans le répertoire *nsi* : 2 fichiers (*fiche1.odt* et *photo.jpg*) et un répertoire (*test*).
+Dans l'exemple ci-dessus, dans le répertoire personnel de l'utilisateur, nous avons 5 fichiers
 
 ### c) la commande pwd
 
-La commande pwd permet de connaitre le répertoire courant (permet d'afficher le chemin d'accès vers le répertoire courant depuis la racine)
+La commande ```pwd``` permet de connaitre le répertoire courant (permet d'afficher le chemin d'accès vers le répertoire courant depuis la racine)
 
 ### d) La commande mkdir
 
-La commande *mkdir* permet de créer un répertoire dans le répertoire courant. La commande est de la forme *mkdir nom_du_répertoire*
+La commande ```mkdir``` permet de créer un répertoire dans le répertoire courant. La commande est de la forme ```mkdir nom_du_répertoire```
 
-![](img/c14c_4.png)
+![image](https://github.com/user-attachments/assets/93d99cdc-63a6-4e64-a3b2-0f6a2f4b95ed)
 
-Remarque : il est préférable de ne pas utiliser de caractères accentués dans les noms de répertoire (ou de fichier). Il en est de même pour les espaces (à remplacer par des caractères tirets bas "_")
+Remarque : il est toujours préférable de ne pas utiliser de caractères accentués dans les noms de répertoire (ou de fichier). Il en est de même pour les espaces (à remplacer par des caractères tirets bas "_")
 
 ### e) La commande rm
 
-La commande *rm* permet de supprimer un fichier ou un répertoire. La commande est de la forme *rm nom_du_répertoire_ou_nom_du_fichier*
+La commande ```rm``` permet de supprimer un fichier ou un répertoire (rm -r). La commande est de la forme ```rm nom_du_répertoire_ou_nom_du_fichier```
 
 ![](img/c14c_5.png)
 
