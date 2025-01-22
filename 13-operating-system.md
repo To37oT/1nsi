@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Chapitre 12 - Invariants de boucle
+title: Chapitre 13 - Systèmes d'exploitation
 permalink: /chapitre13/
 published: true
 date: 2024
