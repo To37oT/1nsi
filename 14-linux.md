@@ -119,6 +119,13 @@ La commande ```touch``` permet de créer un fichier vide. La commande est de la 
 
 ![image](https://github.com/user-attachments/assets/f65561bf-9488-474d-b779-8760fb1afbb3)
 
+##### Exercice 1
+>- Créer un répertoire "exercices"
+>- Créer dans ce dossier un sous répertoire "exercice_1"
+>- Créer 1 fichier "synthese.txt" dans ce répertoire
+>- Vous vérifierez que tout est bien créé (faire une copie d'écran)
+
+
 ### g) La commande cat
 
 La commande ```cat``` permet d'afficher dans la console le contenu d'un fichier.
@@ -145,47 +152,57 @@ La commande ```mv``` (move) permet de déplacer un fichier. Par exemple ```mv ns
 
 La commande ```man``` permet d'obtenir la documentation d'une autre commande. Par exemple, ```man ls``` vous donnera la documentation de la commande ```ls```.
 
-(pas de manuel disponible dans l'outil "bellard.org")
+(pas de manuel disponible avec certains outils)
+
+![image](https://github.com/user-attachments/assets/5d0d880d-9f21-42a2-9af6-28f6d13c950c)
+
+##### Exercice 2
+>Pour toutes les actions suivantes, **faire une copie d'écran des lignes de commande saisies** :
+>- Créer un répertoire "exercice_2" dans le répertoire "exercices"
+>- Créer un répertoire "doc" dans le répertoire "exercice_2"
+>- Créer un répertoire "texte" dans le répertoire "exercice_2"
+>- Créer un fichier "toto.txt" dans le répertoire "texte"
+>- Déplacer le fichier "toto.txt" dans le répertoire "doc"
+>- Vérifier le déplacement
+>- Faire une copie du fichier "toto.txt" dans le répertoire "exercice_2"
+>- Supprimer le répertoire "doc"
+>- Vérifier
 
 ## 4) Gestion des utilisateurs et des groupes
 
-Les systèmes de type "UNIX" sont des systèmes multi-utilisateurs, plusieurs utilisateurs peuvent donc partager un même ordinateur, chaque utilisateur possédant un environnement de travail qui lui est propre.
+Les systèmes de type "UNIX" sont des **systèmes multi-utilisateurs**, plusieurs utilisateurs peuvent donc partager un même ordinateur, chaque utilisateur possédant un environnement de travail qui lui est propre.
 
-Chaque utilisateur possède certains droits lui permettant d'effectuer certaines opérations et pas d'autres. Le système d'exploitation permet de gérer ces droits très finement. Un utilisateur un peu particulier est autorisé à modifier tous les droits : ce "super utilisateur" est appelé "administrateur" ou "root". L'administrateur pourra donc attribuer ou retirer des droits aux autres utilisateurs. Au lieu de gérer les utilisateurs un par un, il est possible de créer des groupes d'utilisateurs. L'administrateur attribue des droits à un groupe au lieu d'attribuer des droits particuliers à chaque utilisateur.
+**Chaque utilisateur possède certains droits** lui permettant d'effectuer certaines opérations et pas d'autres. Le système d'exploitation permet de gérer ces droits très finement. Un utilisateur un peu particulier est autorisé à modifier tous les droits : ce super utilisateur est appelé "**administrateur**" (ou "root"). L'administrateur pourra donc attribuer ou retirer des droits aux autres utilisateurs. Au lieu de gérer les utilisateurs un par un, il est possible de créer des groupes d'utilisateurs. L'administrateur attribue des droits à un groupe au lieu d'attribuer des droits particuliers à chaque utilisateur.
 
-Comme nous venons de le voir, chaque utilisateur possède des droits qui lui ont été octroyés par le "super utilisateur". Nous nous intéresserons ici uniquement aux droits liés aux fichiers, mais vous devez savoir qu'il existe d'autres droits liés aux autres éléments du système d'exploitation ((imprimante, installation de logiciels...).
+Comme nous venons de le voir, chaque utilisateur possède des droits qui lui ont été octroyés par l'administrateur. Nous nous intéresserons ici uniquement aux droits liés aux fichiers, mais vous devez savoir qu'il existe d'autres droits liés aux autres éléments du système d'exploitation (imprimante, installation de logiciels...).
 
-Les fichiers et les répertoires possèdent 3 types de droits :
+**Les fichiers et les répertoires possèdent 3 types de droits :**
 
-- les droits en lecture (symbolisés par la lettre r) : est-il possible de lire le contenu de ce fichier
+- les droits en lecture (symbolisés par la lettre **r**) : Lire le contenu d'un fichier
+- les droits en écriture (symbolisés par la lettre **w**) : Modifier le contenu d'un fichier
+- les droits en exécution (symbolisés par la lettre **x**) : Exécuter le contenu d'un fichier (quand le fichier du code exécutable)
 
-- les droits en écriture (symbolisés par la lettre w) : est-il possible de modifier le contenu de ce fichier
+**Il existe 3 types d'utilisateurs pour un fichier ou un répertoire :**
 
-- les droits en exécution (symbolisés par la lettre x) : est-il possible d'exécuter le contenu de ce fichier (quand le fichier du code exécutable)
+- le propriétaire du fichier (par défaut c'est la personne qui a créé le fichier), il est symbolisé par la lettre **u**
+- un fichier est associé à un groupe, tous les utilisateurs appartenant à ce groupe possèdent des droits particuliers sur ce fichier. Le groupe est symbolisé par la lettre **g**
+- tous les autres utilisateurs (ceux qui ne sont pas le propriétaire du fichier et qui n'appartiennent pas au groupe associé au fichier). Ces utilisateurs sont symbolisés la lettre **o**
 
-Il existe 3 types d'utilisateurs pour un fichier ou un répertoire :
+Il est possible d'utiliser la commande ```ls``` avec l'option ```-l``` afin d'avoir des informations supplémentaires.
 
-- le propriétaire du fichier (par défaut c'est la personne qui a créé le fichier), il est symbolisé par la lettre u
-
-- un fichier est associé à un groupe, tous les utilisateurs appartenant à ce groupe possèdent des droits particuliers sur ce fichier. Le groupe est symbolisé par la lettre g
-
-- tous les autres utilisateurs (ceux qui ne sont pas le propriétaire du fichier et qui n'appartiennent pas au groupe associé au fichier). Ces utilisateurs sont symbolisés la lettre "o"
-
-Il est possible d'utiliser la commande *ls* avec l'option *-l* afin d'avoir des informations supplémentaires.
-
-![](img/c14c_9.png)
+![image](https://github.com/user-attachments/assets/6a2eb012-5490-4588-944f-2240968c42ae)
 
 Prenons la première ligne :
 
 ```
--rw-r--r-- 1 david david 0 avril 13 19:58 fic.txt
+-rw-r--r-- 1 root root 113 Sep 9 2018 bench.py
 ```
 
-Lisons cette ligne de gauche à droite :
+**Lisons cette ligne de gauche à droite :**
 
 - le premier symbole "-" signifie que l'on a affaire à un fichier, dans le cas d'un répertoire, nous aurions un "d" (voir la 2e ligne)
 
-- les 3 symboles suivants "rw-"donnent les droits du propriétaire du fichier : lecture autorisée (r), écriture autorisée (w), exécution interdite (- à la place de x)
+- les 3 symboles suivants "rw-" donnent les droits du propriétaire du fichier : lecture autorisée (r), écriture autorisée (w), exécution interdite (- à la place de x)
 
 - les 3 symboles suivants "r--"donnent les droits du groupe lié au fichier : lecture autorisée (r), écriture interdite (- à la place de w), exécution interdite (- à la place de x)
 
@@ -193,15 +210,15 @@ Lisons cette ligne de gauche à droite :
 
 - le caractère suivant "1" donne le nombre de liens (nous n'étudierons pas cette notion ici)
 
-- le premier "david" représente le nom du propriétaire du fichier
+- le premier "root" représente le nom du propriétaire du fichier
 
-- le second "david" représente le nom du groupe lié au fichier
+- le second "root" représente le nom du groupe lié au fichier
 
-- le "0" représente la taille du fichier en octet (ici notre fichier est vide)
+- le "113" représente la taille du fichier en octet
 
-- "avril 13 19:58" donne la date et l'heure de la dernière modification du fichier
+- "Sep 9 2018" donne la date de la dernière modification du fichier
 
-- "fic.txt" est le nom du fichier
+- "bench.py" est le nom du fichier
 
 Prenons la deuxième ligne :
 
