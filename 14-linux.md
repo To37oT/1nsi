@@ -105,45 +105,47 @@ Remarque : il est toujours préférable de ne pas utiliser de caractères accent
 
 ### e) La commande rm
 
-La commande ```rm``` permet de supprimer un fichier ou un répertoire (rm -r). La commande est de la forme ```rm nom_du_répertoire_ou_nom_du_fichier```
+La commande ```rm``` permet de supprimer un fichier ou un répertoire (```rm -r```). La commande est de la forme ```rm nom_du_répertoire_ou_nom_du_fichier```
 
-![](img/c14c_5.png)
+La plupart des commandes UNIX peuvent être utilisées avec une ou des options. Par exemple ici l'option *-r*
 
-La plupart des commandes UNIX peuvent être utilisées avec une ou des options. Par exemple, pour supprimer un répertoire non vide, il est nécessaire d'utiliser la commande *rm* avec l'option *-r* : *rm -r nom_du_répertoire*
+![image](https://github.com/user-attachments/assets/169c6c78-06b7-46c5-aa1b-bbe17a9546f3)
 
-![](img/c14c_6.png)
-
-En fait l'option -r permet de supprimer un répertoire et ses sous répertoire.
-
-**ATTENTION** : cette commande est relativement "dangereuse", il faut donc la manipuler prudemment. Par exemple la commande *rm ** efface tous les fichiers du répertoire courant (le * signifie tous les fichiers et tous les répertoires). Pour effacer tous les fichiers et tous les répertoires présents dans le répertoire courant il faut donc utiliser *rm -r **
+**ATTENTION** : cette commande est relativement "dangereuse", il faut donc la manipuler prudemment. Par exemple la commande ```rm *``` efface tous les fichiers du répertoire courant (le * signifie "tout"). Pour effacer tous les fichiers et tous les répertoires présents dans le répertoire courant il faut donc utiliser ```rm -r *```
 
 ### f) La commande touch
 
-La commande *touch* permet de créer un fichier vide. La commande est de la forme *touch nom_du_fichier_à_créer*
+La commande ```touch``` permet de créer un fichier vide. La commande est de la forme ```touch nom_du_fichier_à_créer```
 
-![](img/c14c_7.png)
-
+![image](https://github.com/user-attachments/assets/f65561bf-9488-474d-b779-8760fb1afbb3)
 
 ### g) La commande cat
 
-La commande *cat* permet d'afficher dans la console le contenu d'un fichier.
+La commande ```cat``` permet d'afficher dans la console le contenu d'un fichier.
 
-Soit un fichier *toto.txt*. Si à l'aide d'un éditeur de texte vous avez saisi *coucou* dans le fichier *toto.txt*, la commande *cat toto.txt* affichera *coucou* dans la console.
+Soit un fichier "nsi.txt". Si à l'aide d'un éditeur de texte vous avez saisi "coucou" dans le fichier "nsi.txt", la commande ```cat nsi.txt``` affichera "coucou" dans la console.
 
+![image](https://github.com/user-attachments/assets/113ac99e-2c42-4258-a353-703e88ea9bc4)
+
+Remarque : vous pouvez éditer un fichier sous Linux avec la commande ```nano nom_du_fichier```
 
 ### h) La commande cp
 
-La commande *cp* permet de copier un fichier. La commande est de la forme *cp /répertoire_source/nom_fichier_à_copier /répertoire_destination/nom_fichier*
+La commande ```cp``` permet de copier un fichier. La commande est de la forme ```cp /répertoire_source/nom_fichier_à_copier /répertoire_destination/nom_fichier```
 
-![](img/c14c_8.png)
+![image](https://github.com/user-attachments/assets/4c7ea5b5-0ef5-4c69-82f9-6cb0a13bf712)
 
 ### i) La commande mv
 
-La commande *mv* (move) permet de déplacer un fichier dans un dossier. Par exemple un *mv toto.txt titi* déplacera le fichier *toto.txt* dans le répertoire *titi* (attention on parle bien de déplacement pas de copie).
+La commande ```mv``` (move) permet de déplacer un fichier. Par exemple ```mv nsi.txt cours``` déplacera le fichier "nsi.txt" dans le répertoire "cours" (attention on parle bien de déplacement pas de copie).
+
+![image](https://github.com/user-attachments/assets/7b77e4c3-b56c-4b9f-8dca-0d3742b8af99)
 
 ### j) La commande man
 
-La commande *man* permet d'obtenir la documentation d'une autre commande. Par exemple, *man ls* vous donnera la documentation de la commande *ls*.
+La commande ```man``` permet d'obtenir la documentation d'une autre commande. Par exemple, ```man ls``` vous donnera la documentation de la commande ```ls```.
+
+(pas de manuel disponible dans l'outil "bellard.org")
 
 ## 4) Gestion des utilisateurs et des groupes
 
