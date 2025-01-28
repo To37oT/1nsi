@@ -12,16 +12,25 @@ date: 2024
 
 ### a) Présentation du langage C
 
-Jusqu'à présent, nous avons surtout utilisé le langage de programmation Python. Il existe beaucoup d'autres langages de programmation : Java, C++, Ruby, PHP, JavaScript... Tous ces langages sont différents, mais ils ont aussi des points communs, on peut même dire qu'ils ont plus de points communs que de différences. Afin d'entrer un peu dans les détails, nous allons nous intéresser à un langage qui tient une place à part dans l'histoire de l'informatique, le langage C. Le but n'est pas de faire de vous des "programmeurs C", mais de vous montrer que même si le langage Python et le langage C ont des différences, ils ont aussi de nombreux points communs.
+Jusqu'à présent, nous avons surtout utilisé le langage de programmation Python. Il existe beaucoup d'autres langages de programmation : Java, C++, Ruby, PHP, JavaScript... Tous ces langages sont différents, mais ils ont aussi des points communs, on peut même dire qu'ils ont plus de points communs que de différences. Afin d'entrer un peu dans les détails, nous allons nous intéresser à un langage qui tient une place à part dans l'histoire de l'informatique, le langage C. 
 
-Le langage C a été créé par Dennis Ritchie (1941-2011) et Ken Thompson (1943- ) en 1972 (oui, les mêmes Ritchie et Thompson qu'UNIX). Le langage C est une évolution du langage B (langage B a été créé par Ken Thompson à la fin des années 60). Le langage C est encore très utilisé aujourd'hui (dans le top 10 des langages de programmation les plus utilisés), par exemple, le noyau du système d'exploitation Linux est écrit en C. Tout informaticien qui se respecte doit avoir, un jour ou l'autre (au moins pendant ses études), écrit des programmes en C.
+Le but n'est pas de faire de vous des programmeurs C, mais de vous montrer que même si le langage Python et le langage C ont des différences, ils ont aussi de nombreux points communs.
+
+Le langage C a été créé par **Dennis Ritchie** (1941-2011) et **Ken Thompson** (1943- ) en 1972 (les mêmes Ritchie et Thompson qu'UNIX). Le langage C est une évolution du langage B (langage B a été créé par Ken Thompson à la fin des années 60). Le langage C est encore très utilisé aujourd'hui (dans le top 10 des langages de programmation les plus utilisés), par exemple, le noyau du système d'exploitation Linux est écrit en C. Tout informaticien qui se respecte doit avoir, un jour ou l'autre (au moins pendant ses études), écrit des programmes en C.
 
 Ken Thompson et Dennis Ritchie :
 
-![](img/c15c_1.jpg)
+![c15c_1](https://github.com/user-attachments/assets/b7ef9091-c3fb-4dda-b395-4131ccdaeed2)
 
+Le C est un langage compilé, c'est-à-dire qu'un programme appelé **compilateur transforme le code source** (le code écrit par le programmeur) **en langage machine**. Cette opération, appelée **compilation**, doit être effectuée à chaque fois que le programmeur modifie le code source, cette phase de compilation peut prendre des dizaines de minutes pour de très gros programmes. 
 
-Le C est un langage compilé, c'est-à-dire qu'un programme appelé "compilateur" transforme le code source (le code écrit par le programmeur) en langage machine. Cette opération, appelée "compilation", doit être effectuée à chaque fois que le programmeur modifie le code source, cette phase de compilation peut prendre des dizaines de minutes pour de très gros programmes. Il existe une autre méthode pour passer du code source au langage machine : l'interprétation. En simplifiant à l'extrême, l'interpréteur assure une traduction "à la volée" des instructions. (une ligne est traduite en langage machine puis immédiatement exécutée), alors que dans le cas de la compilation l'ensemble du code source est transformé en langage machine avant le début de l'exécution du programme. Les langages compilés (comme le langage C) sont réputés plus rapides à l'exécution que les langages interprétés. Il existe une troisième voie qui a le vent en poupe : le code source est compilé en pseudocode (appelé bytecode) qui n'est pas encore du langage machine, mais s'en rapproche par rapport au code source de départ. Ce bytecode est ensuite interprété (l'interprétation est beaucoup plus rapide que pour des langages 100% interprétés). Python utilise cette technique.
+Il existe une autre méthode pour passer du code source au langage machine : **l'interprétation**. 
+
+En simplifiant, l'interpréteur assure une traduction "à la volée" des instructions (une ligne est traduite en langage machine puis immédiatement exécutée), alors que dans le cas de la compilation l'ensemble du code source est transformé en langage machine avant le début de l'exécution du programme. 
+
+Les langages compilés (comme le langage C) sont réputés plus rapides à l'exécution que les langages interprétés. 
+
+Il existe une troisième voie : le code source est compilé en **bytecode** qui n'est pas encore du langage machine, mais s'en rapproche par rapport au code source de départ. Ce bytecode est ensuite interprété (l'interprétation est beaucoup plus rapide que pour des langages 100% interprétés). **Python utilise cette technique**.
 
 Voici un programme (très simple) écrit en C :
 
@@ -40,7 +49,7 @@ La première ligne du programme :
 #include <stdio.h>
 ```
 
-n'est pas une instruction à proprement parlé, c'est une "directives de préprocesseur", cette ligne est lue au début de la phase de compilation. Nous aurons l'occasion de revenir sur cette ligne plus tard, pour le moment, vous devez juste savoir que cette ligne est obligatoire si vous voulez utiliser "printf" (voir quelques lignes plus loin).
+n'est pas une instruction à proprement parlé, c'est une directives de préprocesseur, cette ligne est lue au début de la phase de compilation. Nous aurons l'occasion de revenir sur cette ligne plus tard, pour le moment, vous devez juste savoir que cette ligne est obligatoire si vous voulez utiliser ```printf``` (voir quelques lignes plus loin).
 
 Le programme commence réellement avec la ligne :
 
@@ -48,9 +57,9 @@ Le programme commence réellement avec la ligne :
 int main(void) {
 ```
 
-Nous avons ici une fonction (équivalent à un "def main():" en Python), comme vous l'avez sans doute déjà compris, tout le code compris entre l'accolade ouvrante "{" et l'accolade fermante "}" constitue la fonction nommée "main". Voici donc une première différence avec Python, le code constituant une fonction n'est pas défini grâce à une indentation, mais grâce à des accolades (vous remarquerez que l'on utilise tout de même une indentation, mais cette dernière n'est pas obligatoire en C mais seulement fortement conseillée afin de rendre le code plus lisible).
+Nous avons ici une fonction (équivalent à un ```def main():``` en Python), comme vous l'avez sans doute déjà compris, tout le code compris entre l'accolade ouvrante ```{``` et l'accolade fermante ```}``` constitue la fonction nommée ```main```. Voici donc une première différence avec Python, le code constituant une fonction n'est pas défini grâce à une indentation, mais grâce à des accolades (vous remarquerez que l'on utilise tout de même une indentation, mais cette dernière n'est pas obligatoire en C mais seulement fortement conseillée afin de rendre le code plus lisible).
 
-Le "int" situé avant le nom de la fonction ("main" dans cet exemple), signifie que la fonction doit renvoyer un entier. Le "void" situé entre parenthèses signifie que notre fonction ne prend aucun paramètre. Nous aurons l'occasion de revenir sur ce "int" et ce "void" un peu plus loin.
+Le ```int``` situé avant le nom de la fonction (```main``` dans cet exemple), signifie que la fonction doit renvoyer un entier. Le ```void``` situé entre parenthèses signifie que notre fonction ne prend aucun paramètre.
 
 La ligne :
 
@@ -58,43 +67,17 @@ La ligne :
 printf("Hello World\n");
 ```
 
-permet d'afficher le message "Hello World" dans la console (le "\n" permet de passer à la ligne suivante).
+permet d'afficher le message "Hello World" dans la console (le ```\n``` permet de passer à la ligne suivante).
 
-Le
+La ligne
 
 ```c
 return 0;
 ```
 
-permet de renvoyer l'entier 0. Pourquoi renvoie-t-on 0 ? Tout simplement pour signifier que la fonction "main" a bien été exécutée jusqu'au bout. Si cette fonction renvoie autre chose que 0 cela signifiera qu'il y a eu un problème lors de l'exécution de cette dernière.
+permet de renvoyer l'entier ```0```. Pourquoi renvoie-t-on 0 ? Tout simplement pour signifier que la fonction ```main``` a bien été exécutée jusqu'au bout. Si cette fonction renvoie autre chose cela signifiera qu'il y a eu un problème lors de l'exécution de cette dernière.
 
-Vous avez dû remarquer que la plupart des lignes se terminent par un point-virgule. Ce point virgule indique au compilateur que la ligne est terminée, il est obligatoire.
-
-Si on omet un point virgule comme ici :
-
-```c
-#include <stdio.h>
-
-int main(void) {
-	printf("Hello World\n")
-	return 0;
-}
-```
-
-On aura une erreur durant la phase de compilation :
-
-```
-exit status 1
-main.c:4:24: error: expected ';' after expression
-printf("Hello World\n")
-                       ^
-                       ;
-1 error generated.
-```
-
-La première ligne ("exit status 1") vous indique que la fonction "main" n'a pas renvoyée l'entier 0 : il y a donc eu un problème lors de la compilation.
-
-Le message d'erreur qui suit est très explicite puisqu'il indique clairement qu'il manque un point-virgule à la fin de la ligne *printf("Hello World\n")*
+Vous avez dû remarquer que la plupart des lignes se terminent par un **point-virgule**. Ce point virgule indique au compilateur que la ligne est terminée, il est **obligatoire**.
 
 Le programme Python permettant d'obtenir le même résultat que le programme ci-dessus est très simple puisqu'il est constitué d'une seule ligne :
 
@@ -102,7 +85,11 @@ Le programme Python permettant d'obtenir le même résultat que le programme ci-
 print("Hello World")
 ```
 
-En C, c'est un petit plus complexe, car la fonction "main" est obligatoire. En effet, au moment de l'exécution du programme, le système recherche la fonction "main" afin d'exécuter les instructions qui se trouvent "à l'intérieur" de cette fonction (le nom "main" est obligatoire).
+En C, c'est un petit plus complexe, car la fonction ```main``` est **obligatoire**. En effet, au moment de l'exécution du programme, le système la recherche afin d'exécuter les instructions qui se trouvent à l'intérieur de cette fonction.
+
+##### Exercice 1
+> Nous programmerons en C directement sur [replit.com](https://replit.com/languages/c)  (lien dans ENT) pour nous éviter l'utilisation d'un compilateu
+
 
 Il est bien sûr possible d'utiliser des variables en C :
 
