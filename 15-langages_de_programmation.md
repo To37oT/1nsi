@@ -88,8 +88,17 @@ print("Hello World")
 En C, c'est un petit plus complexe, car la fonction ```main``` est **obligatoire**. En effet, au moment de l'exécution du programme, le système la recherche afin d'exécuter les instructions qui se trouvent à l'intérieur de cette fonction.
 
 ##### Exercice 1
-> Nous programmerons en C directement sur [replit.com](https://replit.com/languages/c)  (lien dans ENT) pour nous éviter l'utilisation d'un compilateu
-
+> Nous programmerons en C directement sur [replit.com](https://replit.com/languages/c){:target="_blank"} pour nous éviter l'utilisation d'un compilateur.
+>Tester le programme C suivant :
+>
+>```c
+>#include <stdio.h>
+>
+>int main(void) {
+>	printf("Hello C\n");
+>	return 0;
+>}
+>```
 
 Il est bien sûr possible d'utiliser des variables en C :
 
@@ -117,7 +126,7 @@ Dans le programme en C, on s'attardera particulièrement sur la ligne :
 int i;
 ```
 
-Cette ligne permet de déclarer la variable *i* et de préciser que cette variable "i" "contiendra" un nombre de type entier (cette variable sera de type entier). En C, cette déclaration est obligatoire, afin de, au moment de la compilation, réserver la place nécessaire en mémoire pour la valeur de la variable *i*. Dans notre cas, le compilateur réservera pour *i*, une certaine quantité de mémoire (la quantité de mémoire nécessaire pour "accueillir" un entier).
+Cette ligne permet de déclarer la variable ```i``` et de préciser que cette variable contiendra un nombre de type entier (cette variable sera de type entier). En C, cette déclaration est **obligatoire**, afin de, au moment de la compilation, réserver la place nécessaire en mémoire pour la valeur de cette variable. Dans notre cas, le compilateur réservera la quantité de mémoire nécessaire pour accueillir un entier.
 
 Il existe d'autres types de variables en C : "long", "float", "char"... mais, encore une fois, notre but n'étant pas d'apprendre à programmer en C, nous en resterons là.
 
@@ -172,20 +181,6 @@ Encore quelques différences avec le même programme en Python, mais rien de tr�
 
 Nous avons déjà eu l'occasion de parler des fonctions en C avec la fonction "main", il est bien évidemment possible d'écrire d'autres fonctions en C :
 
-voici un programme Python qui utilise une fonction :
-
-```python
-def somme(x,y):
-    s=x+y
-    return s
-a=5
-b=4
-res=somme(a,b)
-print(f"La somme de {a} et de {b} vaut {res}")
-```
-
-et voici l'équivalent en C :
-
 ```c
 #include <stdio.h>
 
@@ -207,7 +202,7 @@ int main(void) {
 }
 ```
 
-Nous constatons comme pour la fonction "main" qu'il est nécessaire d'indiquer le type de la valeur renvoyée par la fonction (ici "int" car notre fonction "somme" renvoie bien un entier). À la différence de notre fonction "main", la fonction "somme" prend deux paramètres : x et y (tous les deux de type entier). Il est nécessaire d'indiquer le type des paramètres, ici "int" pour x et y. Si vous omettez le type d'un paramètre, vous aurez le droit à une erreur au moment de la compilation.
+Nous constatons qu'il est nécessaire d'indiquer le type de la valeur renvoyée par la fonction (ici ```int``` car notre fonction ```somme``` renvoie bien un entier). La fonction ```somme``` prend deux paramètres : ```x``` et ```y``` (tous les deux de type entier). Il est nécessaire d'indiquer le type des paramètres, ici ```int``` pour les 2 paramètres. Si vous omettez le type d'un paramètre, vous aurez le droit à une erreur au moment de la compilation.
 
 ### b) Prototype d'une fonction
 
