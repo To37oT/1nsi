@@ -67,7 +67,7 @@ Il est important de savoir que si le double point ("../") permet de remonter d'u
 
 Nous utiliserons une émulation de Linux pour travailler : 
 
-https://bellard.org/jslinux/vm.html?cpu=riscv64&url=buildroot-riscv64.cfg&mem=256
+[Lien vers émulateur](https://bellard.org/jslinux/vm.html?cpu=riscv64&url=buildroot-riscv64.cfg&mem=256){:target="_blank"}
 
 ### a) la commande cd
 
