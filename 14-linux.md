@@ -220,10 +220,10 @@ Prenons la première ligne :
 
 - "bench.py" est le nom du fichier
 
-Prenons la deuxième ligne :
+**Prenons la deuxième ligne :**
 
 ```
-drwxr-xr-x 2 david david 4096 avril 13 20:05 info
+drwxr-xr-x 2 root root 61 Jan 27 16:24 cours
 ```
 
 Lisons cette ligne de gauche à droite :
@@ -238,19 +238,21 @@ Lisons cette ligne de gauche à droite :
 
 - le caractère suivant "2" donne le nombre de liens (nous n'étudierons pas cette notion ici)
 
-- le premier "david" représente le nom du propriétaire du répertoire
+- le premier "root" représente le nom du propriétaire du répertoire
 
-- le second "david" représente le nom du groupe lié au répertoire
+- le second "root" représente le nom du groupe lié au répertoire
 
-- le "4096" représente la taille du répertoire en octets
+- le "61" représente la taille du répertoire en octets
 
-- "avril 13 20:05" donne la date et l'heure de la dernière modification du contenu du répertoire
+- "Jan 27 16:24" donne la date et l'heure de la dernière modification du contenu du répertoire
 
-- "info" est le nom du répertoire
+- "cours" est le nom du répertoire
 
-Il est important de ne pas perdre de vu que l'utilisateur *root* a la possibilité de modifier les droits de tous les utilisateurs.
+Il est important de ne pas perdre de vu que l'utilisateur "root" a la possibilité de modifier les droits de tous les utilisateurs. Ici "root" est également le propriétaire de ce dossier.
 
-Le propriétaire d'un fichier peut modifier les permissions d'un fichier ou d'un répertoire à l'aide de la commande *chmod*. Pour utiliser cette commande, il est nécessaire de connaitre certains symboles :
+Le propriétaire d'un fichier peut modifier les permissions d'un fichier ou d'un répertoire à l'aide de la commande ```chmod```. 
+
+Pour utiliser cette commande, il est nécessaire de connaitre certains symboles :
 
 - les symboles liés aux utilisateurs : "u" correspond au propriétaire, "g" correspond au groupe lié au fichier (ou au répertoire), "o" correspond aux autres utilisateurs et "a" correspond à "tout le monde" (permet de modifier "u", "g" et "o" en même temps)
 
@@ -258,7 +260,7 @@ Le propriétaire d'un fichier peut modifier les permissions d'un fichier ou d'un
 
 - les symboles liés aux permissions : "r" : lecture, "w" : écriture, "x" : exécution.
 
-La commande *chmod* à cette forme :
+La commande ```chmod``` a cette forme :
 
 ```
 chmod [u g o a] [+ - =] [r w x] nom_du_fichier
@@ -267,17 +269,24 @@ chmod [u g o a] [+ - =] [r w x] nom_du_fichier
 par exemple
 
 ```
-chmod o+w toto.txt
+chmod o+w nsi.txt
 ```
 
-attribuera la permission "écriture" pour le fichier "toto.txt" "aux autres utilisateurs"
+attribuera la permission "écriture" pour le fichier "nsi.txt" "aux autres utilisateurs"
 
 Il est possible de combiner les symboles :
 
 ```
-chmod g-wx toto.txt
+chmod g-wx nsi.txt
 ```
 
-La commande *chmod* ci-dessus permet de supprimer la permission "écriture" et la permission "exécution" pour le fichier *toto.txt* "au groupe lié au fichier"
+La commande ```chmod``` ci-dessus permet de supprimer la permission "écriture" et la permission "exécution" pour le fichier "nsi.txt" au **groupe** lié au fichier
 
-Une fois de plus, "root" a tous les droits sur l'ensemble des fichiers et des répertoires, il peut donc utiliser la commande *chmod* sur tous les répertoires et tous les fichiers.
+Une fois de plus, "root" a tous les droits sur l'ensemble des fichiers et des répertoires, il peut donc utiliser la commande ```chmod``` sur tous les répertoires et tous les fichiers.
+
+##### Exercice 3
+> Faire les actions suivantes en utilisant des lignes de commande (faire des copies d'écran).
+>- Créer un répertoire "exercice_3"
+>- Créer un fichier nsi.txt à l'intérieur
+>- Lister les droits (r, w et x) pour les différents utilisateurs (u, g et o) sur le fichier nsi.txt
+>- Supprimer le droit en lecture pour les utilisateurs g sur le fichier nsi.txt
