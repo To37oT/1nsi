@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Chapitre 14 - Invariants de boucle
+title: Chapitre 14 - Linux
 permalink: /chapitre14/
 published: true
 date: 2024
