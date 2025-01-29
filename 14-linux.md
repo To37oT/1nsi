@@ -119,7 +119,7 @@ La commande ```touch``` permet de créer un fichier vide. La commande est de la 
 
 ![image](https://github.com/user-attachments/assets/f65561bf-9488-474d-b779-8760fb1afbb3)
 
-##### Exercice 1
+##### Exercice 2
 >- Créer un répertoire "exercices"
 >- Créer dans ce dossier un sous répertoire "exercice_1"
 >- Créer 1 fichier "synthese.txt" dans ce répertoire
@@ -156,7 +156,7 @@ La commande ```man``` permet d'obtenir la documentation d'une autre commande. Pa
 
 ![image](https://github.com/user-attachments/assets/5d0d880d-9f21-42a2-9af6-28f6d13c950c)
 
-##### Exercice 2
+##### Exercice 3
 >Pour toutes les actions suivantes, **faire une copie d'écran des lignes de commande saisies** :
 >- Créer un répertoire "exercice_2" dans le répertoire "exercices"
 >- Créer un répertoire "doc" dans le répertoire "exercice_2"
@@ -284,7 +284,7 @@ La commande ```chmod``` ci-dessus permet de supprimer la permission "écriture" 
 
 Une fois de plus, "root" a tous les droits sur l'ensemble des fichiers et des répertoires, il peut donc utiliser la commande ```chmod``` sur tous les répertoires et tous les fichiers.
 
-##### Exercice 3
+##### Exercice 4
 > Faire les actions suivantes en utilisant des lignes de commande (faire des copies d'écran).
 >- Créer un répertoire "exercice_3"
 >- Créer un fichier nsi.txt à l'intérieur
