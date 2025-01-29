@@ -204,6 +204,11 @@ int main(void) {
 
 Nous constatons qu'il est nécessaire d'indiquer le type de la valeur renvoyée par la fonction (ici ```int``` car notre fonction ```somme``` renvoie bien un entier). La fonction ```somme``` prend deux paramètres : ```x``` et ```y``` (tous les deux de type entier). Il est nécessaire d'indiquer le type des paramètres, ici ```int``` pour les 2 paramètres. Si vous omettez le type d'un paramètre, vous aurez le droit à une erreur au moment de la compilation.
 
+##### Exercice 2
+>
+>Écrivez en C une fonction *estMajeur* qui prend en paramètre un *age* et qui renvoie 1 si *age* est supérieure ou égal à 18 et 0 dans le cas contraire.
+
+
 ### b) Prototype d'une fonction
 
 Vous avez sans doute remarqué que la fonction "somme" du programme ci-dessus se trouve dans le code avant la fonction "main", si vous placez la fonction "somme" après la fonction "main" cela ne fonctionnera pas, car le compilateur ne "comprendra" pas la ligne "res=somme(a,b);", en effet à ce stade le compilateur n'aura pas encore "rencontré" une fonction dénommée "somme". Cependant, il est tout de même possible de placer la fonction "somme" après la fonction "main" à condition de fournir au compilateur le prototype de la fonction "somme". Le prototype d'une fonction permet "d'annoncer" au compilateur qu'une fonction X renvoyant une valeur d'un certain type et qui possède un (ou des) paramètre(s) d'un certain type va être définie "un peu plus loin" dans le programme.
@@ -319,6 +324,11 @@ Le programmeur est donc averti du problème, il pourra donc prendre les mesures 
 Évidemment le compilateur a pu informer le programmeur du problème parce que le prototype de la fonction précise que les paramètres attendus sont des entiers. Ce qui, au départ, aurait pu paraitre comme une contrainte inutile peut rendre de grand service au programmeur au cours du débogage du programme, alors qu'en Python, l'erreur pourrait passer inaperçue.
 
 Il existe un moyen en Python d'éviter ce genre de problème : l'utilisation des assertions.
+
+### Exercice 3
+>
+>Vous êtes gérant d'un magasin et vous désirez écrire un programme C qui calculera automatiquement le montant de la facture des clients. Tout client qui achète au moins 5 fois le même article se voit octroyer une remise de 5 %. Afin de simplifier le problème, on considère qu'un client n'achète qu'un seul type d'article. Écrivez une fonction *facture* qui prend en paramètre le prix unitaire de l'article et le nombre d'articles achetés. Cette fonction doit renvoyer le montant de la facture.
+
 
 ### b) les assertions en Python
 
