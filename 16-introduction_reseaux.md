@@ -7,62 +7,66 @@ date: 2024
 ---
 
 # Introduction au réseau
+
 ## 1) introduction
 
 Il est possible de faire communiquer deux ordinateurs en les reliant par un simple câble. On dit alors que ces deux ordinateurs sont en réseau.
 
-2 ordinateurs en réseau :
+**2 ordinateurs en réseau :**
 
-![](img/c16c_1.png)
+![c16c_1](https://github.com/user-attachments/assets/d938c32f-2747-4f4a-a1e4-02b882eea063)
 
-Dans la plupart des cas, le câble reliant les 2 ordinateurs est un câble Ethernet. Ce type de câble possède à ses 2 extrémités des prises RJ45 (il existe d'autres types de câbles qui permettent de mettre 2 ordinateurs en réseau, mais l'utilisation de câbles Ethernet est tellement majoritaire que nous ne nous intéresserons pas aux autres types de câbles).
+Dans la plupart des cas, le câble reliant les 2 ordinateurs est un câble Ethernet. Ce type de câble possède à ses 2 extrémités **des prises RJ45**.
 
-câble Ethernet avec prises RJ45 :
+**Câble Ethernet avec prises RJ45 :**
 
-![](img/c16c_2.jpg)
+![image](https://github.com/user-attachments/assets/74ef07da-4c70-4d44-9022-28e583d5e219)
 
 Un ordinateur relié à un réseau doit posséder une carte réseau, on identifie cette carte réseau de type Ethernet grâce à la prise RJ45 femelle située souvent à l'arrière de l'ordinateur.
 
-carte réseau de type Ethernet :
+**Carte réseau de type Ethernet :**
 
-![](img/c16c_3.jpg)
+![c16c_3](https://github.com/user-attachments/assets/3cb0936b-f16b-4c93-a117-8699a469ff51)
 
-Relier 2 ordinateurs peut avoir un intérêt, mais dans la plupart des cas, un réseau sera constitué d'un plus grand nombre d'ordinateurs. Dans ce cas, il est nécessaire d'utiliser un commutateur réseau, souvent appelé switch (même en français). Un switch est constitué de plusieurs prises RJ45.
+Relier 2 ordinateurs peut avoir un intérêt, mais dans la plupart des cas, un réseau sera constitué d'un plus grand nombre d'ordinateurs. Dans ce cas, il est nécessaire d'utiliser un commutateur réseau, souvent appelé **switch**. Un switch est constitué de plusieurs prises RJ45. Vous en avez un dans cette salle informatique.
 
-plusieurs switchs :
+**Plusieurs switchs :**
 
-![](img/c16c_4.png)
+![c16c_4](https://github.com/user-attachments/assets/46aef797-2772-45c9-9eca-cd80a0fc48e8)
 
 Comme nous le montre la photo ci-dessus, il existe des switchs de différentes tailles, certains switchs possèdent 8 prises RJ45 alors que d'autres peuvent en posséder 24.
 
 Chaque ordinateur doit être relié au switch par l'intermédiaire d'un câble Ethernet.
 
-réseau de 4 ordinateurs :
+**Réseau de 4 ordinateurs :**
 
-![](img/c16c_5.png)
+![c16c_5](https://github.com/user-attachments/assets/d847f5f2-cc57-4c5f-b286-313f12dbfbac)
 
 Dans l'exemple du schéma ci-dessus, les ordinateurs A, B, C et D sont en réseau, chaque ordinateur peut communiquer avec les 3 autres.
 
 Les switchs ayant un nombre de prises RJ45 limité, il peut être nécessaire d'utiliser plusieurs switchs dans un même réseau.
 
-réseau de 5 ordinateurs :
+**Réseau de 5 ordinateurs :**
 
-![](img/c16c_6.png)
+![c16c_6](https://github.com/user-attachments/assets/3e7bfe3b-ec27-4a5b-b012-44b8c0fe0b76)
 
 Dans l'exemple du schéma ci-dessus, les ordinateurs A, B, C, D et E sont en réseau. A, B et C sont reliés à un switch, D et E sont reliés à un autre switch. Les 2 switchs étant reliés ensemble.
 
-Depuis le début nous avons uniquement parlé de réseaux filaires (les différents composants du réseau sont reliés par des câbles), il est aussi possible de mettre plusieurs machines en réseau grâce à des technologies sans fil (utilisation des ondes radio pour transmettre l'information entre les différents composants du réseau), par exemple, le wifi (il existe d'autres technologies sans fil que le wifi, mais elles ne seront abordées ici). Chaque ordinateur appartenant au réseau sans fil devra posséder une carte réseau wifi (aujourd'hui tous les ordinateurs portables vendus sont par défaut équipés d'une telle carte). Il sera nécessaire d'utiliser un concentrateur wifi (équivalent du switch en filaire) si l'on désire mettre en réseau plus de deux ordinateurs.
+Depuis le début nous avons uniquement parlé de réseaux filaires (reliés par des câbles), il est aussi possible de mettre plusieurs machines en réseau grâce à des technologies sans fil (utilisation des ondes radio pour transmettre l'information entre les différents composants du réseau), par exemple le wifi. Chaque ordinateur appartenant au réseau sans fil devra posséder une carte réseau wifi (aujourd'hui tous les ordinateurs portables vendus sont par défaut équipés d'une telle carte). Il sera nécessaire d'utiliser un concentrateur wifi (équivalent du switch en filaire) si l'on désire mettre en réseau plus de deux ordinateurs.
 
 ## 2) les adresses IP
+
 ### a) introduction
 
-Maintenant que nos ordinateurs sont reliés par l'intermédiaire d'un switch (ou d'un concentrateur wifi), imaginons que l'ordinateur A "souhaite" entrer en communication avec l'ordinateur C. Quand vous désirez communiquer avec quelqu'un par voie postale, il est nécessaire d'écrire l'adresse de cette personne sur une enveloppe, à chaque habitation correspond donc une adresse postale. Et bien, c'est un peu la même chose pour les ordinateurs en réseau, chaque machine possède une adresse. Pendant très longtemps, différentes technologies de réseau, et donc différents types d'adresse, ont coexisté. Aujourd'hui, on trouve presque exclusivement qu'un seul type d'adresse : les adresses IP.
+Maintenant que nos ordinateurs sont reliés, imaginons que l'ordinateur A souhaite entrer en communication avec l'ordinateur C. Quand vous désirez communiquer avec quelqu'un par voie postale, il est nécessaire d'écrire l'adresse de cette personne sur une enveloppe, à chaque habitation correspond donc une adresse postale. Et bien, c'est la même chose pour les ordinateurs en réseau, chaque machine possède une adresse. Aujourd'hui, on trouve presque exclusivement qu'un seul type d'adresse : **les adresses IP**.
 
-Les adresses IP sont de la forme : "a.b.c.d", avec a, b, c et d compris entre 0 et 255 (a, b, c et d sont codés sur 1 octet). Voici un exemple d'adresse IP : 192.168.0.1
+Les adresses IP sont de la forme : "a.b.c.d", avec a, b, c et d compris entre 0 et 255 (a, b, c et d sont codés sur 1 octet). 
 
-Une partie de l’adresse IP permet d’identifier le réseau auquel appartient la machine et l’autre partie de l’adresse IP permet d’identifier la machine sur ce réseau.
+**Voici un exemple d'adresse IP : 192.168.0.1**
 
-Exemple : Soit un ordinateur A ayant pour adresse IP 192.168.2.1 Dans cette adresse IP "192.168.2" permet d’identifier le réseau (on dit que la machine A appartient au réseau ayant pour adresse réseau 192.168.2.0, pour trouver l'adresse réseau, il suffit de remplacer la partie "machine" de cette adresse IP par un ou des 0) et "1" permet d’identifier la machine sur le réseau.
+Une partie de l’adresse IP permet d’identifier **le réseau** auquel appartient la machine et l’autre partie de l’adresse IP permet d’identifier **la machine** sur ce réseau.
+
+Exemple : Soit un ordinateur A ayant pour adresse IP 192.168.2.18 Dans cette adresse IP "192.168.2" permet d’identifier le réseau (on dit que la machine A appartient au réseau ayant pour adresse réseau 192.168.2.0, pour trouver l'adresse réseau, il suffit de remplacer la partie machine de cette adresse IP par des 0) et "18" permet d’identifier la machine sur le réseau.
 
 Toutes les machines appartenant au même réseau devront posséder la même adresse réseau (sinon elles ne pourront pas communiquer, même si elles sont bien physiquement reliées).
 
@@ -72,7 +76,7 @@ Prenons 2 exemples, soit 2 machines A et B en réseau :
 
 - la machine A a pour adresse IP 192.168.2.5 et la machine B a pour adresse IP 192.168.3.8. Les 3 premiers octets ne sont pas identiques ("192.168.2" pour A et "192.168.3" pour B), A et B n'ont pas la même adresse réseau ("192.168.2.0" pour A et "192.168.3.0" pour B). Ces 2 machines ne pourront donc pas communiquer
 
-**Attention**, les adresses IP (a.b.c.d) n’ont forcément pas les parties a, b et c consacrées à l’identification du réseau et la partie d consacrées à l’identification des machines sur le réseau. Entrons un peu dans les détails
+**Attention, les adresses IP (a.b.c.d) n’ont pas obligatoirement les parties a, b et c consacrées à l’identification du réseau, cela peut-être "a" ou "a, b" ou "a, b, c" (8, 16 ou 24 bits). Le reste sera dédié à la partie adresse machine.**
 
 ### b) les masques de sous-réseaux
 
