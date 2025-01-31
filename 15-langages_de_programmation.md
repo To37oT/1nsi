@@ -325,7 +325,7 @@ Le programmeur est donc averti du problème, il pourra donc prendre les mesures 
 
 Il existe un moyen en Python d'éviter ce genre de problème : l'utilisation des assertions.
 
-### Exercice 3
+##### Exercice 3
 >
 >Vous êtes gérant d'un magasin et vous désirez écrire un programme C qui calculera automatiquement le montant de la facture des clients. Tout client qui achète au moins 5 fois le même article se voit octroyer une remise de 5 %. Afin de simplifier le problème, on considère qu'un client n'achète qu'un seul type d'article. Écrivez une fonction *facture* qui prend en paramètre le prix unitaire de l'article et le nombre d'articles achetés. Cette fonction doit renvoyer le montant de la facture.
 
