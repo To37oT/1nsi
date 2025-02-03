@@ -72,4 +72,4 @@ Il est très important de bien comprendre que TCP/IP repose sur la notion de paq
 
 ##### Exercice
 >
->Remplir le QCM
+>Sur l'ENT
