@@ -150,24 +150,3 @@ Avec un masque de 255.0.0.0, nous avons 3 octets (24 bits) à consacrer à la pa
 ## 4) Les adresses IPv6 
 
 Les adresses IP que nous avons étudiées ci-dessus sont appelées **adresse IPv4** (adresse IP version 4). Une nouvelle norme est en train de remplacer progressivement les adresses IPv4 : les adresses IPv6 (adresse IP version 6). Ce sont des adresses composées de 8 nombres entre 0 et 65536 (l'écriture se fera sur 4 caractères en hexadécimal). Nous n'étudierons pas cette nouvelle norme ici, mais voici tout de même un exemple d'adresse IPv6 : 2001:0db8:0000:85a3:0000:0000:ac1f:8001. Un nombre décimal de combinaison à 38 chiffres...
-
-##### Exercice 1
->Déterminez les adresses réseaux à partir des adresses IP suivantes :
->
->- 147.12.1.24/16
->- 192.168.2.45/24
->- 5.23.65.87/8
-
-##### Exercice 2
->Soit 2 machines A et B connectées à un switch, dites dans quels cas ces 2 machines pourront communiquer ensemble :
->
->- adresse IP de A : 172.23.4.7/16 ; adresse IP de B : 172.23.5.8/16
->- adresse IP de A : 24.2.8.127/8 ; adresse IP de B : 24.23.5.52/8
->- adresse IP de A : 193.28.7.2/24 ; adresse IP de B : 193.28.8.3/24
-
-##### Exercice 3
->Combien de machines peut-on trouver au maximum :
->
->- dans un réseau d'adresse réseau 192.168.2.0/24 ?
->- dans un réseau d'adresse réseau 176.24.0.0/16 ?
->- dans un réseau d'adresse réseau 10.0.0.0/8 ?
