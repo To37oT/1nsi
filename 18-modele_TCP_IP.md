@@ -10,23 +10,27 @@ date: 2024
 
 ## 1) Trame Ethernet
 
-Nous avons eu l'occasion de voir avec les protocoles TCP et IP le processus d'encapsulation des données : "IP encapsule TCP". Les paquets IP ne peuvent pas transiter sur un réseau tel quel, ils vont eux aussi être encapsulés avant de pouvoir "voyager" sur le réseau. L'encapsulation des paquets IP produit ce que l'on appelle une trame. Il n'est pas question d'étudier en détail ce qu'est une trame, vous devez juste savoir qu'il existe de nombreux types de trames : ATM, token ring, PPP, Ethernet, Wifi... Nous allons uniquement évoquer les 2 dernières : la trame Ethernet et la trame Wifi.
+Nous avons eu l'occasion de voir avec les protocoles TCP et IP le processus d'encapsulation des données : "IP encapsule TCP". 
 
-Si vous utilisez un réseau filaire avec des câbles Ethernet (avec des prises RJ45), la trame sera de type Ethernet (ce qui est le cas pour le réseau du lycée). Si vous utilisez un réseau sans fil Wifi, la trame sera de type Wifi. En faite, la trame Wifi ressemble beaucoup à la trame Ethernet, on peut même dire que la trame Wifi est la variante sans-fil de la trame Ethernet, afin de simplifier les choses, dans la suite, nous évoquerons uniquement la trame Ethernet en ayant à l'esprit que ce qui est dit sur la trame Ethernet et aussi valable pour la trame Wifi.
+Les paquets IP ne peuvent pas transiter sur un réseau tel quel, ils vont eux aussi être encapsulés avant de pouvoir voyager sur le réseau. L'encapsulation des paquets IP produit ce que l'on appelle **une trame**. Il existe de nombreux types de trames : ATM, token ring, PPP, Ethernet, Wifi... Nous allons uniquement évoquer les 2 dernières : la trame Ethernet et la trame Wifi.
+
+Si vous utilisez un réseau filaire avec des câbles Ethernet (avec des prises RJ45), la trame sera de type Ethernet (ce qui est le cas pour le réseau du lycée). Si vous utilisez un réseau sans fil Wifi, la trame sera de type Wifi. En faite, la trame Wifi est la variante sans-fil de la trame Ethernet, dans la suite nous évoquerons uniquement la trame Ethernet en ayant à l'esprit que ce qui est dit sur la trame Ethernet et aussi valable pour la trame Wifi.
 
 Nous avons vu que le paquet IP contient les adresses IP de l'émetteur et du récepteur :
 
-![](img/c18c_1.jpg)
+![c18c_1](https://github.com/user-attachments/assets/5c3be6b2-dbfa-4146-93dc-865ccf8b4bee)
 
-Le paquet IP étant encapsulé par la trame Ethernet, les adresses IP ne sont plus directement disponibles (il faut désencapsuler le paquet IP pour pouvoir lire ces adresses IP), nous allons donc trouver un autre type d'adresse qui permet d'identifier l'émetteur et le récepteur : l'adresse MAC (Media Access Control) aussi appelée adresse physique.
+L'objectif de cette trame est d'arriver jusqu'au destinaire. Pour ce faire, la trame va contenir un autre type d'adresse : **l'adresse MAC** (Media Access Control) aussi appelée adresse physique.
 
-![](img/c18c_2.jpg)
+Cette adresse MAC permet d'identifier le prochain réseau vers lequel se diriger. 
+
+Lorsqu'un paquet traverse plusieurs réseaux, les adresses MAC changent à chaque saut (passage d'un routeur), tandis que les adresses IP restent les mêmes : Une fois que le routeur reçoit la trame, il la déconstruit, lit le paquet IP, et crée une nouvelle trame Ethernet, en s'aidant du protocole nommé ARP (Address Resolution Protocol), avec une nouvelle adresse MAC de destination.
+
+![image](https://github.com/user-attachments/assets/5684b41b-4fbc-43e1-89e5-92e2f86b35f0)
 
 Une adresse MAC est codée sur 6 octets. on écrit traditionnellement les adresses MAC en hexadécimal, chaque octet étant séparés par 2 points (exemple d'adresse MAC : 00:E0:4C:68:02:11)
 
 L'adresse MAC est liée au matériel, chaque carte réseau (Ethernet ou Wifi) possède sa propre adresse MAC, il n'existe pas dans le monde, 2 cartes réseau (Ethernet ou Wifi) qui possèdent la même adresse MAC. Les 3 premiers octets d'une adresse MAC ("00:E0:4C" dans l'exemple ci-dessus) désignent le constructeur du matériel, par exemple, "00:E0:4C" désigne le constructeur "realtek semiconductor corp".
-
-Au moment de l'encapsulation d'un paquet IP, l'ordinateur "émetteur" va utiliser un protocole nommé ARP (Address Resolution Protocol) qui va permettre de déterminer l'adresse MAC de l'ordinateur "destination", en effectuant une requête "broadcast" (requête destinée à tous les ordinateurs du réseau) du type : "j'aimerais connaitre l'adresse MAC de l'ordinateur ayant pour IP XXX.XXX.XXX.XXX". Une fois qu'il a obtenu une réponse à cette requête ARP, l'ordinateur "émetteur" encapsule le paquet IP dans une trame Ethernet et envoie cette trame sur le réseau.
 
 ## 2) La couche application
 
