@@ -150,3 +150,7 @@ Avec un masque de 255.0.0.0, nous avons 3 octets (24 bits) à consacrer à la pa
 ## 4) Les adresses IPv6 
 
 Les adresses IP que nous avons étudiées ci-dessus sont appelées **adresse IPv4** (adresse IP version 4). Une nouvelle norme est en train de remplacer progressivement les adresses IPv4 : les adresses IPv6 (adresse IP version 6). Ce sont des adresses composées de 8 nombres entre 0 et 65536 (l'écriture se fera sur 4 caractères en hexadécimal). Nous n'étudierons pas cette nouvelle norme ici, mais voici tout de même un exemple d'adresse IPv6 : 2001:0db8:0000:85a3:0000:0000:ac1f:8001. Un nombre décimal de combinaison à 38 chiffres...
+
+##### Exercice
+>
+>Sur l'ENT
