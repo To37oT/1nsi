@@ -2,7 +2,7 @@
 layout: default
 title: Chapitre 1
 permalink: /test/
-published: false
+published: true
 date: 2024
 ---
 
