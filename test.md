@@ -17,3 +17,4 @@ date: 2024
   <a href="/media/cc0-videos/flower.mp4">MP4</a>
   video.
 </video>
+![Animation](https://github.com/user-attachments/assets/51326c25-d01a-45b2-8ef7-83e4a92d68aa)
