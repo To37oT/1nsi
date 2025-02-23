@@ -34,53 +34,44 @@ L'adresse MAC est liée au matériel, chaque carte réseau (Ethernet ou Wifi) po
 
 ## 2) La couche application
 
-Nous avons vu que le protocole TCP permet de mettre en forme les données à envoyer :
+Le protocole TCP encapsule lui aussi des données : Page web (protocole HTTP), fichier (protocole FTP), mail (protocole SMTP),...
 
-![](img/c18c_3.jpg)
+On dit que tous ces protocoles (HTTP, FTP, SMTP, DNS,...) appartiennent à la couche **Application** du modèle TCP/IP.
 
-Quelle est la nature de ces données mises en forme par TCP ?
+Nous allons très prochainement étudier le protocole HTTP. Les requêtes et les réponses HTTP sont encapsulés par TCP :
 
-En faite, TCP effectue lui aussi une encapsulation, les données encapsulées par TCP peuvent être de plusieurs natures :
+![c18c_4](https://github.com/user-attachments/assets/ba6a618f-9d11-4a39-b5be-f6cacad23e3f)
 
-Nous allons très prochainement étudier le protocole HTTP. Les requêtes et les réponses HTTP sont encapsulés par TCP, au bout du compte et en résumé, nous avons donc :
+Il est aussi possible d'avoir :
 
-![](img/c18c_4.jpg)
+![c18c_5](https://github.com/user-attachments/assets/f5a39803-aeaa-4428-bc0f-3c5c0522754b)
 
-TCP encapsule aussi d'autres types de requêtes (et réponses), par exemple FTP (File Transfer Protocol) qui permet d'envoyer sur un réseau des fichiers (texte, son, image...), SMTP (Simple Mail Transfer Protocol) qui permet d'envoyer des emails, DNS (Domain Name Server) qui permet d'avoir la correspondance entre une adresse IP et une URL,...
-
-Il est donc aussi possible d'avoir :
-
-![](img/c18c_5.jpg)
-
-On dit que tous ces protocoles (HTTP, FTP, SMTP, DNS,...) appartiennent à la couche "Application" du modèle TCP/IP.
 
 ## 3) Le modèle des couches TCP/IP
 
-En effet, à chaque phase d'encapsulation on associe ce que l'on appelle une couche :
+À chaque phase d'encapsulation on associe **une couche** :
 
-- comme nous l'avons vu les protocoles HTTP, FTP, SMTP, DNS,... sont associés à la couche "Application"
+- comme nous l'avons vu les protocoles HTTP, FTP, SMTP,... sont associés à **la couche Application**
 
-- les protocoles TCP et UDP sont associés à la couche "Transport"
+- les protocoles TCP et UDP sont associés à **la couche Transport**
 
-- le protocole IP est associé à la couche "Internet"
+- le protocole IP est associé à **la couche Internet**
 
-- les trames Ethernet (ou Wifi) sont associées à la couche "Accès réseau"
+- les trames Ethernet (ou Wifi) sont associées à **la couche Accès réseau**
 
 On présente souvent ces différentes couchent sur ce type de schéma :
 
+![c18c_6](https://github.com/user-attachments/assets/fafa50c9-9b0f-42e6-a73b-972b4f3024e4)
 
-![](img/c18c_6.jpg)
+**La couche du dessous encapsule la couche située au dessus.**
 
-La couche du "dessous" encapsule la couche située "au dessus"
+On nomme ce système de couche **modèle de couches TCP/IP**.
 
-On nomme ce système de couche "modèle de couches TCP/IP" (car ce modèle repose principalement sur TCP et IP)
 
 ## 4) Le modèle des couches OSI
 
-Il existe un autre modèle de couche, le modèle OSI (Open Systems Interconnection), ce système est antérieur au modèle TCP/IP puisqu'il date des années 1970. Ce modèle est principalement théorique et à permis de poser les bases des communications réseau. Ce modèle est composé de 7 couches (alors que le modèle TCP/IP est composé de 4 couches).
+Il existe un autre modèle de couche, le **modèle OSI** (Open Systems Interconnection), ce système est antérieur au modèle TCP/IP puisqu'il date des années 1970. Ce modèle est principalement théorique et à permis de poser les bases des communications réseau. Ce modèle est composé de 7 couches (alors que le modèle TCP/IP est composé de 4 couches).
 
-![](img/c18c_7.jpg)
+![Comparaison_des_modèles_OSI_et_TCP_IP](https://github.com/user-attachments/assets/fd0e0d52-96ab-4968-b3ee-a24a144991cb)
 
-Il existe des liens entre le modèle OSI et le modèle TCP/IP (par exemple on retrouve le protocole IP dans la couche 3 du modèle OSI et TCP dans la couche 4), mais parfois comparer les 2 modèles peut être délicat.
-
-Ce modèle est donné ici à titre d'information (pour le cas où vous le rencontriez pendant vos recherches sur Internet), mais le principal est de retenir ce qui a été vu sur le modèle TCP/IP.
+Ce modèle est donné ici à titre d'information, Nous retiendrons dans ce cours le modèle TCP/IP.
