@@ -32,11 +32,52 @@ Modifier le nom des ordinateurs et leurs adresses IP
 
 ![image](https://github.com/user-attachments/assets/273425a7-f682-44ea-b8fc-4122cd16a3a8)
 
+3 - Relier les ordinateurs
+
+Utiliser l'icône du câble à gauche pour relier les 2 ordinateurs. 
+
+![image](https://github.com/user-attachments/assets/102fdc92-905c-4131-ae35-49e31558aa7f)
+
+4 - Passer en mode simulation
+
+Cliquer sur le triangle vert.
+
+![image](https://github.com/user-attachments/assets/fb0d33d2-d70e-4b50-a46a-93871330c8d3)
+
+![image](https://github.com/user-attachments/assets/98e933a2-1efc-46d1-be4a-43d0528e4b94)
+
+5 - Lancer l'ordinateur 1
+
+Cliquer sur "Portable 1" pour lancer l'ordinateur
+
+Installer l'éditeur de ligne de commande
+
+![image](https://github.com/user-attachments/assets/f8238464-9fa6-4b05-9e04-ab15168f065f)
+
+6 - Lancer l'éditeur de ligne
+
+![image](https://github.com/user-attachments/assets/4397c508-0c7e-4b29-83d3-727c30ef936b)
+
+![image](https://github.com/user-attachments/assets/ab545ec4-64d9-447e-b41c-66b0476826a2)
+
+7 - Commandes
+
+- Lancer la commande ```ipconfig```
+
+![image](https://github.com/user-attachments/assets/0f1f5ab3-2775-4dad-af1b-d3f59ba35653)
+
+Il est possible de vérifier que l'adresse IP de cet ordinateur est bien 192.168.0.1
+
+- Lancer la commande ```ping 192.168.0.2```
+
+Cette commande va nous permettre d'envoyer des paquets au second ordinateur et de tester si il les reçoit bien.
+
+Bien sur, si l'on test avec ```ping 192.168.0.3``` cela n'aboutira pas.
+
+![image](https://github.com/user-attachments/assets/da367250-c803-4e93-8a6d-a990ea368e9a)
 
 
-
-
-
+- 
 ### activité 19.2
 
 En utilisant Filius, créez un réseau de 4 machines (M1, M2, M3 et M4). L'adresse IP de la machine M1 est *192.168.1.1/24*, choisissez les adresses IP des machines M2, M3 et M4.
