@@ -1,26 +1,41 @@
-Après la théorie, passons maintenant à la pratique. Il est un peu difficile de mettre en place un réseau pour effectuer quelques tests. À la place, nous allons utiliser un simulateur de réseau. Il existe différents types de simulateurs : du plus simple au plus "professionnel". Nous allons utiliser un simulateur relativement simple à prendre en main, mais suffisamment performant : Filius
+---
+layout: default
+title: Chapitre 18 - Modèle TCP/IP
+permalink: /chapitre18/
+published: true
+date: 2024
+---
+
+# Simulation réseau
+
+Nous allons utiliser un simulateur de réseau. Nous allons utiliser un simulateur relativement simple à prendre en main, mais suffisamment performant : **Filius**
 
 Avant de visionner une petite vidéo qui devrait vous aider à prendre en main Filius, quelques petites indications
 
 Nous allons utiliser deux commandes dans la vidéo :
 
-- *ipconfig* qui permet de connaitre la configuration réseau de la machine (adresse IP, adresse MAC...) sur laquelle est exécutée cette commande ("ipconfig" est une véritable commande sous Windows de Microsoft, sous les systèmes de type Unix (Linux ou macOS par exemple), la commande équivalente est "ifconfig")
+- ```ipconfig``` qui permet de connaitre la configuration réseau de la machine (adresse IP, adresse MAC...) sur laquelle est exécutée cette commande ("ipconfig" sous Windows, "ifconfig" sous Linux ou macOS).
 
-- *ping* qui permet d'envoyer des paquets de données d'une machine A vers une machine B. Si la commande est exécutée sur la machine A, le *ping* devra être suivi par l'adresse IP de la machine B (par exemple, si l'adresse IP de B est "192.168.0.2", on aura *ping 192.168.0.2*)
+- ```ping``` qui permet d'envoyer des paquets de données d'une machine A vers une machine B. Si la commande est exécutée sur la machine A, le ```ping``` devra être suivi par l'adresse IP de la machine B (par exemple, si l'adresse IP de B est "192.168.0.2", on aura ```ping 192.168.0.2```)
 
-Autre chose à retenir, vous allez peut-être apercevoir dans cette vidéo un "netmask" (masque de réseau en français), vous devez juste savoir que :
+## Activité
 
-- pour une adresse du type a.b.c.d/8, on a un netmask qui est "255.0.0.0"
+1 - Lancer le logiciel FILIUS
 
-- pour une adresse du type a.b.c.d/16, on a un netmask qui est "255.255.0.0"
+![image](https://github.com/user-attachments/assets/79aa04da-d499-44ac-8c5a-ab36c80b1127)
 
-- pour une adresse du type a.b.c.d/24, on a un netmask qui est "255.255.255.0"
+2 - Ajouter 2 ordinateurs portables
 
-### activité 19.1
+Modifier le nom des ordinateurs et leurs adresses IP
 
-Vous pouvez maintenant visionner la vidéo :
+![image](https://github.com/user-attachments/assets/9cef756d-20df-4c74-a2e8-0f5444bf9712)
 
-[https://www.youtube.com/watch?v=nzuRSOwdF5I](https://www.youtube.com/watch?v=nzuRSOwdF5I)
+![image](https://github.com/user-attachments/assets/273425a7-f682-44ea-b8fc-4122cd16a3a8)
+
+
+
+
+
 
 ### activité 19.2
 
