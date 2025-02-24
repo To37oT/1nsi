@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Chapitre 18 - Modèle TCP/IP
-permalink: /chapitre18/
+title: Chapitre 19 - Simulation réseau
+permalink: /chapitre19/
 published: true
 date: 2024
 ---
