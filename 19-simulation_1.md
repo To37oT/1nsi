@@ -24,6 +24,11 @@ Nous allons utiliser deux commandes dans la vidéo :
 
 ![image](https://github.com/user-attachments/assets/79aa04da-d499-44ac-8c5a-ab36c80b1127)
 
+Si jamais la langue n'est pas la bonne, supprimer le fichier de configuration pour la réinitialiser.
+
+![image](https://github.com/user-attachments/assets/71fece47-f342-4ab1-8752-598285ae0764)
+
+
 ### 2 - Ajouter 2 ordinateurs portables
 
 Modifier le nom des ordinateurs et leurs adresses IP
