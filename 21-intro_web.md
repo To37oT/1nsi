@@ -6,7 +6,7 @@ published: true
 date: 2024
 ---
 
-# Protocole du bit alterné
+# Introduction au Web
 
 ## 1) historique
 
