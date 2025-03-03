@@ -10,17 +10,15 @@ date: 2024
 
 ## 1) introduction
 
-Nous allons nous intéresser à un acteur fondamental du développement web, le couple HTML+CSS (Hyper Text Markup Langage et Cascading Style Sheets).
+Nous allons nous intéresser à un acteur fondamental du développement web, le couple **HTML + CSS** (Hyper Text Markup Langage et Cascading Style Sheets).
 
 ## 2) le HTML
 
-L’Hypertext Markup Language, généralement abrégé HTML, est le format de données conçu pour représenter les pages web. C’est un langage de balisage permettant d’écrire de l’hypertexte, d’où son nom. HTML permet également de structurer sémantiquement et de mettre en forme le contenu des pages, d’inclure des ressources multimédias, dont des images, des formulaires de saisie, et des programmes informatiques. Il permet de créer des documents interopérables avec des équipements très variés de manière conforme aux exigences de l’accessibilité du web. Il est souvent utilisé conjointement avec des langages de programmation (JavaScript) et des formats de présentation (feuilles de style en cascade).
+Le HTML (HyperText Markup Language), est le format de données conçu pour représenter les pages web. C’est un **langage de balisage** (avec des balises). HTML permet de structurer **sémantiquement** et de mettre en forme le contenu des pages, d’inclure du texte, des images, des formulaires de saisie... Il est souvent utilisé avec des langages de programmation (JavaScript) et des formats de présentation (CSS).
 
-Pour l'instant, nous allons retenir deux éléments de cette définition «conçu pour représenter les pages web» et «un langage de balisage».
+C'est votre **navigateur** (Firefox, Chrome, Opera,....) qui s'occupera de lire le HTML et d'afficher les éléments (texte, images, videos...).
 
-Grâce au HTML vous allez pouvoir, dans votre navigateur (Firefox, Chrome, Opera,....), afficher du texte, afficher des images, proposer des hyperliens (liens vers d'autres pages web), afficher des formulaires et même maintenant afficher des vidéos (grâce à la dernière version du HTML, l'HTML5).
-
-HTML n'est pas un langage de programmation (comme le Python par exemple), ici, pas question de conditions, de boucles....c'est un langage de description.
+**HTML n'est pas un langage de programmation** (comme le Python par exemple), ici, pas question de conditions, de boucles....c'est **un langage de description**.
 
 Voici un exemple de code HTML :
 
