@@ -27,11 +27,11 @@ Voici un exemple de code HTML :
 <p>Ceci est un <strong>paragraphe</strong>. Avez-vous bien compris ?</p>
 ```
 
-Comme déjà évoqué ci-dessus, en HTML tout est une histoire de balise que l'on ouvre et que l'on ferme. Une balise ouvrante est de la forme ```<nom_de_la_balise>```, les balises fermantes sont de la forme ```</nom_de_la_balise>```.
+En HTML tout est une histoire de balise que l'on ouvre et que l'on ferme. Une **balise ouvrante** est de la forme ```<nom_de_la_balise>```, les **balises fermantes** sont de la forme ```</nom_de_la_balise>```.
 
-En observant attentivement le code, vous devriez forcément remarquer que toute balise ouverte doit être refermée à un moment ou un autre. La balise ouvrante et la balise fermante peuvent être sur la même ligne ou pas, cela n'a aucune espèce d'importance, la seule question à se poser ici est : ai-je bien refermé toutes les balises que j'ai ouvertes ?
+En observant attentivement le code, vous devriez forcément remarquer que toute balise ouverte doit être refermée à un moment ou un autre. La balise ouvrante et la balise fermante peuvent être sur la même ligne ou pas, cela n'a aucune importance, la seule question à se poser ici est : **ai-je bien refermé toutes les balises que j'ai ouvertes ?**
 
-Enfin pour terminer avec les généralités sur les balises, il est important de savoir qu'une structure du type :
+Enfin pour terminer avec les généralités sur les balises, il est important de savoir qu'une structure de ce type est interdite :
 
 ```
 <balise1>
@@ -40,7 +40,7 @@ Enfin pour terminer avec les généralités sur les balises, il est important de
 </balise2>
 ```
 
-est interdite, la balise2 a été ouverte après la balise1, elle devra donc être refermée avant la balise1.
+La balise2 a été ouverte **après** la balise1, elle devra donc être refermée **avant** la balise1.
 
 En revanche, l'enchaînement suivant est correct :
 
@@ -51,21 +51,35 @@ En revanche, l'enchaînement suivant est correct :
 </balise1>
 ```
 
+Nous ajouterons même une identition, non obligatoire mais qui permet une meilleure lisibilité du code.
+
+```
+<balise1>
+	<balise2>
+	</balise2>
+</balise1>
+```
+
 Notez que dans notre exemple nous respectons bien cette règle « d'imbrication » des balises avec la balise ```<p>``` et la balise ```<strong>```.
 
-Il est important de comprendre que chaque balise a une signification qu'il faut bien respecter (on parle de la sémantique des balises). Par exemple le texte situé entre la balise ouvrante et fermante ```<h1>``` est obligatoirement un titre important (il existe des balises ```<h2>```, ```<h3>```......qui sont aussi des titres, mais des titres moins importants (sous-titre)). La balise ```<p>``` permet de définir des paragraphes, enfin, la balise ```<strong>``` permet de mettre en évidence un élément important.
+### A. La sémantique
 
-Vous devez aussi savoir qu'il existe des balises qui sont à la fois ouvrantes et fermantes (```<balise/>```) : un exemple, la balise permettant de sauter une ligne, la balise ```<br/>``` (balise qu'il faut d'ailleurs éviter d'utiliser par différentes raisons que nous n'aborderons pas ici).
+Il est important de comprendre que chaque balise a une signification qu'il faut bien respecter (on parle de la sémantique des balises, son "**sens**"). Par exemple le texte situé entre la balise ouvrante et fermante ```<h1>``` est obligatoirement un titre important (il existe des balises ```<h2>```, ```<h3>```......qui sont aussi des titres, mais des titres moins importants (sous-titre)). 
+
+La balise ```<p>``` permet de définir des paragraphes, enfin, la balise ```<strong>``` permet de mettre en évidence un élément important.
+
+La sémantique est importante à respecter, elle aide votre navigateur à comprendre le sens de votre page et renforce la visibilité de votre site dans les résultats des moteurs de recherche.
+
+
+### B. Les attributs
 
 Il est possible d'ajouter des éléments à une balise ouvrante, on parle d'attribut. Une balise peut contenir plusieurs attributs :
 
-```
-<ma_balise attribut_1= "valeur_1" attribut_2="valeur_2">
+```html
+<ma_balise attribut_1="valeur_1" attribut_2="valeur_2">
 ```
 
 Il existe beaucoup d'attributs différents, nous allons nous contenter de 2 exemples avec l'attribut id (id pour identifiant) et class. Nous verrons l’intérêt de ces attributs prochainement
-
-code HTML avec une balise ```<p>``` possédant un attribut id :
 
 ```html
 <h1>Ceci est un titre</h1>
@@ -73,9 +87,13 @@ code HTML avec une balise ```<p>``` possédant un attribut id :
 <p id="para_1">Ceci est un <strong>paragraphe</strong>. Avez-vous bien compris ?</p>
 ```
 
+### C. Les balises orphelines
+
+Il  existe  une  exception  concernant  l'imbrication  des  balises,  quelques  rares  balises  s'ouvrent, mais ne se ferme pas (comme la balise permettant de mettre une image).
+
 ## 3) le CSS
 
-Le HTML n'a pas été conçu pour gérer la mise en page (c'est possible, mais c'est une mauvaise pratique). Le HTML s'occupe uniquement du contenu et de la sémantique, pour tout ce qui concerne la mise en page et l'aspect "décoratif" (on parle du « style » de la page), on utilisera le CSS (Cascading Style Sheets).
+Le HTML n'a pas été conçu pour gérer la mise en page. Le HTML s'occupe uniquement du contenu et de la sémantique, pour tout ce qui concerne la mise en page et l'aspect décoratif (on parle du style de la page), on utilisera le CSS (Cascading Style Sheets).
 
 Voici un exemple de code CSS :
 
@@ -85,6 +103,7 @@ h1
 	text-align: center;
 	background-color: red;
 }
+
 h2
 {
 	font-family: Verdana;
@@ -93,7 +112,7 @@ h2
 }
 ```
 
-Dans l'exemple ci-dessus, les propriétés *text-align* (permet de choisir l'alignement d'un texte) et *background-color* (permet de modifier la couleur de fond) seront appliquées au contenu de toutes les balises de type h1 (avec respectivement les valeurs *center* et *red* : les textes contenus dans les balises *h1* seront centrés et la couleur de fond sera rouge).
+Dans l'exemple ci-dessus, les propriétés *text-align* (permet de choisir l'alignement d'un texte) et *background-color* (permet de modifier la couleur de fond) seront appliquées au contenu **de toutes les balises de type h1** (avec respectivement les valeurs *center* et *red* : les textes contenus dans les balises *h1* seront centrés et la couleur de fond sera rouge).
 
 Le contenu des balises *h2* sera écrit avec la police de caractère *Verdana*, en italique et en vert.
 
@@ -119,15 +138,15 @@ et le code CSS correspondant :
 
 Ici seul le second paragraphe (*Vous allez bien ?*) sera concerné par le CSS ci-dessus. Le premier paragraphe (*Bonjour*) et le titre *h1* ne seront pas concernés
 
-Il est donc possible de cibler un paragraphe et pas un autre en utilisant l'id du paragraphe (en CSS l'id se traduisant par le signe #).
+Il est donc possible de cibler un paragraphe et pas un autre en utilisant l'id du paragraphe (**en CSS l'id se traduisant par le signe #**).
 
-Il est aussi possible d'utiliser l'attribut class à la place de l'id. Dans le CSS on utilisera le point . à la place du #.
+Il est aussi possible d'utiliser l'attribut class à la place de l'id. **Dans le CSS on utilisera le point . à la place du #**.
 
-La différence entre "id" et "class" n'est pas très importante.
-
-L'attribut "class" permet de donner le même nom à plusieurs reprises dans une même page, ce qui n'est pas possible avec l'attribut *id*
-
-Si nous avions eu un 3e paragraphe, nous aurions pu avoir : ```<p class="para_1">Voici un 3e paragraphe</p>```, mais nous n'aurions pas pu avoir : ```<p id="para_1"> Voici un 3e paragraphe </p>```, car le nom para_1 a déjà été utilisé pour le 1er paragraphe.
+> Nous ne nous attarderons pas sur la différence entre id et class, sachez juste qu'un même id est unique dans chaque page web alors qu'une classe peut-être utilisée plusieurs fois dans la même page.
+> 
+> L'attribut class permet de donner le même nom à plusieurs reprises dans une même page, ce qui n'est pas possible avec l'attribut *id*
+> 
+> Si nous avions eu un 3e paragraphe, nous aurions pu avoir : ```<p class="para_1">Voici un 3e paragraphe</p>```, mais nous n'aurions pas pu avoir : ```<p id="para_1"> Voici un 3e paragraphe </p>```, car le nom para_1 a déjà été utilisé pour le 1er paragraphe.
 
 ## 4) quelques balises à connaître
 
