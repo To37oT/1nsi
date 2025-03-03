@@ -10,7 +10,7 @@ date: 2024
 
 ## 1) introduction
 
-Dans la barre d'adresse de votre navigateur web vous trouverez, quand vous visitez un site, des choses du genre : "https://www.monsite.com/machin/truc/fichier.html". La partie "/machin/truc/fichier.html" s'appelle **une URL**.
+Dans la barre d'adresse de votre navigateur web vous trouverez, quand vous visitez un site, des choses du genre : "https://www.nomsunsite.com/machin/truc/fichier.html". La partie "/machin/truc/fichier.html" s'appelle **une URL**.
 
 Une URL (Uniform Resource Locator) permet **d'identifier une ressource** (par exemple un fichier) sur un réseau.
 
