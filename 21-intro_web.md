@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Chapitre 20 - Protocole du bit alterné
-permalink: /chapitre20/
+title: Chapitre 21 - Introduction au Web
+permalink: /chapitre21/
 published: true
 date: 2024
 ---
