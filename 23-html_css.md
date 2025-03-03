@@ -91,7 +91,7 @@ Il existe beaucoup d'attributs différents, nous allons nous contenter de 2 exem
 
 Il  existe  une  exception  concernant  l'imbrication  des  balises,  quelques  rares  balises  s'ouvrent, mais ne se ferme pas (comme la balise permettant de mettre une image).
 
-## 3) le CSS
+## 3) Le CSS
 
 Le HTML n'a pas été conçu pour gérer la mise en page. Le HTML s'occupe uniquement du contenu et de la sémantique, pour tout ce qui concerne la mise en page et l'aspect décoratif (on parle du style de la page), on utilisera le CSS (Cascading Style Sheets).
 
@@ -148,34 +148,34 @@ Il est aussi possible d'utiliser l'attribut class à la place de l'id. **Dans le
 > 
 > Si nous avions eu un 3e paragraphe, nous aurions pu avoir : ```<p class="para_1">Voici un 3e paragraphe</p>```, mais nous n'aurions pas pu avoir : ```<p id="para_1"> Voici un 3e paragraphe </p>```, car le nom para_1 a déjà été utilisé pour le 1er paragraphe.
 
-## 4) quelques balises à connaître
+## 4) Quelques balises à connaître
 
-### a) la balise *a*
+### a) La balise *a*
 
-La balise *a* permet de créer des liens hypertextes, ce sont ces liens hypertextes qui vous permettent de "voyager" entre les pages d'un site ou entre les sites. Les liens hypertextes sont par défaut soulignés et de couleur bleue (modifiable grâce au CSS). La balise a possède un attribut *href* qui a pour valeur le chemin du fichier que l'on cherche à atteindre ou l'adresse du site cible : 
-
-```html
-<a href="https://pixees.fr">Cliquez ici pour vous rendre sur le site pixees</a>
-```
-
-Entre la balise ouvrante et fermante, on trouve le texte qui s'affichera à l'écran (c'est ce texte qui est souligné et de couleur bleue).La balise peut sans problème se trouver en plein milieu d'un paragraphe.
-
-### b) la balise *image*
-
-Comme vous devez déjà vous en douter, la balise image sert à insérer des...images :
+La balise *a* permet de créer des liens hypertextes, ce sont ces liens hypertextes qui vous permettent de naviguer entre les pages d'un site ou entre les sites. Les liens hypertextes sont par défaut soulignés et de couleur bleue (modifiable grâce au CSS). La balise *a* possède un attribut *href* qui a pour valeur le chemin du fichier que l'on cherche à atteindre ou l'adresse du site cible : 
 
 ```html
-<img src="mon_image.jpg" alt="avion"/>
+<a href="https://www.sfda37.fr/">Cliquez ici</a>
 ```
 
-la balise img est à la fois ouvrante et fermante comme la balise br. Elle possède 2 attributs :
+Entre la balise ouvrante et fermante, on trouve le texte qui s'affichera à l'écran (c'est ce texte qui est souligné et de couleur bleue). La balise peut sans problème se trouver en plein milieu d'un paragraphe.
 
-src qui doit être égal au nom du fichier image (ou au chemin si le fichier image se trouve dans un autre dossier).
-alt qui doit être égal à une description de votre image (cet attribut est utilisé notamment par les systèmes de description des pages web utilisées par les non-voyants), il faut donc systématiquement renseigner cet attribut.
+### b) La balise *image*
+
+La balise image sert à insérer des images :
+
+```html
+<img src="mon_image.jpg" alt="avion">
+```
+
+La balise img ne se ferme pas. Elle possède 2 attributs importants :
+
+- **src** qui doit être égal au nom du fichier image (ou au chemin, relatif ou absolu, si le fichier image se trouve dans un autre dossier).
+- **alt** qui doit être égal à une description de votre image, il faut systématiquement renseigner cet attribut.
 
 ### c) les balises form, label, input et button
 
-Les formulaires sont des éléments importants des sites internet, ils permettent à l'utilisateur de transmettre des informations. Un formulaire devra être délimité par une balise form (même si ce n'est pas une obligation) :
+Les formulaires sont des éléments importants des sites internet, ils permettent à l'utilisateur de transmettre des informations. Un formulaire devra être délimité par une balise form :
 
 ```
 <form>
@@ -189,7 +189,8 @@ Les balises *button* et *label* nous seront aussi d'une grande utilité  :
 
 ```html
 <form>
-	<label>voici un champ de texte : </label><input type="text"/>
+	<label>voici un champ de texte : </label>
+	<input type="text">
 	<button>Cliquez ici !</button>
 </form>
 ```
@@ -217,16 +218,30 @@ Parce qu'elles n'ont aucune signification particulière, ce sont des balises dit
 
 Pourquoi 2 balises génériques ?
 
-Parce que div est une balise de type “block” et que span est une balise de type “inline” !
+Parce que div est une balise de type “block” et que span est une balise de type “inline” (voir partie suivante).
+
+Aujourd'hui pour remplacer la balise div, nous avons plusieurs balises qui font exactement la même chose, mais ajoute également un peu de sens au regroupement : 
+
+```html
+<header></header>
+<nav></nav>
+<main></main>
+<section></section>
+<article></article>
+<footer></footer>
+<aside></aside>
+```
 
 ## 5) les balises de type *block* et les balises de type *inline*
 
-Sans trop entrer dans les détails, il faut bien comprendre que l'ordre des balises dans le code HTML a une grande importance. Les balises sont affichées les unes après les autres, on parle du flux normal de la page.
+Sans trop entrer dans les détails, il faut bien comprendre que l'ordre des balises dans le code HTML a une grande importance. Les balises sont affichées les unes après les autres, on parle du **flux** normal de la page.
 
 C'est ici qu'entrent en jeu les balises de type "block" et les balises de type "inline".
 
 Les contenus des balises de type "block" (p, div,h1,...) se placent sur la page web les uns en dessous des autres.
+
 Les contenus des balises de type "inline" (strong, img, span, a) se placent sur la page web les uns à côté des autres.
+
 Cela revient à dire qu'une balise de type “block” prend toute la largeur de la page alors qu'une balise de type “inline” prend juste la largeur qui lui est nécessaire.
 
 ## 6) écrire une page HTML
@@ -256,10 +271,10 @@ Nous n'allons pas nous attarder sur ce squelette de page HTML, mais voici ce que
 - la balise *head* délimite ce que l'on appelle l'en-tête. L'en-tête contient, dans notre exemple, 3 balises : 
 	- la balise *meta* possède l'attribut *charset="utf-8* qui permet de définir l'encodage des caractères (ici utf-8)
 	
-	- la balise *title* qui définit le titre de la page (attention ce titre ne s'affiche pas dans le navigateur, ne pas confondre avec la balise *h1*, on retrouve le contenu  de cette balise au niveau des  onglets du navigateur)
+	- la balise *title* qui définit le titre de la page (titre qui s'affiche dans l'onglet du navigateur)
 	
 	- la balise *link va permettre de relier votre HTML et votre CSS. Votre CSS se trouvera dans un fichier indépendant (ici *style.css*), l'attribut *href* correspond au chemin (relatif ou absolu) vers ce fichier
 
-- toutes les balises qui composeront votre page (p, h1, img...) devront se trouver entre la balise *body* ouvrante et la balise *body* fermante.
+- toutes les balises qui composeront votre page (p, h1, img...) **devront se trouver** entre la balise *body* ouvrante et la balise *body* fermante.
 
 Pour créer une nouvelle page, il suffira de copier-coller ce squelette de page HTML dans un nouveau fichier et de le compléter avec votre code HTML (entre les balises *body*) 
