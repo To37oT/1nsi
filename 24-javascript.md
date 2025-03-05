@@ -14,7 +14,7 @@ Nous avons déjà pu nous familiariser avec le couple HTML-CSS, en fait, le coup
 
 Notre but ici n'est pas d'apprendre un nouveau langage de programmation, mais juste d'étudier quelques exemples d'utilisation du JavaScript, notamment dans le cas des interactions entre un utilisateur et une page web.
 
-Avant d'entrer dans le vif du sujet, un petit rappel historique : JavaScript a été créé en dix jours par Brendan Eich en 1995. Malgré son nom, JavaScript n'a rien à voir avec le langage Java, même si Brendan Eich affirme s'être inspiré de nombreux langage, dont Java, pour mettre au point JavaScript. Après des débuts chaotiques, il est, comme déjà dit plus haut, devenu incontournable dans le développement web.
+Après des débuts chaotiques, ce langage devenu incontournable dans le développement web.
 
 ## 2) intégrer le JavaScript
 
@@ -38,12 +38,14 @@ Voici un exemple de fichier HTML associé avec un fichier *script.js* :
 	</head>
 	<body>
 		...
+
+		<script src="script.js"></script>
 	</body>
-	<script src="script.js"></script>
+	
 </html>
 ```
 
-Comme vous pouvez le constater ci-dessus la balise *script* est placée après la balise *body* fermante (il est aussi possible de placer la balise *script* dans la partie *head*, mais ce choix peut entraîner certains problèmes si on ne prend pas certaines précautions, on préférera donc placer la balise *script* après le *body*).
+Comme vous pouvez le constater ci-dessus la balise *script* est placée à la fin de la balise *body* (il est aussi possible de placer la balise *script* dans la partie *head*, mais ce choix peut entraîner certains problèmes si on ne prend pas certaines précautions, on préférera donc placer la balise *script* après le *body*).
 
 ## 3) le JavaScript pour répondre à des événements
 
