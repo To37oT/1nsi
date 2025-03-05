@@ -278,8 +278,3 @@ Nous n'allons pas nous attarder sur ce squelette de page HTML, mais voici ce que
 - toutes les balises qui composeront votre page (p, h1, img...) **devront se trouver** entre la balise *body* ouvrante et la balise *body* fermante.
 
 Pour créer une nouvelle page, il suffira de copier-coller ce squelette de page HTML dans un nouveau fichier et de le compléter avec votre code HTML (entre les balises *body*) 
-
-
-##### Activité
->
->[lien vers l'activité](https://capytale2.ac-paris.fr/web/c/35de-5797741)
