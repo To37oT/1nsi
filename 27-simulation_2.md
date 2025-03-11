@@ -1,14 +1,14 @@
 ---
 layout: default
-title: Chapitre 27 - Le protocole HTTP
+title: Chapitre 27 - Simulation réseau
 permalink: /chapitre27/
 published: true
 date: 2024
 ---
 
-# Le protocole HTTP
+# Simulation réseau
 
-###  activité 27.1
+##  Activité
 
 En utilisant Filius, nous allons maintenant mettre en place un serveur Web afin de pouvoir faire des requêtes HTTP. Il sera possible d'analyser les données échangées entre les machines grâce à l'outil "data exchange". Pour afficher cet outil, il suffit de faire un clic droit sur la machine concernée et de choisir "show data exchange". Commencez par visionner la vidéo ci-dessous :
 
@@ -24,4 +24,4 @@ Comme vous pouvez le constater on retrouve :
 
 - le protocole ARP qui permet de trouver une adresse MAC à partir d'une adresse IP (l'échange entre les 2 machines commence d'ailleurs avec ce protocole ARP, sinon, impossible d'envoyer les trames)
 
-On notera que les trames et les paquets IP ne sont pas directement visibles avec cet outil "data exchange" : il faut cliquer sur une ligne "TCP" pour "voir" les couches "Internet" et "accès réseau".
+On notera que les trames et les paquets IP ne sont pas directement visibles avec cet outil "data exchange" : il faut cliquer sur une ligne "TCP" pour voir les couches "Internet" et "accès réseau".
