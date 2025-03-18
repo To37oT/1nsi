@@ -236,7 +236,7 @@ Modifiez le fichier "index.html" comme suit :
 	</head>
 	<body>
 	  <h1>Mon super site</h1>
-	  <p>Le serveur fonctionne parfaitement, il est \{{heure}} h \{{minute}} minutes et {{seconde}} secondes</p>
+	  <p>Le serveur fonctionne parfaitement, il est {% raw %}{{heure}} h \{{minute}} minutes et {{seconde}} secondes{% endraw %}</p>
 	</body>
 </html>
 ```
