@@ -236,7 +236,7 @@ Modifiez le fichier "index.html" comme suit :
 	</head>
 	<body>
 	  <h1>Mon super site</h1>
-	  <p>Le serveur fonctionne parfaitement, il est {% raw %}{{heure}} h \{{minute}} minutes et {{seconde}} secondes{% endraw %}</p>
+	  <p>Le serveur fonctionne parfaitement, il est {% raw %}{{heure}} h {{minute}} minutes et {{seconde}} secondes{% endraw %}</p>
 	</body>
 </html>
 ```
@@ -245,7 +245,7 @@ Testez ces modifications en saisissant "localhost:5000" dans la barre de votre n
 
 Nous avons bien une page dynamique, puisqu'à chaque fois que vous actualisez la page dans votre navigateur, l'heure courante s'affiche : à chaque fois que vous actualisez la page, vous effectuez une nouvelle requête et en réponse à cette requête, le serveur envoie une nouvelle page HTML.
 
-Attention, il est bien important de comprendre que la page HTML envoyée par le serveur au client ne contient plus les paramètres {{heure}}, {{minute}} et {{seconde}}. Au moment de créer la page, le serveur remplace ces paramètres par les valeurs passées en paramètres de la fonction "render_template" (s'il est 14 h 45 minutes et 31 secondes, le serveur remplacera "Le serveur fonctionne parfaitement, il est {{heure}} h {{minute}} minutes et {{seconde}} secondes" par "Le serveur fonctionne parfaitement, il est 15 h 45 minutes et 31 secondes").
+Attention, il est bien important de comprendre que la page HTML envoyée par le serveur au client ne contient plus les paramètres \{{heure}}, \{{minute}} et \{{seconde}}. Au moment de créer la page, le serveur remplace ces paramètres par les valeurs passées en paramètres de la fonction "render_template" (s'il est 14 h 45 minutes et 31 secondes, le serveur remplacera "Le serveur fonctionne parfaitement, il est {{heure}} h {{minute}} minutes et {{seconde}} secondes" par "Le serveur fonctionne parfaitement, il est 15 h 45 minutes et 31 secondes").
 
 Le fichier "index.html" ne contient donc pas du HTML (même si cela ressemble beaucoup à du HTML), car les paramètres {{heure}}, {{minute}} et {{seconde}} n'existent pas en HTML. Le fichier "index.html" contient en fait un langage de template nommé **Jinja**. Jinja ressemble beaucoup au HTML, mais il rajoute beaucoup de fonctionnalités par rapport au HTML (notamment les paramètres entourés d'une double accolade comme {{heure}}). Si vous utilisez Jinja seul (sans un framework comme Flask), les paramètres ne seront pas remplacés et votre navigateur affichera "Le serveur fonctionne parfaitement, il est {{heure}} h {{minute}} minutes et {{seconde}} secondes".
 
