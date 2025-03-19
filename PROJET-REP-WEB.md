@@ -51,12 +51,12 @@ index.html (répertoire "templates")
 <head>
     <meta charset="utf-8">
     <title>Ma page</title>
-    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+    <link rel="stylesheet" href=" {% raw %}{{url_for('static', filename='style.css')}} {% endraw %}">
 </head>
 
 <body>
     <h1>Mon super site</h1>
-    <p>Tout fonctionne parfaitement, voici <a href="{{ url_for('autre_page') }}">un lien</a> vers une autre page</p>
+    <p>Tout fonctionne parfaitement, voici <a href=" {% raw %}{{ url_for('autre_page') }} {% endraw %}">un lien</a> vers une autre page</p>
 </body>
 
 </html>
@@ -71,12 +71,12 @@ autre_page.html (répertoire "templates")
 <head>
     <meta charset="utf-8">
     <title>Ma page</title>
-    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+    <link rel="stylesheet" href=" {% raw %}{{url_for('static', filename='style.css')}} {% endraw %}">
 </head>
 
 <body>
     <h1>About</h1>
-    <p><a href="{{ url_for('index') }}">Retour vers la première page</a></p>
+    <p><a href=" {% raw %}{{ url_for('index') }} {% endraw %}">Retour vers la première page</a></p>
 </body>
 
 </html>
