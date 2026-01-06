@@ -47,5 +47,5 @@ Au cours de ce projet, il vous sera sans doute nécessaire d'étudier les 2 poin
 - Veillez au bon fonctionnement de votre rendu
   
 ## EVALUATION : 
-Projet : 5pts (consignes et code)
-Evaluation sur le projet : 15pts (évaluation pratique)
+- Projet : 5pts (consignes et code)
+- Evaluation sur le projet : 15pts (évaluation pratique)
