@@ -42,13 +42,10 @@ Au cours de ce projet, il vous sera sans doute nécessaire d'étudier les 2 poin
 
 - N'oubliez pas d'utiliser le plus possible les fonctions.
 - N'oubliez pas de commenter votre code
-- Votre code doit être simple et réutiliser le cours et cet énoncé (un code mal maitrisé ou un copier/coller sera sanctionné)
-- Vos noms de variables ou fonctions doivent être pertinents
+- Votre code doit être simple à comprendre et réutiliser le cours
+- Vos noms de variables, de fonctions, de fichiers,... doivent être pertinents.
 - Veillez au bon fonctionnement de votre rendu
-- Des points spéciaux sont attribués :
-  - Ajouter des fonctionnalités complémentaires (uniquement si le reste fonctionne parfaitement)
-  - Prévoir les erreurs utilisateur qui pourraient amener le programme à ne pas fonctionner correctement
-  - Proposer une interface favorisant l'interaction.
   
-
-
+## EVALUATION : 
+Projet : 5pts (consignes et code)
+Evaluation sur le projet : 15pts (évaluation pratique)
