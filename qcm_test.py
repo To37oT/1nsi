@@ -1,30 +1,34 @@
-def lire_fichier():
-    res = []
-    with open('projet-question.txt','r', encoding="utf8") as f: 
-        fichier2 = f.readlines()
-        for ligne in fichier2 : 
-            ligne = ligne.strip("\n")
-            res.append(ligne)
-    return res
+__all__=["lire_fichier","separe","poser_questions"]
 
+def _x0(_p):
+    _r=[]
+    _f=open(_p,'r',encoding='utf8')
+    for _l in _f:
+        _r.append(_l.rstrip("\n"))
+    _f.close()
+    return _r
 
-def separe(tab):
-    questions = []
-    for question in tab:
-        question = question.split(";;")
-        questions.append(question)
-        
-    return questions
+def _x1(_t,_d):
+    _q=[]
+    for _e in _t:
+        _q.append(_e.split(_d))
+    return _q
 
-def poser_questions(liste):
-    tot = 0
-    for question in liste :
-        print(question[0])
-        rep = "Blanc"
-        if rep == question[1]:
-            print("bravo !")
-            tot = tot + 1
+def _x2(_L,_a):
+    _s=0
+    for _i in _L:
+        print(_i[0])
+        if _a==_i[1]:
+            print("bravo !");_s+=1
         else:
             print("dommage")
-    print(tot)
+    print(_s)
 
+def lire_fichier():
+    return _x0("projet-question.txt")
+
+def separe(tab):
+    return _x1(tab,";;")
+
+def poser_questions(liste):
+    return _x2(liste,"Blanc")
