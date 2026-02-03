@@ -1,29 +1,30 @@
 def lire_fichier():
-    tab = []
+    res = []
     with open('projet-question.txt','r', encoding="utf8") as f: 
-        fichier = f.readlines()
-        for ligne in fichier : #regarde chaque ligne
-            ligne = ligne.strip("\n") # Supprime les retours à la ligne
-            tab.append(ligne) # Ajoute dans un tableau
-    return tab #retourner le résultat final
+        fichier2 = f.readlines()
+        for ligne in fichier2 : 
+            ligne = ligne.strip("\n")
+            res.append(ligne)
+    return res
 
 
-def separe(tableau_question):
-    questions_separe = []
-    for question in tableau_question: # On regarde chaque élément du tableau questions
-        question = question.split(";;") # Coupe chaque question sur les 
-        questions_separe.append(question) #Ajouter le résultat dans questions_separe
+def separe(tab):
+    questions = []
+    for question in tab:
+        question = question.split(";;")
+        questions.append(question)
         
-    return questions_separe # retourner le résultat final
+    return questions
 
-def poser_questions(liste_question):
-    score = 0
-    for question in liste_question :
+def poser_questions(liste):
+    tot = 0
+    for question in liste :
         print(question[0])
-        reponse = "Blanc" # simuler la réponse de l'utilisateur
-        if reponse == question[1]:
+        rep = "Blanc"
+        if rep == question[1]:
             print("bravo !")
-            score = score + 1
+            tot = tot + 1
         else:
             print("dommage")
-    return score
+    print(tot)
+
