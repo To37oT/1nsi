@@ -16,7 +16,7 @@ def separe(tableau_question):
         
     return questions_separe # retourner le résultat final
 
-def questions(liste_question):
+def poser_questions(liste_question):
     score = 0
     for question in liste_question :
         print(question[0])
