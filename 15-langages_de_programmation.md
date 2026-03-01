@@ -88,7 +88,7 @@ print("Hello World")
 En C, c'est un petit plus complexe, car la fonction ```main``` est **obligatoire**. En effet, au moment de l'exécution du programme, le système la recherche afin d'exécuter les instructions qui se trouvent à l'intérieur de cette fonction.
 
 ##### Exercice 1
-> Nous programmerons en C directement sur [replit.com](https://replit.com/languages/c){:target="_blank"} pour nous éviter l'utilisation d'un compilateur.
+> Nous programmerons en C directement sur [onlinegdb.com](https://www.onlinegdb.com/){:target="_blank"} pour nous éviter l'utilisation d'un compilateur.
 >Tester le programme C suivant :
 >
 >```c
