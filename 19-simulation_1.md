@@ -65,6 +65,9 @@ Installer l'éditeur de ligne de commande
 
 ![image](https://github.com/user-attachments/assets/ab545ec4-64d9-447e-b41c-66b0476826a2)
 
+
+**Pour les activités suivantes, vous réaliserez des copies d'écrans de vos résultats et manipulations**
+
 ### 7 - Commandes
 
 - Lancer la commande ```ipconfig```
@@ -82,7 +85,7 @@ Bien sur, si l'on test avec ```ping 192.168.0.3``` cela n'aboutira pas.
 ![image](https://github.com/user-attachments/assets/da367250-c803-4e93-8a6d-a990ea368e9a)
 
 
-### 8 - Modification
+### 8 - Modifications
 
 - Revenir au mode conception 
 
