@@ -100,7 +100,7 @@ Bien sur, si l'on test avec ```ping 192.168.0.3``` cela n'aboutira pas.
 
 ![image](https://github.com/user-attachments/assets/2b47ffdf-a107-42d3-8ead-5b7bc489a50a)
 
-### 8 - Test
+### 9 - Ping
 
 - Faite un ping de l'ordinateur 1 vers l'ordinateur 3.
 
