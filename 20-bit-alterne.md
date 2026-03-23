@@ -40,7 +40,7 @@ Dans certaines situations, le protocole de bit alterné ne permet pas de récup�
 
 ##### Exercice
 >
-> Trouver une situation où le protocole du bit alterné ne va pas pouvoir être efficace.
+> Trouver une situation où le protocole du bit alterné peut créer un problème.
 
 ##### Exercice
 >
